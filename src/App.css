@@ -8,18 +8,36 @@
   position: relative;
 }
 
-.level-0 {
+.container {
+  display: flex;
+  flex-direction: column;
   border: 1px solid black;
-  grid-column: 1;
 }
 
-.container > .container {
-  display: none;
-}
-.container > .container:first-child {
-  display: block;
+.menu {
+  display: flex;
 }
 
-.container > .container {
+.level-0 {
+  width: 100px;
+}
+
+.level-1 {
   left: 100px;
+  width: 200px;
+}
+
+.selected {
+  border: 2px solid red;
+}
+
+.crumb-path {
+  display: flex;
+  flex-direction: row;
+}
+
+.crumb-path > .crumb:not(:last-child):after {
+  content: '>';
+  margin: 0 5px;
+
 }
