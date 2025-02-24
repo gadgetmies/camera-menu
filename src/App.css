@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.level-0 {
+  border: 1px solid black;
+  grid-column: 1;
+}
+
+.container > .container {
+  display: none;
+}
+.container > .container:first-child {
+  display: block;
+}
+
+.container > .container {
+  left: 100px;
+}
