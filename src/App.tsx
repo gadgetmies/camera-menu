@@ -30,15 +30,21 @@ console.log({data})
 type SetSelectedFn = (level: number, index: number) => void
 
 
-const render = (node: Record<string, any>, level: number, selected: Array<number>, setSelected: SetSelectedFn): JSX.Element => {
+const render = (node: Record<string, any>, level: number, selected: Array<number>, setSelected: SetSelectedFn, classNames: string = ''): JSX.Element => {
     return <>
-        <div className={`level-${level} container`}>
+        <div className={`level-${level} container ${classNames}`}>
             {Object.keys(node).map((key, i) =>
-                <div className={`${selected[level] === i ? 'selected' : ''}`}
-                     onClick={() => setSelected(level, i)}>{key}</div>)
+                <div className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
+                     onClick={() => setSelected(level, i)}>
+                    <span className={'index'}>{i + 1}</span>
+                    <span className={'label'}>{key}</span>
+                </div>)
             }
         </div>
-        {Object.values(node).map((value, index) => value instanceof Object && selected[level] === index ? render(value, level + 1, selected, setSelected) : null)}
+        {Object.values(node)
+            .map((value, index) => value instanceof Object && selected[level] === index ?
+                render(value, level + 1, selected, setSelected, `${classNames} ${level === 0 ? `category-${index}` : ''}`) :
+                null)}
     </>
 }
 
@@ -78,8 +84,10 @@ function App() {
     const [searchString, setSearchString] = useState('')
     const select = setSelected(_setSelected, selected)
     return <div className={'root'}>
-        {crumbPath(data, selected.length > 2 ? selected.slice(0, -1) : selected)}
-        <div className={'menu'}>{render(data, 0, selected, select)}</div>
+        <div className={'wrapper'}>
+            {crumbPath(data, selected.length > 2 ? selected.slice(0, -1) : selected)}
+            <div className={'menu'}>{render(data, 0, selected, select)}</div>
+        </div>
         <div className={'search'}>
             <label>Search: <input value={searchString} onChange={e => setSearchString(e.target.value)}/></label>
             <button onClick={() => setSearchString('')}>Clear</button>

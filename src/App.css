@@ -2,6 +2,10 @@
   max-width: 1280px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .root {
   display: flex;
   flex-direction: column;
@@ -11,24 +15,101 @@
 .container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+}
+
+.wrapper {
+  background-color: black;
+  color: white;
+  font-weight: 500;
 }
 
 .menu {
   display: flex;
 }
 
+.item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.index {
+  display: none;
+  margin: 4px;
+}
+
+.label {
+  padding: 4px;
+  display: inline-block;
+  border-radius: 2px;
+  flex: 1;
+  margin-right: 4px;
+}
+
+.level-0 .item-0, .level-1.category-0 .index {
+  background-color: #de0937;
+}
+
+.level-0 .item-1, .level-1.category-1 .index {
+  background-color: #de21a5;
+}
+
+.level-0 .item-2, .level-1.category-2 .index {
+  background-color: #a324de;
+}
+
+.level-0 .item-3, .level-1.category-3 .index {
+  background-color: #0b7cde;
+}
+
+.level-0 .item-4, .level-1.category-4 .index {
+  background-color: #43de3e;
+}
+
+.level-0 .item-5, .level-1.category-5 .index {
+  background-color: #dea300;
+}
+
 .level-0 {
   width: 100px;
 }
 
-.level-1 {
-  left: 100px;
-  width: 200px;
+.level-0 .item {
+  opacity: 0.5;
 }
 
-.selected {
-  border: 2px solid red;
+.level-0 .item.selected {
+  opacity: 1;
+}
+
+.level-1 {
+  left: 100px;
+  width: 250px;
+  background-color: #181818;
+}
+
+.level-1 .index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.level-1 .selected .label, .level-2 .selected .label {
+  background-color: #cd2701;
+}
+
+.level-2 {
+  background: #292929;
+}
+
+.level-2 .item {
+  padding: 4px;
+}
+
+.level-2 .item:not(:first-child) {
+  border-top: 1px solid #464646;
 }
 
 .crumb-path {
@@ -39,5 +120,4 @@
 .crumb-path > .crumb:not(:last-child):after {
   content: '>';
   margin: 0 5px;
-
 }
