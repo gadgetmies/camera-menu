@@ -1,7 +1,9 @@
 import {JSX, useState} from 'react'
-import './App.css'
+import './Sony.css'
+//import './Canon.css'
 
-import csv from './a7iv.csv?raw'
+import csv from './sonyA7iv.csv?raw'
+//import csv from './canon5Div.csv?raw'
 
 const process = (acc: Record<string, any>, value: string): void => {
     const commaPosition = value.indexOf(',');
@@ -69,13 +71,13 @@ const crumbPath = (structure: Record<string, any>, selected: Array<number>) => {
     return <div className={'crumb-path'}>{res[0]}</div>
 }
 
-const search = (structure: Record<string, any>, searchString: string, path: Array<number>, select: UpdateFn): JSX.Element[] => {
+const search = (structure: Record<string, any>, searchString: string, path: Array<number>, keys: Array<string>, select: UpdateFn): JSX.Element[] => {
     return [...Object.keys(structure)
         .map((key, index) =>
             key.toLowerCase().includes(searchString.toLowerCase()) ?
-                <div onClick={() => select([...path, index])}>{key}</div> : null
+                <div onClick={() => select([...path, index])}>{[...keys, key].join(' > ')}</div> : null
         ),
-        ...Object.values(structure).map((value, i) => value instanceof Object ? search(value, searchString, [...path, i], select) : [])
+        ...Object.entries(structure).map(([key, value], i) => value instanceof Object ? search(value, searchString, [...path, i], [...keys, key], select) : [])
     ].filter(Boolean) as JSX.Element[]
 }
 
@@ -85,13 +87,18 @@ function App() {
     const select = setSelected(_setSelected, selected)
     return <div className={'root'}>
         <div className={'wrapper'}>
-            {crumbPath(data, selected.length > 2 ? selected.slice(0, -1) : selected)}
-            <div className={'menu'}>{render(data, 0, selected, select)}</div>
+            <div className={'menu'}>
+                {crumbPath(data, selected)}
+                {render(data, 0, selected, select)}
+                <div className={'nav-buttons'}>
+                    <div className={'back-button'} onClick={() => _setSelected(selected.slice(0, -1))}></div>
+                </div>
+            </div>
         </div>
         <div className={'search'}>
             <label>Search: <input value={searchString} onChange={e => setSearchString(e.target.value)}/></label>
             <button onClick={() => setSearchString('')}>Clear</button>
-            {searchString !== '' && search(data, searchString, [], _setSelected)}
+            {searchString !== '' && search(data, searchString, [], [], _setSelected)}
         </div>
     </div>
 }

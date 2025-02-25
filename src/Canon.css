@@ -1,0 +1,268 @@
+#root {
+    max-width: 1280px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.level-0.container {
+    flex-direction: row;
+}
+
+.wrapper {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.index {
+    display: none;
+}
+
+.label {
+    padding: 4px;
+    display: inline-block;
+    border-radius: 2px;
+    flex: 1;
+    margin-right: 4px;
+}
+
+:root {
+    --item-0-color: 255, 0, 0;
+    --item-1-color: 232, 0, 232;
+    --item-2-color: 0, 100, 255;
+    --item-3-color: 219, 207, 0;
+    --item-4-color: 255, 165, 0;
+    --item-5-color: 0, 128, 0;
+    --selected-item-line-width: 2px;
+}
+
+.level-0 .item {
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    height: 40px;
+    font-size: 12px;
+}
+
+.level-0 .item-0.selected, .level-2.category-0 .selected, .level-3.category-0 .item.selected {
+    background-color: rgba(var(--item-0-color), 1);
+}
+
+.level-1.category-0 .selected .index {
+    background-color: rgba(var(--item-0-color), 0.8);
+}
+
+.level-0:has(.item-0.selected), .crumb-path:has(~ .level-3.category-0) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-0-color), 1);
+}
+
+.level-0 .item-1.selected, .level-2.category-1 .selected, .level-3.category-1 .item.selected {
+    background-color: rgba(var(--item-1-color), 1);
+}
+
+.level-1.category-1 .selected .index {
+    background-color: rgba(var(--item-1-color), 0.8);
+}
+
+.level-0:has(.item-1.selected), .crumb-path:has(~ .level-3.category-1) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-1-color), 1);
+}
+
+.level-0 .item-2.selected, .level-2.category-2 .selected, .level-3.category-2 .item.selected {
+    background-color: rgba(var(--item-2-color), 1);
+}
+
+.level-1.category-2 .selected .index {
+    background-color: rgba(var(--item-2-color), 0.8);
+}
+
+.level-0:has(.item-2.selected), .crumb-path:has(~ .level-3.category-2) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-2-color), 1);
+}
+
+.level-0 .item-3.selected, .level-2.category-3 .selected, .level-3.category-3 .item.selected {
+    background-color: rgba(var(--item-3-color), 1);
+}
+
+.level-1.category-3 .selected .index {
+    background-color: rgba(var(--item-3-color), 0.8);
+}
+
+.level-0:has(.item-3.selected), .crumb-path:has(~ .level-3.category-3) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-3-color), 1);
+}
+
+.level-0 .item-4.selected, .level-2.category-4 .selected, .level-3.category-4 .item.selected {
+    background-color: rgba(var(--item-4-color), 1);
+}
+
+.level-1.category-4 .selected .index {
+    background-color: rgba(var(--item-4-color), 0.8);
+}
+
+.level-0:has(.item-4.selected), .crumb-path:has(~ .level-3.category-4) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-4-color), 1);
+}
+
+.level-0 .item-5.selected, .level-2.category-5 .selected, .level-3.category-5 .item.selected {
+    background-color: rgba(var(--item-5-color), 1);
+}
+
+.level-1.category-5 .selected .index {
+    background-color: rgba(var(--item-5-color), 0.8);
+}
+
+.level-0:has(.item-5.selected), .crumb-path:has(~ .level-3.category-5) {
+    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-5-color), 1);
+}
+
+.level-0 .item {
+    opacity: 0.5;
+}
+
+.level-0 .item.selected {
+    opacity: 1;
+}
+
+.level-1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+}
+
+.level-1 .index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    width: 40px;
+    height: 100%;
+}
+
+.level-1 .label {
+    display: none;
+}
+
+.level-2 .label, .level-3 .label {
+    margin: 0 12px;
+}
+
+.level-2 .selected .label, .level-3 .selected .label {
+    background-color: black;
+}
+
+.level-2 {
+    background: #292929;
+}
+
+.level-2 .item, .level-3 .item {
+    padding: 4px;
+}
+
+.level-2 .item:not(:first-child) {
+    border-top: 1px solid black;
+}
+
+.crumb-path {
+    order: 3;
+    display: flex;
+    margin-right: 8px;
+}
+
+.level-0 {
+    order: 1;
+    flex: 1 1 100%;
+}
+
+.level-1 {
+    order: 2;
+}
+
+.level-2 {
+    order: 4;
+    flex: 1 1 100%;
+    margin-top: 4px;
+}
+
+.level-3 {
+    order: 5;
+    width: 100%;
+    background: black;
+    margin-top: 8px;
+}
+
+.crumb-path:has(~ .level-3) {
+    order: 1;
+    width: 100%;
+    margin: 0 16px;
+}
+
+.crumb-path:has(~ .level-3) .crumb {
+    margin: 0 16px;
+}
+
+.crumb-path:has(~ .level-3) .crumb:nth-child(-n + 2), .crumb-path:has(~ .level-3) .crumb:nth-child(4) {
+    display: none;
+}
+
+.level-0:has(~ .level-3), .level-1:has(~ .level-3), .level-2:has(~ .level-3) {
+    display: none;
+}
+
+.level-3 {
+    display: flex;
+}
+
+.level-3 .item {
+    background-color: #292929;
+}
+
+.level-3 ~ .nav-buttons {
+    display: flex;
+    justify-items: flex-end;
+    order: 6;
+    flex: 1 1 100%;
+    justify-content: flex-end;
+}
+
+.level-3 ~ .nav-buttons .back-button {
+    border: 1px solid #444444;
+    background: #292929;
+    padding: 4px 2px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.level-3 ~ .nav-buttons .back-button:before {
+    content: 'SET OK';
+}
+
+
+.level-4 {
+    order: 6;
+}
