@@ -2,8 +2,15 @@ import {JSX, useState} from 'react'
 import './Sony.css'
 //import './Canon.css'
 
-import csv from './sonyA7iv.csv?raw'
-//import csv from './canon5Div.csv?raw'
+import sA7iv from './sonyA7iv.csv?raw'
+import sA7Riii from './sonyA7Riii.csv?raw'
+import c5Div from './canon5Div.csv?raw'
+
+const cameraCsvs: Record<string, string> = {
+    sA7iv,
+    sA7Riii,
+    c5Div
+}
 
 const process = (acc: Record<string, any>, value: string): void => {
     const commaPosition = value.indexOf(',');
@@ -20,14 +27,6 @@ const process = (acc: Record<string, any>, value: string): void => {
         acc[value] = ''
     }
 }
-
-let data = {}
-const [_, ...rest] = csv.split("\n")
-for (const line of rest) {
-    process(data, line)
-}
-
-console.log({data})
 
 type SetSelectedFn = (level: number, index: number) => void
 
@@ -82,9 +81,25 @@ const search = (structure: Record<string, any>, searchString: string, path: Arra
 }
 
 function App() {
+    const cameraSettings = ((camera: string) => {
+        if (!camera) return {}
+
+        let data = {}
+        const [_, ...rest] = cameraCsvs[camera].split("\n")
+        for (const line of rest) {
+            process(data, line)
+        }
+
+        return data
+    })
+
+    const [selectedCamera, _setSelectedCamera] = useState('sA7iv')
+    const [data, _setData] = useState(cameraSettings(selectedCamera))
     const [selected, _setSelected] = useState([0, 0])
     const [searchString, setSearchString] = useState('')
+
     const select = setSelected(_setSelected, selected)
+
     return <div className={'root'}>
         <div className={'wrapper'}>
             <div className={'menu'}>
@@ -94,6 +109,19 @@ function App() {
                     <div className={'back-button'} onClick={() => _setSelected(selected.slice(0, -1))}></div>
                 </div>
             </div>
+        </div>
+        <div>
+            <label>
+                Camera Model:
+                <select onChange={({target: {value}}) => {
+                    _setSelectedCamera(value)
+                    _setData(cameraSettings(value))
+                }}>
+                    <option value={"sA7iv"}>Sony A7iv</option>
+                    <option value={"sA7Riii"}>Sony A7Riii</option>
+                    <option value={"c5Div"}>Canon 5Div</option>
+                </select>
+            </label>
         </div>
         <div className={'search'}>
             <label>Search: <input value={searchString} onChange={e => setSearchString(e.target.value)}/></label>
