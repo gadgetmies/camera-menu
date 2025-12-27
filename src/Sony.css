@@ -86,8 +86,23 @@
   overflow: hidden;
 }
 
+.level-0 .label {
+  display: none;
+}
+
 .level-0 .item.selected {
   opacity: 1;
+}
+
+.level-0 .icon {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.level-0 .icon img {
+  width: 30px;
+  height: auto;
 }
 
 .level-1 {
@@ -122,8 +137,6 @@
 }
 
 .level-3 {
-  right: 0;
-  width: 50%;
 }
 
 .crumb-path {
