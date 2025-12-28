@@ -4,7 +4,7 @@ import SonyCss from './Sony.css?url'
 import CanonCss from './Canon.css?url'
 import PanasonicCss from './Panasonic.css?url'
 
-const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
+const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
 
 const cssFileMap: Record<string, string> = {
     'Sony': SonyCss,
