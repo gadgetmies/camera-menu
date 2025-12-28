@@ -150,7 +150,16 @@ function App() {
         return {data, config}
     })
 
-    const [selectedCamera, _setSelectedCamera] = useState(Object.keys(cameraCsvs)[0] || '')
+    const getInitialCamera = () => {
+        const params = new URLSearchParams(window.location.search)
+        const cameraParam = params.get('camera')
+        if (cameraParam && cameraCsvs[cameraParam]) {
+            return cameraParam
+        }
+        return Object.keys(cameraCsvs)[0] || ''
+    }
+
+    const [selectedCamera, _setSelectedCamera] = useState(getInitialCamera())
     const [cameraData, _setCameraData] = useState(cameraSettings(selectedCamera))
     const data = cameraData.data
     const config = cameraData.config
@@ -185,6 +194,17 @@ function App() {
             link.href = cssUrl
         }
     }, [selectedCamera, config.cssFile])
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search)
+        if (selectedCamera) {
+            params.set('camera', selectedCamera)
+        } else {
+            params.delete('camera')
+        }
+        const newUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}`
+        window.history.replaceState({}, '', newUrl)
+    }, [selectedCamera])
 
     const select = setSelected(_setSelected, selected)
 
