@@ -61,22 +61,26 @@ type SetSelectedFn = (level: number, index: number) => void
 
 const render = (config: Record<string, any>, node: Record<string, any>, level: number, selected: Array<number>, setSelected: SetSelectedFn, classNames: string = ''): JSX.Element => {
     return <>
-        <div className={`level-${level} container ${classNames}`} key={`level-${level}-container`}>
-            {Object.keys(node).map((key, i) => {
-                const parts = key.match(/(<i name="(.*)"\/>)?(.*)/)
-                return <div 
-                            className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
-                            key={key}
-                            onClick={() => setSelected(level, i)}>
-                    <span className={'index'}>{i + 1}</span>
-                    {parts![2] &&
-                        <span className={'icon'}>
-                            <img alt={parts![2]} src={`data:image/png;base64, ${config.icons[parts![2]]}`}/>
-                        </span>}
-                    <span className={'label'}>{parts![3]}</span>
-                </div>;
-            })
-            }
+        <div className={`scroll-container level-${level}`}>
+            <div className={`level-${level} container ${classNames}`} key={`level-${level}-container`}>
+                {Object.keys(node).map((key, i) => {
+                    const iconMatch = key.match(/<i name="([^"]+)"\/>/)
+                    const iconName = iconMatch ? iconMatch[1] : null
+                    const label = key.replace(/<i name="[^"]+"\/>/g, '')
+                    return <div 
+                                className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
+                                key={key}
+                                onClick={() => setSelected(level, i)}>
+                        <span className={'index'}>{i + 1}</span>
+                        {iconName && config.icons[iconName] &&
+                            <span className={'icon'}>
+                                <img alt={iconName} src={`data:image/png;base64, ${config.icons[iconName]}`}/>
+                            </span>}
+                        <span className={'label'}>{label}</span>
+                    </div>;
+                })
+                }
+            </div>
         </div>
         {Object.values(node)
             .map((value, index) => value instanceof Object && selected[level] === index ?
@@ -99,8 +103,8 @@ const crumbPath = (structure: Record<string, any>, selected: Array<number>) => {
         if (!currentKey) {
             return [result, current]
         }
-        const parts = currentKey.match(/(<i name="(.*)"\/>)?(.*)/)
-        return [[...result, <div className={'crumb'} key={currentKey}>{parts![3]}</div>], current[currentKey]];
+        const label = currentKey.replace(/<i name="[^"]+"\/>/g, '')
+        return [[...result, <div className={'crumb'} key={currentKey}>{label}</div>], current[currentKey]];
     }, [[], structure]);
     return <div className={'crumb-path'}>{res[0]}</div>
 }
@@ -124,11 +128,33 @@ function App() {
         let config: {icons: Record<string, string>, displayName?: string, cssFile?: string} = {icons: {}}
         const [_, ...rest] = cameraCsvs[camera].split("\n")
         const menuLines = rest.slice(0, rest.indexOf('camera_menu_config'))
+        
+        let previousRowCells: string[] = []
+        
         for (const line of menuLines) {
             if (line.startsWith('camera_menu_config')) {
                 break
             }
-            process(data, line)
+            
+            const currentRowCells = line.split(',')
+            
+            if (previousRowCells.length > 0) {
+                for (let i = 0; i < currentRowCells.length; i++) {
+                    const isEmpty = currentRowCells[i].trim() === ''
+                    const hasLaterValues = currentRowCells.some((cell, index) => index > i && cell.trim() !== '')
+                    
+                    if (isEmpty && hasLaterValues && i < previousRowCells.length && previousRowCells[i].trim() !== '') {
+                        currentRowCells[i] = previousRowCells[i]
+                    }
+                }
+            }
+            
+            const filledLine = currentRowCells.join(',')
+            process(data, filledLine)
+            
+            if (currentRowCells.some(cell => cell.trim() !== '')) {
+                previousRowCells = currentRowCells
+            }
         }
 
         const configStartIndex = rest.findIndex(line => line.startsWith('camera_menu_config'))

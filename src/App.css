@@ -239,38 +239,3 @@
   max-height: 200px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  background-color: black;
-  color: white;
-  font-weight: 500;
-}
-
-.menu {
-  display: flex;
-  max-width: 100vw;
-  overflow: auto;
-}
-
-.item {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-}
-
-.index {
-  display: none;
-  margin: 4px;
-}
-
-.label {
-  padding: 4px;
-  display: inline-block;
-  border-radius: 2px;
-  flex: 1;
-  margin-right: 4px;
-}
