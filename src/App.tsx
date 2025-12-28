@@ -1,16 +1,14 @@
 import {JSX, useState, useEffect} from 'react'
 import './App.css'
-import SonyCss from './Sony.css?url'
-import CanonCss from './Canon.css?url'
-import PanasonicCss from './Panasonic.css?url'
 
-const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
+const cssModules = import.meta.glob('./data/*.css', { query: '?url', import: 'default', eager: true })
 
-const cssFileMap: Record<string, string> = {
-    'Sony': SonyCss,
-    'Canon': CanonCss,
-    'Panasonic': PanasonicCss
-}
+const cssFileMap: Record<string, string> = {}
+Object.keys(cssModules).forEach((path) => {
+    const fileName = path.replace('./data/', '').replace('.css', '')
+    cssFileMap[fileName] = cssModules[path] as string
+})
 
 const cameraCsvs: Record<string, string> = {}
 const cameraDisplayNames: Record<string, string> = {}
@@ -38,7 +36,7 @@ Object.keys(csvModules).forEach((path) => {
         cameraDisplayNames[key] = fileName
     }
     if (!cameraCssFiles[key]) {
-        cameraCssFiles[key] = 'Sony'
+        cameraCssFiles[key] = fileName
     }
 })
 
@@ -170,7 +168,7 @@ function App() {
     }
 
     useEffect(() => {
-        const cssFile = config.cssFile || cameraCssFiles[selectedCamera] || 'Sony'
+        const cssFile = config.cssFile || cameraCssFiles[selectedCamera] || selectedCamera
         const linkId = 'camera-specific-css'
         
         let link = document.getElementById(linkId) as HTMLLinkElement

@@ -1,0 +1,490 @@
+Tab,Category,Menu Item (click link for Sony Help Guide),Sub Menu Item,Comments/Defaults
+My Menu,My Menu 1,,,
+My Menu,My Menu 2,,,
+My Menu,My Menu 3,,,
+My Menu,My Menu Setting,Add Item,,
+My Menu,My Menu Setting,Sort Item,,
+My Menu,My Menu Setting,Delete Item,,
+My Menu,My Menu Setting,Delete Page,,
+My Menu,My Menu Setting,Delete All,,
+My Menu,My Menu Setting,Display From My Menu,,
+Camera 1,Quality / Image Size1,File Format,RAW,
+Camera 1,Quality / Image Size1,File Format,RAW & JPEG,
+Camera 1,Quality / Image Size1,File Format,JPEG,
+Camera 1,Quality / Image Size1,RAW File Type,Compressed,
+Camera 1,Quality / Image Size1,RAW File Type,Uncompressed,
+Camera 1,Quality / Image Size1,JPEG Quality,Extra Fine,
+Camera 1,Quality / Image Size1,JPEG Quality,Fine,
+Camera 1,Quality / Image Size1,JPEG Quality,Standard,
+Camera 1,Quality / Image Size1,JPEG Image Size,L: 24M,
+Camera 1,Quality / Image Size1,JPEG Image Size,M: 10M,
+Camera 1,Quality / Image Size1,JPEG Image Size,S: 6.0M,
+Camera 1,Quality / Image Size1,Aspect Ratio (still image),3:2,
+Camera 1,Quality / Image Size1,Aspect Ratio (still image),16:9,
+Camera 1,Quality / Image Size1,APS-C/Super 35mm,Shooting,Auto,
+Camera 1,Quality / Image Size1,APS-C/Super 35mm,Shooting:Manual,
+Camera 1,Quality / Image Size2,Long Exposure NR,On,
+Camera 1,Quality / Image Size2,Long Exposure NR,Off,
+Camera 1,Quality / Image Size2,High ISO NR,Normal,
+Camera 1,Quality / Image Size2,High ISO NR,Low,
+Camera 1,Quality / Image Size2,High ISO NR,Off,
+Camera 1,Quality / Image Size2,Color Space,sRGB,
+Camera 1,Quality / Image Size2,Color Space,AdobeRGB,
+Camera 1,Quality / Image Size2,Lens Comp.,Shading Comp.,Auto
+Camera 1,Quality / Image Size2,Lens Comp.,Shading Comp.,Off
+Camera 1,Quality / Image Size2,Lens Comp.,Chro. Aber. Comp.,Auto
+Camera 1,Quality / Image Size2,Lens Comp.,Chro. Aber. Comp.,Off
+Camera 1,Quality / Image Size2,Lens Comp.,Distortion Comp.,Auto
+Camera 1,Quality / Image Size2,Lens Comp.,Distortion Comp.,Off
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Bracketing,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Portrait,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Sports Action,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Macro,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Landscape,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Sunset,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Night Scene,
+Camera 1,Shoot Mode/Drive1,Scene Selection,Night Portrait,
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Shooting,
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Shooting,Continuous Shooting: Lo
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,5 Sec
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,2 Sec
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,2 Sec
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),2 Sec. 3 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),2 Sec. 5 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),10 Sec. 3 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),10 Sec. 5 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),5 Sec. 3 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),5 Sec. 5 Img.
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,3.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,3.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 9 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,3.0EV 3 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,3.0EV 5 Image
+Camera 1,Shoot Mode/Drive1,Drive Mode,White Balance Bracket,Lo
+Camera 1,Shoot Mode/Drive1,Drive Mode,White Balance Bracket,High
+Camera 1,Shoot Mode/Drive1,Drive Mode,DRO Bracket,Lo
+Camera 1,Shoot Mode/Drive1,Drive Mode,DRO Bracket,High
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,Off
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,2 Sec
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,5 Sec
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,10 Sec
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Bracket order,0→-→+
+Camera 1,Shoot Mode/Drive1,Bracket Settings,Bracket order,-→0→+
+Camera 1,Shoot Mode/Drive1,Recall
+Camera 1,Shoot Mode/Drive1,Memory
+Camera 1,Shoot Mode/Drive1,Select Media,Slot 1
+Camera 1,Shoot Mode/Drive1,Select Media,Slot 2
+Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 1
+Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 2
+Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 3
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Interval Shooting,Off
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Interval Shooting,On
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Shooting Start Time,Minutes and seconds
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Shooting Interval,Minutes and seconds
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Number of Shots,0-9999
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,High
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,Mid
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,Low
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Silent Shoot. in Intvl.,On
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Silent Shoot. in Intvl.,Off
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Shoot. Intvl. Priority,Off
+Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Shoot. Intvl. Priority,On
+Camera 1,AF1,Focus Mode,Single-shot AF
+Camera 1,AF1,Focus Mode,Automatic AF
+Camera 1,AF1,Focus Mode,Continuous AF
+Camera 1,AF1,Focus Mode,DMF
+Camera 1,AF1,Focus Mode,Manual Focus
+Camera 1,AF1,Priority Set in AF-S,AF
+Camera 1,AF1,Priority Set in AF-S,Release
+Camera 1,AF1,Priority Set in AF-S,Balanced Emphasis
+Camera 1,AF1,Priority Set in AF-C,AF
+Camera 1,AF1,Priority Set in AF-C,Release
+Camera 1,AF1,Priority Set in AF-C,Balanced Emphasis
+Camera 1,AF1,Focus Area,Wide
+Camera 1,AF1,Focus Area,Zone
+Camera 1,AF1,Focus Area,Center
+Camera 1,AF1,Focus Area,Flexible Spot, S
+Camera 1,AF1,Focus Area,Flexible Spot, M
+Camera 1,AF1,Focus Area,Flexible Spot, L
+Camera 1,AF1,Focus Area,Expand Flexible Spot
+Camera 1,AF1,Focus Area,Lock-on AF,Wide
+Camera 1,AF1,Focus Area,Lock-on AF,Zone
+Camera 1,AF1,Focus Area,Lock-on AF,Center
+Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot S
+Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot M
+Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot L
+Camera 1,AF1,Focus Area,Lock-on AF,Expand Flexible Spot
+Camera 1,AF1,Focus Settings,,
+Camera 1,AF1,Swt. V/H AF Area,Off
+Camera 1,AF1,Swt. V/H AF Area,AF Point Only
+Camera 1,AF1,Swt. V/H AF Area,AF Point + AF Area
+Camera 1,AF2,AF Illuminator,Auto,
+Camera 1,AF2,AF Illuminator,Off,
+Camera 1,AF2,Center Lock-on AF,Off,
+Camera 1,AF2,Center Lock-on AF,On,
+Camera 1,AF2,Face/Eye AF Set.,Face/Eye Prty in AF,On
+Camera 1,AF2,Face/Eye AF Set.,Face/Eye Prty in AF,Off
+Camera 1,AF2,Face/Eye AF Set.,Subject Detection,Human
+Camera 1,AF2,Face/Eye AF Set.,Subject Detection,Animal
+Camera 1,AF2,Face/Eye AF Set.,Face Dtct Frame Dsp,On
+Camera 1,AF2,Face/Eye AF Set.,Face Dtct Frame Dsp,Off
+Camera 1,AF2,Face/Eye AF Set.,Animal Eye Display,On
+Camera 1,AF2,Face/Eye AF Set.,Animal Eye Display,Off
+Camera 1,AF2,AF Track Sens,5(Responsive),
+Camera 1,AF2,AF Track Sens,4,
+Camera 1,AF2,AF Track Sens,3(Standard)
+Camera 1,AF2,AF Track Sens,2
+Camera 1,AF2,AF Track Sens,1(Locked on)
+Camera 1,AF2,AF System,Phase Detection AF,
+Camera 1,AF2,AF System,Contrast AF,
+Camera 1,AF2,AF w/ shutter,On
+Camera 1,AF2,AF w/ shutter,Off
+Camera 1,AF3,Pre-AF,Invalid lens!!!
+Camera 1,AF3,Eye-Start AF,Invalid lens!!!
+Camera 1,AF3,AF Area Regist.,On
+Camera 1,AF3,AF Area Regist.,Off
+Camera 1,AF3,Del. Reg. AF Area
+Camera 1,AF3,AF Area Auto Clear,On
+Camera 1,AF3,AF Area Auto Clear,Off
+Camera 1,AF3,Disp. cont. AF area,On
+Camera 1,AF3,Disp. cont. AF area,Off
+Camera 1,AF4,AF Micro Adj.,AF Adjustment Set.,On
+Camera 1,AF4,AF Micro Adj.,AF Adjustment Set.,Off
+Camera 1,AF4,AF Micro Adj.,amount!!!
+Camera 1,AF4,AF Micro Adj.,Clear
+Camera 1,AF4,Aperture Drive in AF,Invalid lens!!!
+
+Camera 1,Exposure1,Exposure Comp.,-5-+5,
+Camera 1,Exposure1,Reset EV Comp.,Maintain
+Camera 1,Exposure1,Reset EV Comp.,Reset
+Camera 1,Exposure1,ISO,Auto
+Camera 1,Exposure1,ISO,50
+Camera 1,Exposure1,ISO,64
+Camera 1,Exposure1,ISO,80
+Camera 1,Exposure1,ISO,100
+Camera 1,Exposure1,ISO,125
+Camera 1,Exposure1,ISO,160
+Camera 1,Exposure1,ISO,200
+Camera 1,Exposure1,ISO,250
+Camera 1,Exposure1,ISO,320
+Camera 1,Exposure1,ISO,400
+Camera 1,Exposure1,ISO,500
+Camera 1,Exposure1,ISO,640
+Camera 1,Exposure1,ISO,800
+Camera 1,Exposure1,ISO,1000
+Camera 1,Exposure1,ISO,1250
+Camera 1,Exposure1,ISO,1600
+Camera 1,Exposure1,ISO,2000
+Camera 1,Exposure1,ISO,2500
+Camera 1,Exposure1,ISO,3200
+Camera 1,Exposure1,ISO,4000
+Camera 1,Exposure1,ISO,5000
+Camera 1,Exposure1,ISO,6400
+Camera 1,Exposure1,ISO,8000
+Camera 1,Exposure1,ISO,10000
+Camera 1,Exposure1,ISO,12800
+Camera 1,Exposure1,ISO,16000
+Camera 1,Exposure1,ISO,20000
+Camera 1,Exposure1,ISO,25600
+Camera 1,Exposure1,ISO,51200
+Camera 1,Exposure1,ISO,64000
+Camera 1,Exposure1,ISO,80000
+Camera 1,Exposure1,ISO,102400
+Camera 1,Exposure1,ISO,128000
+Camera 1,Exposure1,ISO,160000
+Camera 1,Exposure1,ISO,204800
+Camera 1,Exposure1,ISO AUTO Min. SS,Standard
+Camera 1,Exposure1,ISO AUTO Min. SS,Fast
+Camera 1,Exposure1,ISO AUTO Min. SS,Faster
+Camera 1,Exposure1,ISO AUTO Min. SS,Slower
+Camera 1,Exposure1,ISO AUTO Min. SS,Slow
+Camera 1,Exposure1,ISO AUTO Min. SS,1/8000
+Camera 1,Exposure1,ISO AUTO Min. SS,1/4000
+Camera 1,Exposure1,ISO AUTO Min. SS,1/2000
+Camera 1,Exposure1,ISO AUTO Min. SS,1/1000
+Camera 1,Exposure1,ISO AUTO Min. SS,1/500
+Camera 1,Exposure1,ISO AUTO Min. SS,1/250
+Camera 1,Exposure1,ISO AUTO Min. SS,1/125
+Camera 1,Exposure1,ISO AUTO Min. SS,1/60
+Camera 1,Exposure1,ISO AUTO Min. SS,1/30
+Camera 1,Exposure1,ISO AUTO Min. SS,1/15
+Camera 1,Exposure1,ISO AUTO Min. SS,1/8
+Camera 1,Exposure1,ISO AUTO Min. SS,1/4
+Camera 1,Exposure1,ISO AUTO Min. SS,0.5"
+Camera 1,Exposure1,ISO AUTO Min. SS,1"
+Camera 1,Exposure1,ISO AUTO Min. SS,2"
+Camera 1,Exposure1,ISO AUTO Min. SS,4"
+Camera 1,Exposure1,ISO AUTO Min. SS,8"
+Camera 1,Exposure1,ISO AUTO Min. SS,15"
+Camera 1,Exposure1,ISO AUTO Min. SS,30"
+Camera 1,Exposure1,Metering Mode,Multi
+Camera 1,Exposure1,Metering Mode,Center
+Camera 1,Exposure1,Metering Mode,Spot: Standard
+Camera 1,Exposure1,Metering Mode,Spot: Large
+Camera 1,Exposure1,Metering Mode,Entire Screen Avg.
+Camera 1,Exposure1,Metering Mode,Highlight
+Camera 1,Exposure1,Face Prty in Mlti Mtr,On,
+Camera 1,Exposure1,Face Prty in Mlti Mtr,Off,
+Camera 1,Exposure2,Spot Metering Point,Center,
+Camera 1,Exposure2,Spot Metering Point,Focus Point Link,
+Camera 1,Exposure2,Exposure step,0.5EV,
+Camera 1,Exposure2,Exposure step,0.3EV,
+Camera 1,Exposure2,AEL w/ shutter,Auto,
+Camera 1,Exposure2,AEL w/ shutter,On,
+Camera 1,Exposure2,AEL w/ shutter,Off,
+Camera 1,Exposure2,Exposure Std. Adjust,,
+Camera 1,Flash,Flash Mode,Flash Off,
+Camera 1,Flash,Flash Mode,Autoflash,
+Camera 1,Flash,Flash Mode,Fill-flash
+Camera 1,Flash,Flash Mode,Slow Sync.
+Camera 1,Flash,Flash Mode,Rear Sync.
+Camera 1,Flash,Flash Comp.,-3-+3,
+Camera 1,Flash,Exp.comp.set,Ambient&Flash,
+Camera 1,Flash,Exp.comp.set,Ambient only
+Camera 1,Flash,Wireless Flash,Off,
+Camera 1,Flash,Wireless Flash,On,
+Camera 1,Flash,Red Eye Reduction,On,
+Camera 1,Flash,Red Eye Reduction,Off,
+Camera 1,Flash,External Flash Set.,Ext. Flash Firing Set.
+Camera 1,Flash,External Flash Set.,Ext. Flash Cust. Set.
+Camera 1,Color/WB/Img Processing,White Balance,Auto,
+Camera 1,Color/WB/Img Processing,White Balance,Daylight,
+Camera 1,Color/WB/Img Processing,White Balance,Shade,
+Camera 1,Color/WB/Img Processing,White Balance,Cloudy,
+Camera 1,Color/WB/Img Processing,White Balance,Incandescent,
+Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Warm White,
+Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Cool White,
+Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Day White,
+Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Daylight,
+Camera 1,Color/WB/Img Processing,White Balance,Flash,
+Camera 1,Color/WB/Img Processing,White Balance,Underwater Auto,
+Camera 1,Color/WB/Img Processing,White Balance,C.Temp./Filter,
+Camera 1,Color/WB/Img Processing,White Balance,Custom 1
+Camera 1,Color/WB/Img Processing,White Balance,Custom 2
+Camera 1,Color/WB/Img Processing,White Balance,Custom 3
+Camera 1,Color/WB/Img Processing,White Balance,Custom Setup
+Camera 1,Color/WB/Img Processing,Priority Set in AWB,Standard
+Camera 1,Color/WB/Img Processing,Priority Set in AWB,Ambience
+Camera 1,Color/WB/Img Processing,Priority Set in AWB,White
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Auto
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv1
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv2
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv3
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv4
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv5
+Camera 1,Color/WB/Img Processing,DRO/Auto HDR,Auto HDR: Exposure Diff. Auto
+Camera 1,Color/WB/Img Processing,Creative Style,Standard,
+Camera 1,Color/WB/Img Processing,Creative Style,Vivid,
+Camera 1,Color/WB/Img Processing,Creative Style,Neutral,
+Camera 1,Color/WB/Img Processing,Creative Style,Clear,
+Camera 1,Color/WB/Img Processing,Creative Style,Deep,
+Camera 1,Color/WB/Img Processing,Creative Style,Light,
+Camera 1,Color/WB/Img Processing,Creative Style,Portrait,
+Camera 1,Color/WB/Img Processing,Creative Style,Landscape,
+Camera 1,Color/WB/Img Processing,Creative Style,Sunset,
+Camera 1,Color/WB/Img Processing,Creative Style,Night Scene,
+Camera 1,Color/WB/Img Processing,Creative Style,Autumn leaves,
+Camera 1,Color/WB/Img Processing,Creative Style,Black & White,
+Camera 1,Color/WB/Img Processing,Creative Style,Sepia,
+Camera 1,Color/WB/Img Processing,Creative Style,1 Standard,
+Camera 1,Color/WB/Img Processing,Creative Style,2 Vivid,
+Camera 1,Color/WB/Img Processing,Creative Style,3 Neutral,
+Camera 1,Color/WB/Img Processing,Creative Style,4 Portrait,
+Camera 1,Color/WB/Img Processing,Creative Style,5 Landscape,
+Camera 1,Color/WB/Img Processing,Creative Style,6 Black & White,
+
+Camera 1,Color/WB/Img Processing,Picture Effect,[set as desired],
+Camera 1,Color/WB/Img Processing,Picture Profile,Options,
+Camera 1,Color/WB/Img Processing,Priority Set in AWB,,
+Camera 1,Focus Assist,AF in Focus Mag. (still image),,
+Camera 1,Focus Assist,Focus Magnif. Time,,
+Camera 1,Focus Assist,Focus Magnifier,,
+Camera 1,Focus Assist,Initial Focus Mag.(still image),,
+Camera 1,Focus Assist,MF Assist (still image),,
+Camera 1,Focus Assist,Peaking Setting,Peaking Display,
+Camera 1,Focus Assist,Peaking Setting,Peaking Level,
+Camera 1,Focus Assist,Peaking Setting,Peaking Color,
+Camera 1,Shooting Assist,Anti-flicker Shoot. (still image),,
+Camera 1,Shooting Assist,Face Registration,,
+Camera 1,Shooting Assist,Regist. Faces Priority,,
+Camera 2,Movie 1,File Format (movie),,
+Camera 2,Movie 1,Movie:Exposure Mode,RAW & JPEG,
+Camera 2,Movie 1,Proxy Recording,Off,
+Camera 2,Movie 1,Record Setting (movie),,
+Camera 2,Movie 1,S&Q Motion: Exposure Mode,Uncompressed,
+Camera 2,Movie 1,S&Q Settings,,Record Setting
+Camera 2,Movie 1,S&Q Settings,,Frame Rate
+Camera 2,Movie 2,AF drive speed (movie),On,
+Camera 2,Movie 2,AF Track Sens (movie),,
+Camera 2,Movie 2,Audio Level Display,Off,
+Camera 2,Movie 2,Audio Rec Level,Off,
+Camera 2,Movie 2,Audio Recording,Off,
+Camera 2,Movie 2,Auto Slow Shut. (movie),,
+Camera 2,Movie 3,Audio Out Timing,SingleShooting,
+Camera 2,Movie 3,Marker Display(movie),Off,
+Camera 2,Movie 3,Marker Settings(movie),0→ - → +,Center
+Camera 2,Movie 3,Marker Settings(movie),OFF,Aspect
+Camera 2,Movie 3,Marker Settings(movie),,Safety Zone
+Camera 2,Movie 3,Marker Settings(movie),[set as desired],Guideframe
+Camera 2,Movie 3,Movie w/ shutter,Slot 1,
+Camera 2,Movie 3,Video Light Mode,[set as desired],
+Camera 2,Movie 3,Wind Noise Reduct.,--,
+Camera 2,Shutter/Steady Shot,e-Front Curtain Shut.,,
+Camera 2,Shutter/Steady Shot,Release w/o Card,Balanced Emphasis,
+Camera 2,Shutter/Steady Shot,Release w/o Lens,AF-S,
+Camera 2,Shutter/Steady Shot,Silent Shooting(still image),Refer to TAB Reg Cust Shoot Set,
+Camera 2,Shutter/Steady Shot,SteadyShot,Balanced Emphasis,
+Camera 2,Shutter/Steady Shot,SteadyShot Settings,Wide,SteadyShotAdjust
+Camera 2,Shutter/Steady Shot,SteadyShot Settings,,SteadyS.FocalLen
+Camera 2,Zoom,Clear Image Zoom/Digital Zoom (Zoom),,
+Camera 2,Zoom,Zoom Ring Rotate,Off ,
+Camera 2,Zoom,Zoom Setting,Auto,
+Camera 2,Display/Auto Review 1,DISP Button(Monitor/Finder),Off ,
+Camera 2,Display/Auto Review 1,Exposure Set. Guide,,
+Camera 2,Display/Auto Review 1,Finder Frame Rate (still image),,
+Camera 2,Display/Auto Review 1,FINDER/MONITOR,3 Std,
+Camera 2,Display/Auto Review 1,Grid Line,Off,
+Camera 2,Display/Auto Review 1,Zebra Setting,On,Display
+Camera 2,Display/Auto Review 1,Zebra Setting,100,Level
+Camera 2,Display/Auto Review 2,Auto Review,On,
+Camera 2,Display/Auto Review 2,Displaying continuous shooting remaining time indicator (Cont. Shoot. Length),Off,
+Camera 2,Display/Auto Review 2,Live View Display,[set as desired],
+Camera 2,Custom Operation 1,Av/Tv Rotate,,
+Camera 2,Custom Operation 1,Custom Key Movie Page 1,Auto,Control Wheel
+Camera 2,Custom Operation 1,Custom Key Movie Page 2,Off,Multi-Slc Center Button
+Camera 2,Custom Operation 1,Custom Key Movie Page 3,Auto,AEL Button
+Camera 2,Custom Operation 1,Custom Key Playbac Page 1,[set as desired],Custom Button 1
+Camera 2,Custom Operation 1,Custom Key Still Page 1,Off,Control Wheel
+Camera 2,Custom Operation 1,Custom Key Still Page 2,ISO Auto,Multi-Slc Center Button
+Camera 2,Custom Operation 1,Custom Key Still Page 3,On,AEL Button
+Camera 2,Custom Operation 1,Dial Setup,,
+Camera 2,Custom Operation 1,Function Menu Set.- Lower,Function Lower 1,
+Camera 2,Custom Operation 2,Audio signals,,
+Camera 2,Custom Operation 2,Dial Ev Comp,,
+Camera 2,Custom Operation 2,Function Ring(Lens),,
+Camera 2,Custom Operation 2,Lock Operation Parts,,
+Camera 2,Custom Operation 2,MOVIE Button,,
+Network,Network 1,Airplane Mode,,
+Network,Network 1,Ctrl w/ Smartphone,,
+Network,Network 1,FTP Transfer Func.,,
+Network,Network 1,Send to Computer,,
+Network,Network 1,Send to Smartphone,Send to Smartphone,
+Network,Network 1,Send to Smartphone, Sending Target (proxy movies),
+Network,Network 1,View on TV,,
+Network,Network 2,Bluetooth Settings,,
+Network,Network 2,Edit Device Name,,
+Network,Network 2,Importing root certification to the camera ,,
+Network,Network 2,Loc. Info. Link Set.,,GPS
+Network,Network 2,Reset Network Set.,,
+Network,Network 2,WPS Push,,WiFi Settings
+Network,Network 2,Access Point Set.,,WiFi Settings
+Network,Network 2,Disp MAC Address,,WiFi Settings
+Network,Network 2,SSID/PW Reset,,WiFi Settings
+Network,Network 3,Bluetooth Rmt Ctrl,,
+Playback,Playback 1,Deleting multiple selected images (Delete),,
+Playback,Playback 1,Protecting images (Protect),,
+Playback,Playback 1,Rating,,
+Playback,Playback 1,Rating Set(Cust Key),,
+Playback,Playback 1,Rotating an image (Rotate),,
+Playback,Playback 1,Specifying images to be printed (Specify Printing),,
+Playback,Playback 2,Copying images from one memory card to another (Copy),,
+Playback,Playback 2,Enlarge Init. Mag.,,
+Playback,Playback 2,Enlarge Initial Pos.,,
+Playback,Playback 2,Enlarging an image being played back (Enlarge Image),,
+Playback,Playback 2,Photo Capture,,
+Playback,Playback 2,Playing back images using slideshow (Slide Show),,
+Playback,Playback 3,Disp Cont Shoot Grp,,
+Playback,Playback 3,Playing back images on the image index screen (Image Index),,
+Playback,Playback 3,Rotating recorded images automatically (Display Rotation),,
+Playback,Playback 3,Selecting which memory card to play back (Select PB Media),,
+Playback,Playback 3,Setting the method for jumping between images (Image Jump Setting),,
+Playback,Playback 3,Switching between still images and movies (View Mode),,
+Playback,Playback 4,Cont. PB for Intvl.,,
+Playback,Playback 4,PB Speed for Intvl,,
+Setup,Setup 1,Delete confirm.,Cancel first,
+Setup,Setup 1,Finder Color Temp.,[set as desired],
+Setup,Setup 1,Gamma Disp. Assist,Off,
+Setup,Setup 1,Monitor Brightness,[set as desired],
+Setup,Setup 1,Viewfinder Bright.,Auto,
+Setup,Setup 1,Volume Settings,[set as desired],
+Setup,Setup 2,Auto Pwr OFF Temp.,Std. ,
+Setup,Setup 2,Cleaning Mode,[set as desired],
+Setup,Setup 2,Display Quality,Std. ,
+Setup,Setup 2,NTSC/PAL Selector,[set as desired],
+Setup,Setup 2,Pwr Save Start Time,1min,
+Setup,Setup 2,Touch Operation,On,
+Setup,Setup 3,Demo Mode,,
+Setup,Setup 3,HDMI Settings,HDMI Resolution,
+Setup,Setup 3,HDMI Settings,24p/60p Output (movie)(Only for 1080 60i compatible models),
+Setup,Setup 3,HDMI Settings,HDMI Info. Display,
+Setup,Setup 3,HDMI Settings,TC Output (movie),
+Setup,Setup 3,HDMI Settings,REC Control (movie),
+Setup,Setup 3,HDMI Settings,CTRL FOR HDMI,
+Setup,Setup 3,Remote Ctrl,,
+Setup,Setup 3,TC/UB Settings,,TC/UB Disp Setting
+Setup,Setup 3,TC/UB Settings,,TC Preset
+Setup,Setup 3,TC/UB Settings,,UB Preset
+Setup,Setup 3,TC/UB Settings,,TC Format
+Setup,Setup 3,TC/UB Settings,,TC Run
+Setup,Setup 3,TC/UB Settings,,TC Make
+Setup,Setup 3,TC/UB Settings,,UB Time Rec
+Setup,Setup 3,Touch Pad Settings,,Operation in V Orientation
+Setup,Setup 3,Touch Pad Settings,,Touch Position Mode
+Setup,Setup 3,Touch Pad Settings,,Operation Area
+Setup,Setup 3,Touch Panel/Pad,,
+Setup,Setup 4,Language,English,
+Setup,Setup 4,PC Remote Settings,,Still Img. Save Dest.
+Setup,Setup 4,PC Remote Settings,,RAW+J PC Save Img
+Setup,Setup 4,USB Connection,,
+Setup,Setup 4,USB LUN Setting,,
+Setup,Setup 4,USB Power Supply,,
+Setup,Setup 4,4K Output Sel. (movie),,
+Setup,Setup 5,Area Setting,[set as desired],
+Setup,Setup 5,Copyright Info,[set as desired],
+Setup,Setup 5,Date/Time Setup,[set as desired],
+Setup,Setup 5,File Number,[set as desired],
+Setup,Setup 5,Format,[set as desired],
+Setup,Setup 5,Set File Name,[set as desired],
+Setup,Setup 6,Display Media Info.,[set as desired],
+Setup,Setup 6,Folder Name,[set as desired],
+Setup,Setup 6,New Folder,[set as desired],
+Setup,Setup 6,Rec. Media Settings,Slot 1,Prioritize Rec. Media
+Setup,Setup 6,Rec. Media Settings,,Recording Mode
+Setup,Setup 6,Rec. Media Settings,,Auto Switch Media
+Setup,Setup 6,Recover Image DB,[set as desired],
+Setup,Setup 6,Select REC Folder,[set as desired],
+Setup,Setup 7,Setting Reset,,[set as desired]
+Setup,Setup 7,Version,,[set as desired]
+camera_menu_config,
+display_name,Sony A7III
+css_file,sonyA7iii
+Ctrl w/ Smartphone disables USB Connection selection
