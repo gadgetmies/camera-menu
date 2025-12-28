@@ -1,16 +1,46 @@
-import {JSX, useState} from 'react'
-import './Sony.css'
-//import './Canon.css'
+import {JSX, useState, useEffect} from 'react'
+import './App.css'
+import SonyCss from './Sony.css?url'
+import CanonCss from './Canon.css?url'
+import PanasonicCss from './Panasonic.css?url'
 
-import sA7iv from './sonyA7iv.csv?raw'
-import sA7Riii from './sonyA7Riii.csv?raw'
-import c5Div from './canon5Div.csv?raw'
+const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
 
-const cameraCsvs: Record<string, string> = {
-    sA7iv,
-    sA7Riii,
-    c5Div
+const cssFileMap: Record<string, string> = {
+    'Sony': SonyCss,
+    'Canon': CanonCss,
+    'Panasonic': PanasonicCss
 }
+
+const cameraCsvs: Record<string, string> = {}
+const cameraDisplayNames: Record<string, string> = {}
+const cameraCssFiles: Record<string, string> = {}
+
+Object.keys(csvModules).forEach((path) => {
+    const fileName = path.replace('./data/', '').replace('.csv', '')
+    const key = fileName
+    const csvContent = csvModules[path] as string
+    cameraCsvs[key] = csvContent
+    
+    const configIndex = csvContent.indexOf('camera_menu_config')
+    if (configIndex !== -1) {
+        const configLines = csvContent.substring(configIndex).split('\n')
+        for (const line of configLines) {
+            if (line.startsWith('display_name,')) {
+                cameraDisplayNames[key] = line.substring('display_name,'.length)
+            } else if (line.startsWith('css_file,')) {
+                cameraCssFiles[key] = line.substring('css_file,'.length)
+            }
+        }
+    }
+    
+    if (!cameraDisplayNames[key]) {
+        cameraDisplayNames[key] = fileName
+    }
+    if (!cameraCssFiles[key]) {
+        cameraCssFiles[key] = 'Sony'
+    }
+})
 
 const process = (acc: Record<string, any>, value: string): void => {
     const commaPosition = value.indexOf(',');
@@ -33,11 +63,12 @@ type SetSelectedFn = (level: number, index: number) => void
 
 const render = (config: Record<string, any>, node: Record<string, any>, level: number, selected: Array<number>, setSelected: SetSelectedFn, classNames: string = ''): JSX.Element => {
     return <>
-        <div className={`level-${level} container ${classNames}`}>
+        <div className={`level-${level} container ${classNames}`} key={`level-${level}-container`}>
             {Object.keys(node).map((key, i) => {
                 const parts = key.match(/(<i name="(.*)"\/>)?(.*)/)
-                console.log({parts})
-                return <div className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
+                return <div 
+                            className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
+                            key={key}
                             onClick={() => setSelected(level, i)}>
                     <span className={'index'}>{i + 1}</span>
                     {parts![2] &&
@@ -71,9 +102,8 @@ const crumbPath = (structure: Record<string, any>, selected: Array<number>) => {
             return [result, current]
         }
         const parts = currentKey.match(/(<i name="(.*)"\/>)?(.*)/)
-        return [[...result, <div className={'crumb'}>{parts![3]}</div>], current[currentKey]];
+        return [[...result, <div className={'crumb'} key={currentKey}>{parts![3]}</div>], current[currentKey]];
     }, [[], structure]);
-    console.log({res})
     return <div className={'crumb-path'}>{res[0]}</div>
 }
 
@@ -81,7 +111,7 @@ const search = (structure: Record<string, any>, searchString: string, path: Arra
     return [...Object.keys(structure)
         .map((key, index) =>
             key.toLowerCase().includes(searchString.toLowerCase()) ?
-                <div onClick={() => select([...path, index])}>{[...keys, key].join(' > ')}</div> : null
+                <div key={key} onClick={() => select([...path, index])}>{[...keys, key].join(' > ')}</div> : null
         ),
         ...Object.entries(structure).map(([key, value], i) => value instanceof Object ? search(value, searchString, [...path, i], [...keys, key], select) : [])
     ].filter(Boolean) as JSX.Element[]
@@ -93,7 +123,7 @@ function App() {
 
         let data = {}
 
-        let config: {icons: Record<string, string>} = {icons: {}}
+        let config: {icons: Record<string, string>, displayName?: string, cssFile?: string} = {icons: {}}
         const [_, ...rest] = cameraCsvs[camera].split("\n")
         const menuLines = rest.slice(0, rest.indexOf('camera_menu_config'))
         for (const line of menuLines) {
@@ -103,11 +133,18 @@ function App() {
             process(data, line)
         }
 
-        for (const line of rest.slice(1)) {
-            if (line.startsWith('icon')) {
-                const commaIndex = line.indexOf(',')
-                if (commaIndex !== -1) {
-                    config.icons[line.substring(5, commaIndex)] = line.substring(commaIndex + 1)
+        const configStartIndex = rest.findIndex(line => line.startsWith('camera_menu_config'))
+        if (configStartIndex !== -1) {
+            for (const line of rest.slice(configStartIndex + 1)) {
+                if (line.startsWith('display_name,')) {
+                    config.displayName = line.substring('display_name,'.length)
+                } else if (line.startsWith('css_file,')) {
+                    config.cssFile = line.substring('css_file,'.length)
+                } else if (line.startsWith('icon')) {
+                    const commaIndex = line.indexOf(',')
+                    if (commaIndex !== -1) {
+                        config.icons[line.substring(5, commaIndex)] = line.substring(commaIndex + 1)
+                    }
                 }
             }
         }
@@ -115,16 +152,81 @@ function App() {
         return {data, config}
     })
 
-    const [selectedCamera, _setSelectedCamera] = useState('sA7iv')
+    const [selectedCamera, _setSelectedCamera] = useState(Object.keys(cameraCsvs)[0] || '')
     const [cameraData, _setCameraData] = useState(cameraSettings(selectedCamera))
     const data = cameraData.data
     const config = cameraData.config
     const [selected, _setSelected] = useState([0, 0])
     const [searchString, setSearchString] = useState('')
 
+    useEffect(() => {
+        const cssFile = config.cssFile || cameraCssFiles[selectedCamera] || 'Sony'
+        const linkId = 'camera-specific-css'
+        
+        let link = document.getElementById(linkId) as HTMLLinkElement
+        
+        if (!link) {
+            link = document.createElement('link')
+            link.id = linkId
+            link.rel = 'stylesheet'
+            document.head.appendChild(link)
+        }
+        
+        const cssUrl = cssFileMap[cssFile]
+        if (cssUrl) {
+            link.href = cssUrl
+        }
+    }, [selectedCamera, config.cssFile])
+
     const select = setSelected(_setSelected, selected)
 
     return <div className={'root'}>
+        <div className={'controls-header'}>
+            <div className={'control-group'}>
+                <label className={'control-label'}>
+                    Camera Model
+                </label>
+                <select 
+                    className={'camera-select'}
+                    value={selectedCamera} 
+                    onChange={({target: {value}}) => {
+                        _setSelectedCamera(value)
+                        _setCameraData(cameraSettings(value))
+                    }}>
+                    {Object.keys(cameraCsvs).map(key => (
+                        <option key={key} value={key}>{cameraDisplayNames[key]}</option>
+                    ))}
+                </select>
+            </div>
+            <div className={'control-group'}>
+                <label className={'control-label'}>
+                    Search
+                </label>
+                <div className={'search-container'}>
+                    <input 
+                        className={'search-input'}
+                        type="text"
+                        placeholder="Search menu items..."
+                        value={searchString} 
+                        onChange={e => setSearchString(e.target.value)}
+                    />
+                    {searchString !== '' && (
+                        <button 
+                            className={'search-clear'}
+                            onClick={() => setSearchString('')}
+                            aria-label="Clear search"
+                        >
+                            ×
+                        </button>
+                    )}
+                </div>
+                {searchString !== '' && (
+                    <div className={'search-results'}>
+                        {search(data, searchString, [], [], _setSelected)}
+                    </div>
+                )}
+            </div>
+        </div>
         <div className={'wrapper'}>
             <div className={'menu'}>
                 {crumbPath(data, selected)}
@@ -133,24 +235,6 @@ function App() {
                     <div className={'back-button'} onClick={() => _setSelected(selected.slice(0, -1))}></div>
                 </div>
             </div>
-        </div>
-        <div>
-            <label>
-                Camera Model:
-                <select onChange={({target: {value}}) => {
-                    _setSelectedCamera(value)
-                    _setCameraData(cameraSettings(value))
-                }}>
-                    <option value={"sA7iv"}>Sony A7iv</option>
-                    <option value={"sA7Riii"}>Sony A7Riii</option>
-                    <option value={"c5Div"}>Canon 5Div</option>
-                </select>
-            </label>
-        </div>
-        <div className={'search'}>
-            <label>Search: <input value={searchString} onChange={e => setSearchString(e.target.value)}/></label>
-            <button onClick={() => setSearchString('')}>Clear</button>
-            {searchString !== '' && search(data, searchString, [], [], _setSelected)}
         </div>
     </div>
 }
