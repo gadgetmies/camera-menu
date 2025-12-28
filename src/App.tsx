@@ -158,6 +158,16 @@ function App() {
     const config = cameraData.config
     const [selected, _setSelected] = useState([0, 0])
     const [searchString, setSearchString] = useState('')
+    const [isSearchFocused, setIsSearchFocused] = useState(false)
+
+    const handleSearchBlur = () => {
+        setTimeout(() => {
+            const activeElement = document.activeElement
+            if (!activeElement || !activeElement.closest('.search-group')) {
+                setIsSearchFocused(false)
+            }
+        }, 200)
+    }
 
     useEffect(() => {
         const cssFile = config.cssFile || cameraCssFiles[selectedCamera] || 'Sony'
@@ -182,10 +192,7 @@ function App() {
 
     return <div className={'root'}>
         <div className={'controls-header'}>
-            <div className={'control-group'}>
-                <label className={'control-label'}>
-                    Camera Model
-                </label>
+            <div className={`control-group camera-select-group ${isSearchFocused ? 'hidden' : ''}`}>
                 <select 
                     className={'camera-select'}
                     value={selectedCamera} 
@@ -198,17 +205,19 @@ function App() {
                     ))}
                 </select>
             </div>
-            <div className={'control-group'}>
-                <label className={'control-label'}>
-                    Search
-                </label>
+            <div className={`control-group search-group ${isSearchFocused ? 'expanded' : ''}`}>
                 <div className={'search-container'}>
+                    <svg className={'search-icon'} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 10.5L9.5 8.5M10.5 6.5C10.5 8.70914 8.70914 10.5 6.5 10.5C4.29086 10.5 2.5 8.70914 2.5 6.5C2.5 4.29086 4.29086 2.5 6.5 2.5C8.70914 2.5 10.5 4.29086 10.5 6.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                     <input 
                         className={'search-input'}
                         type="text"
                         placeholder="Search menu items..."
                         value={searchString} 
                         onChange={e => setSearchString(e.target.value)}
+                        onFocus={() => setIsSearchFocused(true)}
+                        onBlur={handleSearchBlur}
                     />
                     {searchString !== '' && (
                         <button 

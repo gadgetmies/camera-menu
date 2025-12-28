@@ -19,18 +19,45 @@
   border-bottom: 2px solid #333;
   padding: 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-end;
   gap: 16px;
   position: sticky;
   top: 0;
   z-index: 100;
   min-width: 100vw;
+  justify-content: space-between;
 }
 
 .control-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.camera-select-group {
+  flex: 0 0 auto;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.camera-select-group.hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 0;
+}
+
+.search-group {
+  flex: 0 0 auto;
+  transition: flex 0.3s ease;
+  position: relative;
+}
+
+.search-group.expanded {
+  flex: 1 1 100%;
 }
 
 .control-label {
@@ -77,6 +104,19 @@
   width: 100%;
 }
 
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #888;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+.search-group.expanded .search-icon {
+  opacity: 0;
+}
+
 .search-input {
   background-color: #292929;
   color: #fff;
@@ -86,7 +126,25 @@
   font-size: 16px;
   font-family: inherit;
   width: 100%;
-  transition: border-color 0.2s, background-color 0.2s;
+  transition: width 0.3s ease, padding-left 0.3s ease, border-color 0.2s, background-color 0.2s, color 0.3s ease;
+}
+
+.search-group:not(.expanded) .search-input {
+  width: 40px;
+  cursor: pointer;
+  color: transparent;
+}
+
+.search-group:not(.expanded) .search-input::placeholder {
+  opacity: 0;
+}
+
+.search-group:not(.expanded) .search-clear {
+  display: none;
+}
+
+.search-group:not(.expanded) .search-results {
+  display: none;
 }
 
 .search-input::placeholder {
@@ -132,6 +190,10 @@
 }
 
 .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   margin-top: 8px;
   background-color: #181818;
   border: 1px solid #333;
@@ -139,6 +201,8 @@
   max-height: 300px;
   overflow-y: auto;
   padding: 8px;
+  z-index: 200;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .search-results > div {
@@ -157,42 +221,22 @@
 .search-results > div:active {
   background-color: #333;
 }
-
-@media (min-width: 768px) {
-  .controls-header {
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 24px;
-  }
-
-  .control-group {
-    flex: 1;
-  }
-
-  .search-container {
-    max-width: 400px;
-  }
+.controls-header {
+  padding: 12px;
+  gap: 12px;
 }
 
-@media (max-width: 767px) {
-  .controls-header {
-    padding: 12px;
-    gap: 12px;
-  }
+.control-label {
+  font-size: 12px;
+}
 
-  .control-label {
-    font-size: 12px;
-  }
+.camera-select,
+.search-input {
+  font-size: 16px;
+}
 
-  .camera-select,
-  .search-input {
-    font-size: 16px;
-    padding: 12px;
-  }
-
-  .search-results {
-    max-height: 200px;
-  }
+.search-results {
+  max-height: 200px;
 }
 
 .container {
