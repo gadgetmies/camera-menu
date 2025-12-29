@@ -239,3 +239,14 @@
   max-height: 200px;
 }
 
+.search-crumb-separator {
+  margin: 0 5px;
+}
+
+.search-crumb-separator::after {
+  content: '>';
+}
+
+.search-crumb-separator:last-of-type {
+  display: none;
+}

@@ -67,15 +67,15 @@ const render = (
   setSelected: SetSelectedFn,
   classNames: string = '',
 ): JSX.Element => {
-    console.log('node', node)
-    if (Object.keys(node).length === 0) {
-        return <></>
-    }
+  console.log('node', node)
+  if (Object.keys(node).length === 0) {
+    return <></>
+  }
   return (
     <>
-      <div className={`scroll-container level-${level}`}>
-        <div className={`level-heading`}>{parent ? parent : ''}</div>
+      <div className={`scroll-container level-${level} level`}>
         <div className={`level-${level} container ${classNames}`} key={`level-${level}-container`}>
+          <div className={`level-heading`}>{parent ? parent : ''}</div>
           {Object.keys(node).map((key, i) => {
             const iconMatch = key.match(/<i name="([^"]+)"\/>/)
             const iconName = iconMatch ? iconMatch[1] : null
@@ -159,7 +159,7 @@ const crumbPath = (structure: Record<string, any>, selected: Array<number>) => {
   )
 }
 
-const search = (
+const renderSearch = (
   structure: Record<string, any>,
   searchString: string,
   path: Array<number>,
@@ -168,19 +168,8 @@ const search = (
   config: { icons: Record<string, string> },
 ): JSX.Element[] => {
   const renderKey = (key: string) => {
-    const iconMatch = key.match(/<i name="([^"]+)"\/>/)
-    const iconName = iconMatch ? iconMatch[1] : null
     const label = key.replace(/<i name="[^"]+"\/>/g, '')
-    return (
-      <span>
-        {iconName && config.icons[iconName] && (
-          <span className={'icon'}>
-            <img alt={iconName} src={`data:image/png;base64, ${config.icons[iconName]}`} />
-          </span>
-        )}
-        {label}
-      </span>
-    )
+    return <span>{label}</span>
   }
 
   return [
@@ -190,14 +179,14 @@ const search = (
           {[...keys.map((k) => renderKey(k)), renderKey(key)].map((rendered, i, arr) => (
             <>
               <span key={i}>{rendered}</span>
-              <span className={'crumb-separator'}></span>
+              <span className={'search-crumb-separator'}></span>
             </>
           ))}
         </div>
       ) : null,
     ),
     ...Object.entries(structure).map(([key, value], i) =>
-      value instanceof Object ? search(value, searchString, [...path, i], [...keys, key], select, config) : [],
+      value instanceof Object ? renderSearch(value, searchString, [...path, i], [...keys, key], select, config) : [],
     ),
   ].filter(Boolean) as JSX.Element[]
 }
@@ -370,12 +359,16 @@ function App() {
             )}
           </div>
           {searchString !== '' && (
-            <div className={'search-results'}>{search(data, searchString, [], [], _setSelected, config)}</div>
+            <div className={'search-results'}>{renderSearch(data, searchString, [], [], _setSelected, config)}</div>
           )}
         </div>
       </div>
       <div className={'wrapper'}>
-        <div className={`menu scroll-container on-level-${selected.length - 1}`}>
+        <div
+          className={`menu scroll-container ${Array.from({ length: selected.length })
+            .map((_, i) => `level-${i}-open`)
+            .join(' ')}`}
+        >
           <div className={'container'}>
             {crumbPath(data, selected)}
             {render(config, data, undefined, 0, selected, select)}
