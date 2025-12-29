@@ -1,18 +1,28 @@
-import { JSX, useState, useEffect } from 'react'
+import { JSX, useState, useEffect, useRef } from 'react'
 import './App.css'
+import { getAllCustomCameras, saveCustomCamera, deleteCustomCamera, CustomCamera } from './utils/indexedDB'
+import { createCustomCameraFromZip } from './utils/zipHandler'
+import { downloadCameraAsZip, CameraDownloadData } from './utils/downloadCamera'
 
 const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
 const cssModules = import.meta.glob('./data/*.css', { query: '?url', import: 'default', eager: true })
+const cssRawModules = import.meta.glob('./data/*.css', { query: '?raw', import: 'default', eager: true })
 
 const cssFileMap: Record<string, string> = {}
+const cssRawMap: Record<string, string> = {}
 Object.keys(cssModules).forEach((path) => {
   const fileName = path.replace('./data/', '').replace('.css', '')
   cssFileMap[fileName] = cssModules[path] as string
+})
+Object.keys(cssRawModules).forEach((path) => {
+  const fileName = path.replace('./data/', '').replace('.css', '')
+  cssRawMap[fileName] = cssRawModules[path] as string
 })
 
 const cameraCsvs: Record<string, string> = {}
 const cameraDisplayNames: Record<string, string> = {}
 const cameraCssFiles: Record<string, string> = {}
+const customCameraCssBlobs: Record<string, string> = {}
 
 Object.keys(csvModules).forEach((path) => {
   const fileName = path.replace('./data/', '').replace('.csv', '')
@@ -192,13 +202,207 @@ const renderSearch = (
 }
 
 function App() {
+  const [customCameras, setCustomCameras] = useState<CustomCamera[]>([])
+  const [isUploading, setIsUploading] = useState(false)
+  const [uploadError, setUploadError] = useState<string | null>(null)
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false)
+  const [cameraName, setCameraName] = useState('')
+  const [uploadFile, setUploadFile] = useState<File | null>(null)
+  const [isDragging, setIsDragging] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const loadCustomCameras = async () => {
+    try {
+      const cameras = await getAllCustomCameras()
+      setCustomCameras(cameras)
+
+      cameras.forEach((camera) => {
+        cameraCsvs[camera.id] = camera.csvContent
+        cameraDisplayNames[camera.id] = camera.displayName
+        cameraCssFiles[camera.id] = camera.cssFileName
+
+        const cssBlob = new Blob([camera.cssContent], { type: 'text/css' })
+        const cssUrl = URL.createObjectURL(cssBlob)
+        customCameraCssBlobs[camera.id] = cssUrl
+      })
+    } catch (error) {
+      console.error('Failed to load custom cameras:', error)
+    }
+  }
+
+  useEffect(() => {
+    loadCustomCameras()
+
+    return () => {
+      Object.values(customCameraCssBlobs).forEach((url) => {
+        URL.revokeObjectURL(url)
+      })
+    }
+  }, [])
+
+  const handleFileSelect = (file: File) => {
+    if (file.type === 'application/zip' || file.name.endsWith('.zip')) {
+      setUploadFile(file)
+      setUploadError(null)
+    } else {
+      setUploadError('Please select a ZIP file')
+    }
+  }
+
+  const handleFileInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (file) {
+      handleFileSelect(file)
+    }
+  }
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(true)
+  }
+
+  const handleDragLeave = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+  }
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+
+    const file = e.dataTransfer.files[0]
+    if (file) {
+      handleFileSelect(file)
+    }
+  }
+
+  const handleUpload = async () => {
+    if (!uploadFile) {
+      setUploadError('Please select a ZIP file')
+      return
+    }
+
+    setIsUploading(true)
+    setUploadError(null)
+
+    try {
+      const customCamera = await createCustomCameraFromZip(uploadFile, cameraName || undefined)
+      await saveCustomCamera(customCamera)
+
+      cameraCsvs[customCamera.id] = customCamera.csvContent
+      cameraDisplayNames[customCamera.id] = customCamera.displayName
+      cameraCssFiles[customCamera.id] = customCamera.cssFileName
+
+      const cssBlob = new Blob([customCamera.cssContent], { type: 'text/css' })
+      const cssUrl = URL.createObjectURL(cssBlob)
+      customCameraCssBlobs[customCamera.id] = cssUrl
+
+      setCustomCameras((prev) => [...prev, customCamera])
+
+      _setSelectedCamera(customCamera.id)
+      _setCameraData(cameraSettings(customCamera.id))
+
+      setIsUploadModalOpen(false)
+      setUploadFile(null)
+      setCameraName('')
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
+    } catch (error) {
+      setUploadError(error instanceof Error ? error.message : 'Failed to upload camera')
+      console.error('Upload error:', error)
+    } finally {
+      setIsUploading(false)
+    }
+  }
+
+  const handleCloseModal = () => {
+    if (!isUploading) {
+      setIsUploadModalOpen(false)
+      setUploadFile(null)
+      setCameraName('')
+      setUploadError(null)
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
+    }
+  }
+
+  const handleDeleteCamera = async (cameraId: string) => {
+    try {
+      await deleteCustomCamera(cameraId)
+      delete cameraCsvs[cameraId]
+      delete cameraDisplayNames[cameraId]
+      delete cameraCssFiles[cameraId]
+      if (customCameraCssBlobs[cameraId]) {
+        URL.revokeObjectURL(customCameraCssBlobs[cameraId])
+        delete customCameraCssBlobs[cameraId]
+      }
+      setCustomCameras((prev) => prev.filter((c) => c.id !== cameraId))
+
+      if (selectedCamera === cameraId) {
+        const availableCameras = Object.keys(cameraCsvs)
+        if (availableCameras.length > 0) {
+          _setSelectedCamera(availableCameras[0])
+          _setCameraData(cameraSettings(availableCameras[0]))
+        }
+      }
+    } catch (error) {
+      console.error('Failed to delete camera:', error)
+    }
+  }
+
+  const handleDownloadCamera = async (cameraId: string) => {
+    try {
+      const customCamera = customCameras.find((c) => c.id === cameraId)
+
+      if (customCamera) {
+        const cameraData: CameraDownloadData = {
+          csvContent: customCamera.csvContent,
+          cssContent: customCamera.cssContent,
+          cssFileName: customCamera.cssFileName,
+          iconData: customCamera.iconData,
+        }
+        await downloadCameraAsZip(cameraData)
+      } else {
+        const csvContent = cameraCsvs[cameraId]
+        if (!csvContent) {
+          console.error('Camera CSV not found')
+          return
+        }
+
+        const cssFileName = cameraCssFiles[cameraId] || cameraId
+        const cssContent = cssRawMap[cssFileName]
+
+        if (!cssContent) {
+          console.error('Camera CSS not found')
+          return
+        }
+
+        const cameraData: CameraDownloadData = {
+          csvContent,
+          cssContent,
+          cssFileName,
+        }
+        await downloadCameraAsZip(cameraData)
+      }
+    } catch (error) {
+      console.error('Failed to download camera:', error)
+    }
+  }
+
   const cameraSettings = (camera: string) => {
     if (!camera) return { data: {}, config: { icons: {} } }
 
     const data = {}
 
     const config: { icons: Record<string, string>; displayName?: string; cssFile?: string } = { icons: {} }
-    const [_, ...rest] = cameraCsvs[camera].split('\n')
+    const csvContent = cameraCsvs[camera]
+    if (!csvContent) return { data: {}, config: { icons: {} } }
+    const [_, ...rest] = csvContent.split('\n')
     const menuLines = rest.slice(0, rest.indexOf('camera_menu_config'))
 
     let previousRowCells: string[] = []
@@ -287,7 +491,7 @@ function App() {
       document.head.appendChild(link)
     }
 
-    const cssUrl = cssFileMap[cssFile]
+    const cssUrl = customCameraCssBlobs[selectedCamera] || cssFileMap[cssFile]
     if (cssUrl) {
       link.href = cssUrl
     }
@@ -306,24 +510,54 @@ function App() {
 
   const select = setSelected(_setSelected, selected)
 
+  const allCameras = Object.keys(cameraCsvs)
+  const isCustomCamera = (cameraId: string) => customCameras.some((c) => c.id === cameraId)
+
   return (
     <div className={'root'}>
       <div className={'controls-header'}>
         <div className={`control-group camera-select-group ${isSearchFocused ? 'hidden' : ''}`}>
-          <select
-            className={'camera-select'}
-            value={selectedCamera}
-            onChange={({ target: { value } }) => {
-              _setSelectedCamera(value)
-              _setCameraData(cameraSettings(value))
-            }}
+          <div
+            className={`camera-select-wrapper has-buttons ${isCustomCamera(selectedCamera) ? 'has-delete-button' : ''}`}
           >
-            {Object.keys(cameraCsvs).map((key) => (
-              <option key={key} value={key}>
-                {cameraDisplayNames[key]}
-              </option>
-            ))}
-          </select>
+            <select
+              className={'camera-select'}
+              value={selectedCamera}
+              onChange={({ target: { value } }) => {
+                _setSelectedCamera(value)
+                _setCameraData(cameraSettings(value))
+              }}
+            >
+              {allCameras.map((key) => (
+                <option key={key} value={key}>
+                  {cameraDisplayNames[key]}
+                </option>
+              ))}
+            </select>
+            <div className={'camera-select-buttons'}>
+              <button
+                className={'download-camera-button'}
+                onClick={() => handleDownloadCamera(selectedCamera)}
+                title="Download camera files"
+                aria-label="Download camera files"
+              >
+                ↓
+              </button>
+              {isCustomCamera(selectedCamera) && (
+                <button
+                  className={'delete-camera-button'}
+                  onClick={() => handleDeleteCamera(selectedCamera)}
+                  title="Delete custom camera"
+                  aria-label="Delete custom camera"
+                >
+                  ×
+                </button>
+              )}
+            </div>
+          </div>
+          <button className={'upload-button'} onClick={() => setIsUploadModalOpen(true)}>
+            Upload
+          </button>
         </div>
         <div className={`control-group search-group ${isSearchFocused ? 'expanded' : ''}`}>
           <div className={'search-container'}>
@@ -378,6 +612,99 @@ function App() {
           </div>
         </div>
       </div>
+      {isUploadModalOpen && (
+        <div className={'modal-overlay'} onClick={handleCloseModal}>
+          <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
+            <div className={'modal-header'}>
+              <h2>Upload Camera</h2>
+              <button className={'modal-close'} onClick={handleCloseModal} disabled={isUploading}>
+                ×
+              </button>
+            </div>
+            <div className={'modal-body'}>
+              <div className={'form-group'}>
+                <label htmlFor="camera-name-input">Camera Name</label>
+                <input
+                  id="camera-name-input"
+                  type="text"
+                  className={'camera-name-input'}
+                  value={cameraName}
+                  onChange={(e) => setCameraName(e.target.value)}
+                  placeholder="Enter camera model name"
+                  disabled={isUploading}
+                />
+              </div>
+              <div className={'form-group'}>
+                <label>ZIP File</label>
+                <div
+                  className={`drop-area ${isDragging ? 'dragging' : ''} ${uploadFile ? 'has-file' : ''}`}
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  onDrop={handleDrop}
+                >
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept=".zip"
+                    onChange={handleFileInputChange}
+                    style={{ display: 'none' }}
+                    id="camera-upload-input"
+                    disabled={isUploading}
+                  />
+                  {uploadFile ? (
+                    <div className={'file-selected'}>
+                      <span className={'file-name'}>{uploadFile.name}</span>
+                      <button
+                        className={'remove-file-button'}
+                        onClick={() => {
+                          setUploadFile(null)
+                          if (fileInputRef.current) {
+                            fileInputRef.current.value = ''
+                          }
+                        }}
+                        disabled={isUploading}
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ) : (
+                    <div className={'drop-area-content'}>
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                      </svg>
+                      <p>Drag and drop a ZIP file here, or</p>
+                      <label htmlFor="camera-upload-input" className={'browse-button'}>
+                        Browse
+                      </label>
+                      <p className={'file-hint'}>ZIP file containing CSV, CSS, and optional PNG files</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+              {uploadError && <div className={'upload-error'}>{uploadError}</div>}
+            </div>
+            <div className={'modal-footer'}>
+              <button className={'modal-cancel-button'} onClick={handleCloseModal} disabled={isUploading}>
+                Cancel
+              </button>
+              <button className={'modal-upload-button'} onClick={handleUpload} disabled={!uploadFile || isUploading}>
+                {isUploading ? 'Uploading...' : 'Upload'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
