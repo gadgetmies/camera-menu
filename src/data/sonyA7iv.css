@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100vw;
+  min-height: 100%;
 }
 
 .container {
@@ -24,8 +26,20 @@
 }
 
 .menu {
+  width: 100%;
+  min-height: 100%;
+}
+
+.menu > .container {
   display: flex;
+  width: max-content;
+  flex-direction: row;
   flex-wrap: wrap;
+}
+
+.menu.scroll-container {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .item {
@@ -45,38 +59,102 @@
   border-radius: 2px;
   flex: 1;
   margin-right: 4px;
+  display: flex;
+  gap: 4px;
 }
 
-.level-0 .item-0, .level-1.category-0 .index {
+.level-0 .item-0,
+.level-1.category-0 .index {
   background-color: #444444;
 }
 
-.level-0 .item-1, .level-1.category-1 .index {
+.level-0 .item-1,
+.level-1.category-1 .index {
   background-color: #de0937;
 }
 
-.level-0 .item-2, .level-1.category-2 .index {
+.level-0 .item-2,
+.level-1.category-2 .index {
   background-color: #de21a5;
 }
 
-.level-0 .item-3, .level-1.category-3 .index {
+.level-0 .item-3,
+.level-1.category-3 .index {
   background-color: #a324de;
 }
 
-.level-0 .item-4, .level-1.category-4 .index {
+.level-0 .item-4,
+.level-1.category-4 .index {
   background-color: #0b7cde;
 }
 
-.level-0 .item-5, .level-1.category-5 .index {
+.level-0 .item-5,
+.level-1.category-5 .index {
   background-color: #43de3e;
 }
-.level-0 .item-6, .level-1.category-6 .index {
+.level-0 .item-6,
+.level-1.category-6 .index {
   background-color: #dea300;
+}
+
+.level-0 > .level-heading,
+.level-1 > .level-heading, 
+.level-2 > .level-heading {
+  display: none;
+}
+
+.level-1.container,
+.level-2.container,
+.level-3.container,
+.level-4.container,
+.level-5.container,
+.level-6.container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 20ch;
+}
+
+.level-1.scroll-container,
+.level-2.scroll-container,
+.level-3.scroll-container,
+.level-4.scroll-container,
+.level-5.scroll-container,
+.level-6.scroll-container {
+  margin-top: 1lh;
+}
+
+.level-3.container,
+.level-4.container,
+.level-5.container {
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+}
+
+.level-3 > .level-heading,
+.level-4 > .level-heading,
+.level-5 > .level-heading {
+  background-color: black;
+  border: 1px solid gray;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 4px;
+}
+
+.level-1.scroll-container {
+  margin-left: 40px;
 }
 
 .level-0 {
   flex: 0;
   font-size: 8px;
+  position: absolute;
+  background: black;
+  height: 100%;
+  margin-top: 1lh;
 }
 
 .level-0 .item {
@@ -87,7 +165,7 @@
 }
 
 .level-0 .label {
-  display: none;
+  font-size: 0;
 }
 
 .level-0 .item.selected {
@@ -108,18 +186,23 @@
 .level-1 {
   background-color: #181818;
   flex: 1;
-  padding-left: 4px;
+}
+
+.level-1 .scroll-container {
+  padding-left: 40px;
 }
 
 .level-1 .index {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 
-.level-1 .selected .label, .level-2 .selected .label {
+.level-1 .selected .label,
+.level-2 .selected .label {
   background-color: #cd2701;
 }
 
@@ -143,14 +226,32 @@
   display: flex;
   flex-direction: row;
   flex: 1 1 100%;
+  height: 1lh;
+  position: absolute;
 }
 
-.crumb-path > .crumb:not(:last-child):after {
+.crumb-path .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.crumb-separator:after {
   content: '>';
   margin: 0 5px;
 }
 
+.crumb-separator:first-of-type,
+.crumb-separator:last-of-type {
+  display: none;
+}
+
 .crumb {
-  display: flex;
-  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-container.crumb-path {
+  overflow-x: auto;
+  width: 100%;
 }

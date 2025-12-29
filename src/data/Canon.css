@@ -19,12 +19,35 @@
 
 .container {
     display: flex;
-    flex-direction: column;
-    min-width: max-content;
 }
 
 .level-0.container {
     flex-direction: row;
+}
+
+.level-1.container,
+.level-2.container,
+.level-3.container,
+.level-4.container,
+.level-5.container,
+.level-6.container {
+    width: 100%;
+}
+
+.level-2.container,
+.level-3.container,
+.level-4.container,
+.level-5.container,
+.level-6.container {
+    flex-direction: column;
+}
+
+.level-0.container {
+    flex-direction: row;
+}
+
+.level-1.scroll-container {
+    overflow: hidden;
 }
 
 .wrapper {
@@ -33,8 +56,8 @@
     font-weight: 500;
 }
 
-.menu {
-    display: flex;
+.menu > .container {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -194,19 +217,44 @@
     border-top: 1px solid black;
 }
 
+.level-heading {
+    display: none;
+}
+
 .crumb-path {
     order: 3;
     display: flex;
     margin-right: 8px;
+    align-items: center;
+    margin-left: 4px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.crumb-path .container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.crumb-path.scroll-container {
+    overflow: hidden;
+}
+
+.crumb-path .crumb {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .level-0 {
     order: 1;
-    flex: 1 1 100%;
+    flex-basis: 100%;
 }
 
 .level-1 {
     order: 2;
+    flex-shrink: 0;
 }
 
 .level-2 {
