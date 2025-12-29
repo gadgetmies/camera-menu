@@ -118,7 +118,7 @@ const render = (
 }
 
 const setSelected = (update: UpdateFn, memo: Array<number>) => (level: number, index: number) => {
-  let updated = memo.slice()
+  const updated = memo.slice()
   updated.splice(level, updated.length - level, index)
   update(updated)
 }
@@ -176,7 +176,7 @@ const renderSearch = (
     ...Object.keys(structure).map((key, index) =>
       key.toLowerCase().includes(searchString.toLowerCase()) ? (
         <div key={key} onClick={() => select([...path, index])}>
-          {[...keys.map((k) => renderKey(k)), renderKey(key)].map((rendered, i, arr) => (
+          {[...keys.map((k) => renderKey(k)), renderKey(key)].map((rendered, i) => (
             <>
               <span key={i}>{rendered}</span>
               <span className={'search-crumb-separator'}></span>
@@ -195,9 +195,9 @@ function App() {
   const cameraSettings = (camera: string) => {
     if (!camera) return { data: {}, config: { icons: {} } }
 
-    let data = {}
+    const data = {}
 
-    let config: { icons: Record<string, string>; displayName?: string; cssFile?: string } = { icons: {} }
+    const config: { icons: Record<string, string>; displayName?: string; cssFile?: string } = { icons: {} }
     const [_, ...rest] = cameraCsvs[camera].split('\n')
     const menuLines = rest.slice(0, rest.indexOf('camera_menu_config'))
 
