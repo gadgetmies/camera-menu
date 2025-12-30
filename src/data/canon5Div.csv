@@ -41,12 +41,33 @@ SHOOT,1,External Speedlite control,E-TTL II meter.,Average
 SHOOT,1,External Speedlite control,Flash sync. speed in Av mode,AUTO
 SHOOT,1,External Speedlite control,Flash sync. speed in Av mode,1/200-1/60sec. auto
 SHOOT,1,External Speedlite control,Flash sync. speed in Av mode,1/200sec. (fixed)
+SHOOT,1,External Speedlite control,Flash function settings,?
+SHOOT,1,External Speedlite control,Flash C.Fn settings,?
 SHOOT,2,Exposure Compensation/AEB,±5 stops
-SHOOT,2,ISO Speed Settings,100-32000
+SHOOT,2,ISO Speed Settings,ISO speed,Auto
+SHOOT,2,ISO Speed Settings,ISO speed,100-32000
+SHOOT,2,ISO Speed Settings,Range for stills,1000-32000
+SHOOT,2,ISO Speed Settings,Auto range,1000-32000
+SHOOT,2,ISO Speed Settings,Min. shutter spd.,1/8000-1"
 SHOOT,2,Auto Lighting Optimizer,Disable
 SHOOT,2,Auto Lighting Optimizer,Low
 SHOOT,2,Auto Lighting Optimizer,Standard
 SHOOT,2,Auto Lighting Optimizer,High
+SHOOT,2,White Balance,Auto: Ambience priority
+SHOOT,2,White Balance,Auto: White priority
+SHOOT,2,White Balance,Daylight (Approx. 5200K)
+SHOOT,2,White Balance,Shade (Approx. 7000K)
+SHOOT,2,White Balance,Cloudy (Approx. 6000K)
+SHOOT,2,White Balance,Tungsten (Approx. 3200K)
+SHOOT,2,White Balance,Fluorescent (Approx. 4000K)
+SHOOT,2,White Balance,Flash
+SHOOT,2,White Balance,Custom
+SHOOT,2,White Balance,Color temp.,2500-10000
+SHOOT,2,Custom White Balance
+SHOOT,2,WB Shift/Bkt.,MG,+-3
+SHOOT,2,WB Shift/Bkt.,BA,+-3
+SHOOT,2,Color Space,sRGB
+SHOOT,2,Color Space,Adobe RGB
 SHOOT,3,Picture Style,Auto
 SHOOT,3,Picture Style,Standard
 SHOOT,3,Picture Style,Portrait
@@ -55,80 +76,255 @@ SHOOT,3,Picture Style,Fine Detail
 SHOOT,3,Picture Style,Neutral
 SHOOT,3,Picture Style,Faithful
 SHOOT,3,Picture Style,Monochrome
-SHOOT,3,Picture Style,User Defined 1
-SHOOT,3,Picture Style,User Defined 2
-SHOOT,3,Picture Style,User Defined 3
-SHOOT,3,Long Exposure Noise Reduction,Off
+SHOOT,3,Picture Style,User Def. 1
+SHOOT,3,Picture Style,User Def. 2
+SHOOT,3,Picture Style,User Def. 3
+SHOOT,3,Long Exposure Noise Reduction,Disable
 SHOOT,3,Long Exposure Noise Reduction,Auto
-SHOOT,3,Long Exposure Noise Reduction,On
-SHOOT,3,High ISO Speed Noise Reduction,Off
+SHOOT,3,Long Exposure Noise Reduction,Enable
+SHOOT,3,High ISO Speed Noise Reduction,Disable
 SHOOT,3,High ISO Speed Noise Reduction,Low
 SHOOT,3,High ISO Speed Noise Reduction,Standard
 SHOOT,3,High ISO Speed Noise Reduction,High
-SHOOT,3,White Balance,Auto
-SHOOT,3,White Balance,Daylight
-SHOOT,3,White Balance,Shade
-SHOOT,3,White Balance,Cloudy
-SHOOT,3,White Balance,Tungsten
-SHOOT,3,White Balance,Fluorescent
-SHOOT,3,White Balance,Flash
-SHOOT,3,White Balance,Custom
-SHOOT,3,Color Space,sRGB
-SHOOT,3,Color Space,Adobe RGB
-SHOOT,4,Picture Style,Standard
-SHOOT,5:LV func.,Long Exposure Noise Reduction,Off
-SHOOT,6:LV func.,Highlight Tone Priority,Disable
-SHOOT,6:LV func.,Highlight Tone Priority,Enable
-AF,1,AF Operation,One Shot AF
-AF,1,AF Operation,AI Focus AF
-AF,1,AF Operation,AI Servo AF
-AF,1,AF Area Selection Mode,Manual Select
-AF,1,AF Area Selection Mode,Auto Select
-AF,1,AF Area Selection Mode,Zone AF
-AF,2,AF Point Selection Method,Multi-controller Direct
-AF,2,AF Point Selection Method,Quick Control Dial
-AF,2,AF Point Selection Method,Main Dial
-AF,3,AI Servo 1st Image Priority,Release
-AF,3,AI Servo 1st Image Priority,Equal Priority
-AF,3,AI Servo 1st Image Priority,Focus
-AF,4,AF Assist Beam Firing,Enable
-AF,4,AF Assist Beam Firing,Disable
-AF,4,AF Assist Beam Firing,Enable External Flash Only
-PLAYBACK,1,Protect Images,Protect Single Image
-PLAYBACK,1,Protect Images,Unprotect All Images
-PLAYBACK,1,Erase Images,Erase Selected
-PLAYBACK,1,Erase Images,Erase All
-PLAYBACK,2,Print Order,Order
-PLAYBACK,2,Print Order,Print
-PLAYBACK,2,Print Order,Clear All
-PLAYBACK,3,Rotate Image,Rotate
-PLAYBACK,3,Rotate Image,Reset
-PLAYBACK,4,Image Copy,Copy to Card 1
-PLAYBACK,4,Image Copy,Copy to Card 2
-PLAYBACK,4,Image Copy,Copy All Images
-SET UP,1,Record Function/Card Folder Select,CF Card
-SET UP,1,Record Function/Card Folder Select,SD Card
-SET UP,1,Record Function/Card Folder Select,Auto Switch Card
-SET UP,1,Record Function/Card Folder Select,Record Separately
-SET UP,1,Record Function/Card Folder Select,Record to Multiple
-SET UP,2,Auto Power Off,1 min
-SET UP,2,Auto Power Off,3 min
-SET UP,2,Auto Power Off,5 min
-SET UP,2,Auto Power Off,15 min
-SET UP,2,Auto Power Off,Disable
-SET UP,2,LCD Brightness,Level 1
-SET UP,2,LCD Brightness,Level 2
-SET UP,2,LCD Brightness,Level 3
-SET UP,2,LCD Brightness,Level 4
-SET UP,2,LCD Brightness,Level 5
-SET UP,2,LCD Brightness,Level 6
-SET UP,3,Date/Time/Zone,Set
-SET UP,3,Language,Select
-SET UP,3,Video System,NTSC
-C.Fn,1:Exposure,Exposure,Set
-C.Fn,1:Exposure,Exposure,Reset
-MY MENU,1,Register to My Menu,Add Item
-MY MENU,1,Register to My Menu,Remove Item
-camera_menu_config,
-display_name,Canon 5D IV
-css_file,Canon
+SHOOT,3,High ISO Speed Noise Reduction,Multi Shot Noise Reduction
+SHOOT,3,Highlight tone priority,Disable
+SHOOT,3,Highlight tone priority,Enable (D+)
+SHOOT,3,Dust Delete Data
+SHOOT,3,Multiple exposure,Multiple exposure,Disable
+SHOOT,3,Multiple exposure,Multiple exposure,On:Func/Ctrl
+SHOOT,3,Multiple exposure,Multiple exposure,On:ContShtng
+SHOOT,3,Multiple exposure,Multi-expos ctrl,Additive
+SHOOT,3,Multiple exposure,Multi-expos ctrl,Average
+SHOOT,3,Multiple exposure,Multi-expos ctrl,Bright
+SHOOT,3,Multiple exposure,Multi-expos ctrl,Dark
+SHOOT,3,Multiple exposure,No. of exposures,2-9
+SHOOT,3,Multiple exposure,Save sourec imgs,All images
+SHOOT,3,Multiple exposure,Save sourec imgs,Result only
+SHOOT,3,Multiple exposure,Continue Mult-exp, 1 shot only
+SHOOT,3,Multiple exposure,Continue Mult-exp, Continuously
+SHOOT,3,HDR Mode,Adjust dyn range,Disable HDR
+SHOOT,3,HDR Mode,Adjust dyn range,Auto
+SHOOT,3,HDR Mode,Adjust dyn range,+-1 EV
+SHOOT,3,HDR Mode,Adjust dyn range,+-2 EV
+SHOOT,3,HDR Mode,Adjust dyn range,+-3 EV
+SHOOT,3,HDR Mode,Effect,Natural
+SHOOT,3,HDR Mode,Effect,Art standard
+SHOOT,3,HDR Mode,Effect,Art vivid
+SHOOT,3,HDR Mode,Effect,Art bold
+SHOOT,3,HDR Mode,Effect,Art embossed
+SHOOT,3,HDR Mode,Continuous HDR,1 shot only
+SHOOT,3,HDR Mode,Continuous HDR,Every shot
+SHOOT,3,HDR Mode,Auto Image Align,Enable
+SHOOT,3,HDR Mode,Auto Image Align,Disable
+SHOOT,3,HDR Mode,Save source imgs,All images
+SHOOT,3,HDR Mode,Save source imgs,HDR img only
+SHOOT,4,Interval timer,Disable
+SHOOT,4,Interval timer,Enable
+SHOOT,4,Interval timer,Interval,1s-99h 59m 59s
+SHOOT,4,Interval timer,No. of shots,0-99
+SHOOT,4,Bulb timer,Disable
+SHOOT,4,Bulb timer,Enable
+SHOOT,4,Bulb timer,Expo. time,1s-99h 59m 59s
+SHOOT,4,Anti-flicker shoot.,Disable
+SHOOT,4,Anti-flicker shoot.,Enable
+SHOOT,4,Mirror lockup,Disable
+SHOOT,4,Mirror lockup,Enable
+SHOOT,5,Live View shoot.,Enable
+SHOOT,5,Live View shoot.,Disable
+SHOOT,5,AF method,Face+Tracking,?
+SHOOT,5,AF method,FlexiZoneAF()
+SHOOT,5,AF method,FlexiZoneAF[]
+SHOOT,5,Touch Shutter,Disable
+SHOOT,5,Touch Shutter,Enable
+SHOOT,5,Grid display,Off
+SHOOT,5,Grid display,3x3
+SHOOT,5,Grid display,6x4
+SHOOT,5,Grid display,3x3+diag
+SHOOT,5,Aspect ratio,3:2
+SHOOT,5,Aspect ratio,4:3
+SHOOT,5,Aspect ratio,16:9
+SHOOT,5,Aspect ratio,1:1
+SHOOT,5,Expo. simulation,Enable
+SHOOT,5,Expo. simulation,During shooting?
+SHOOT,5,Expo. simulation,Disable
+SHOOT,6,Silent LV shoot.,Mode 1
+SHOOT,6,Silent LV shoot.,Mode 2
+SHOOT,6,Silent LV shoot.,Disable
+SHOOT,6,Metering timer,4 sec.
+SHOOT,6,Metering timer,8 sec.
+SHOOT,6,Metering timer,16 sec.
+SHOOT,6,Metering timer,30 sec.
+SHOOT,6,Metering timer,1 min.
+SHOOT,6,Metering timer,10 min.
+SHOOT,6,Metering timer,30 min.
+AF,1,Case 1 (Versatile multi purpose setting),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 1 (Versatile multi purpose setting),Tracking sensitivity,-1
+AF,1,Case 1 (Versatile multi purpose setting),Tracking sensitivity,0
+AF,1,Case 1 (Versatile multi purpose setting),Tracking sensitivity,1
+AF,1,Case 1 (Versatile multi purpose setting),Tracking sensitivity,2 (Responsive)
+AF,1,Case 1 (Versatile multi purpose setting),Accel./decel. tracking,-2
+AF,1,Case 1 (Versatile multi purpose setting),Accel./decel. tracking,-1
+AF,1,Case 1 (Versatile multi purpose setting),Accel./decel. tracking,0
+AF,1,Case 1 (Versatile multi purpose setting),Accel./decel. tracking,1
+AF,1,Case 1 (Versatile multi purpose setting),Accel./decel. tracking,2
+AF,1,Case 1 (Versatile multi purpose setting),AF pt auto switching,0
+AF,1,Case 1 (Versatile multi purpose setting),AF pt auto switching,1
+AF,1,Case 1 (Versatile multi purpose setting),AF pt auto switching,2
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Tracking sensitivity,-1
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Tracking sensitivity,0
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Tracking sensitivity,1
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Tracking sensitivity,2 (Responsive)
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Accel./decel. tracking,-2
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Accel./decel. tracking,-1
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Accel./decel. tracking,0
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Accel./decel. tracking,1
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),Accel./decel. tracking,2
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),AF pt auto switching,0
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),AF pt auto switching,1
+AF,1,Case 2 (Continue to track subjects, ignoring possible obstacles),AF pt auto switching,2
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Tracking sensitivity,-1
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Tracking sensitivity,0
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Tracking sensitivity,1
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Tracking sensitivity,2 (Responsive)
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Accel./decel. tracking,-2
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Accel./decel. tracking,-1
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Accel./decel. tracking,0
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Accel./decel. tracking,1
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),Accel./decel. tracking,2
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),AF pt auto switching,0
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),AF pt auto switching,1
+AF,1,Case 3 (Instantly focus on subjects suddenly entering AF points),AF pt auto switching,2
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Tracking sensitivity,-1
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Tracking sensitivity,0
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Tracking sensitivity,1
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Tracking sensitivity,2 (Responsive)
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Accel./decel. tracking,-2
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Accel./decel. tracking,-1
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Accel./decel. tracking,0
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Accel./decel. tracking,1
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),Accel./decel. tracking,2
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),AF pt auto switching,0
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),AF pt auto switching,1
+AF,1,Case 4 (For subjects that accelerate or decelerate quickly),AF pt auto switching,2
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Tracking sensitivity,-1
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Tracking sensitivity,0
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Tracking sensitivity,1
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Tracking sensitivity,2 (Responsive)
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Accel./decel. tracking,-2
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Accel./decel. tracking,-1
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Accel./decel. tracking,0
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Accel./decel. tracking,1
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),Accel./decel. tracking,2
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),AF pt auto switching,0
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),AF pt auto switching,1
+AF,1,Case 5 (For erratic subjects moving quickly in any direction),AF pt auto switching,2
+AF,1,Case 6 (For subjects that change speed and move erratically),Tracking sensitivity,-2 (Locked on)
+AF,1,Case 6 (For subjects that change speed and move erratically),Tracking sensitivity,-1
+AF,1,Case 6 (For subjects that change speed and move erratically),Tracking sensitivity,0
+AF,1,Case 6 (For subjects that change speed and move erratically),Tracking sensitivity,1
+AF,1,Case 6 (For subjects that change speed and move erratically),Tracking sensitivity,2 (Responsive)
+AF,1,Case 6 (For subjects that change speed and move erratically),Accel./decel. tracking,-2
+AF,1,Case 6 (For subjects that change speed and move erratically),Accel./decel. tracking,-1
+AF,1,Case 6 (For subjects that change speed and move erratically),Accel./decel. tracking,0
+AF,1,Case 6 (For subjects that change speed and move erratically),Accel./decel. tracking,1
+AF,1,Case 6 (For subjects that change speed and move erratically),Accel./decel. tracking,2
+AF,1,Case 6 (For subjects that change speed and move erratically),AF pt auto switching,0
+AF,1,Case 6 (For subjects that change speed and move erratically),AF pt auto switching,1
+AF,1,Case 6 (For subjects that change speed and move erratically),AF pt auto switching,2
+AF,2,AI Servo 1st image priority,Release priority
+AF,2,AI Servo 1st image priority,Equal priority
+AF,2,AI Servo 1st image priority,Focus priority
+AF,2,AI Servo 2nd image priority,-2 (Shooting speed priority)
+AF,2,AI Servo 2nd image priority,-1
+AF,2,AI Servo 2nd image priority,0 (Equal priority)
+AF,2,AI Servo 2nd image priority,1
+AF,2,AI Servo 2nd image priority,2 (Focus priority)
+AF,3,Lens electronic MF,Enable after One-Shot AF
+AF,3,Lens electronic MF,Disable after One-Shot AF
+AF,3,Lens electronic MF,Disable in AF mode
+AF,3,AF-assist beam firing,Enable
+AF,3,AF-assist beam firing,Disable
+AF,3,AF-assist beam firing,IR AF assist beam only
+AF,3,One-Shot AF release prior,Release priority
+AF,3,One-Shot AF release prior,Focus priority
+AF,4,Lens drive when AF impossible,Continue focus search
+AF,4,Lens drive when AF impossible,Stop focus search
+AF,4,Selectable AF point,All points
+AF,4,Selectable AF point,Only cross-type AF points
+AF,4,Selectable AF point,15 points
+AF,4,Selectable AF point,9 points
+AF,4,Select AF area selec. mode,Manual select.:Spot AF
+AF,4,Select AF area selec. mode,Manual selection: 1pt AF
+AF,4,Select AF area selec. mode,Expand AF area
+AF,4,Select AF area selec. mode,Expand AF area:Surround
+AF,4,Select AF area selec. mode,Manual select.:Zone AF
+AF,4,Select AF area selec. mode,Manual select.:Large Zone AF
+AF,4,Select AF area selec. mode,Auto selection AF
+AF,4,AF area selection method,?->M-Fn button
+AF,4,AF area selection method,?->Main Dial
+AF,4,Orientation linked AF point,Same for both vert/horiz
+AF,4,Orientation linked AF point,Separate AF pts: Area+pt
+AF,4,Orientation linked AF point,Separate AF pts: Pt only
+AF,4,'Initial AFpt, AI Servo AF',Initial ? AF pt select
+AF,4,'Initial AFpt, AI Servo AF',Manual ? AF pt
+AF,4,'Initial AFpt, AI Servo AF',Auto
+AF,4,Auto AF pt sel.:EOS iTR AF,EOS iTR AF (Face priority)
+AF,4,Auto AF pt sel.:EOS iTR AF,EOS iTR AF
+AF,4,Auto AF pt sel.:EOS iTR AF,Disable
+AF,5,AF point selection movement,Stops at AF area edges
+AF,5,AF point selection movement,Continuous
+AF,5,VF display illumination,Auto
+AF,5,VF display illumination,Enable
+AF,5,VF display illumination,Disable
+AF,5,AF status in viewfinder,Show in field of view
+AF,5,AF status in viewfinder,Show outside view
+AF,5,AF Microadjustment,Disable
+AF,5,AF Microadjustment,All by same amount,-20 - +20
+AF,5,AF Microadjustment,Adjust by lens,-20 - +20?
+PLAY,1,Protect images
+PLAY,1,Rotate images
+PLAY,1,Erase images
+PLAY,1,Print order
+PLAY,1,Photobook Set-up
+PLAY,1,Image copy
+PLAY,1,RAW image processing
+PLAY,2,Cropping
+PLAY,2,Resize
+PLAY,2,Rating
+PLAY,2,Slide show
+PLAY,2,Image transfer
+PLAY,2,Image jump w/wheel
+PLAY,3,Highlight alert,Disable
+PLAY,3,Highlight alert,Enable
+PLAY,3,AF point disp.,Disable
+PLAY,3,AF point disp.,Enable
+PLAY,3,Playback grid,Off
+PLAY,3,Playback grid,3x3
+PLAY,3,Playback grid,6x4
+PLAY,3,Playback grid,3x3+diag
+PLAY,3,Histogram disp,Brightness
+PLAY,3,Histogram disp,RGB
+PLAY,3,Movie play count,Rec time
+PLAY,3,Movie play count,Time code
+PLAY,3,Magnificatn (apx),1x (no magnification)
+PLAY,3,Magnificatn (apx),2x (magnify from center)
+PLAY,3,Magnificatn (apx),4x (magnify from center)
+PLAY,3,Magnificatn (apx),8x (magnify from center)
+PLAY,3,Magnificatn (apx),10x (magnify from center)
+PLAY,3,Magnificatn (apx),Actual size (from selected pt)
+PLAY,3,Magnificatn (apx),Same as last magnif. (from ctr)
+PLAY,3,Ctrl over HDMI,Disable
+PLAY,3,Ctrl over HDMI,Enable
+SET UP1,Record func+card/folder sel.,Record func,Standard
+SET UP1,Record func+card/folder sel.,Record func,Auto switch card
+SET UP1,Record func+card/folder sel.,Record func,Rec. separately
+SET UP1,Record func+card/folder sel.,Record func,Rec. to multiple
+SET UP1,Record func+card/folder sel.,Record/play,1 (?)
+SET UP1,Record func+card/folder sel.,Record/play,2 (SD card)
+SET UP1,File numbering,Continuous
+SET UP1,File numbering,Auto reset
+SET UP1,File numbering,Manual reset
