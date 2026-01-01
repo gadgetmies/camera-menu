@@ -328,3 +328,6 @@ SET UP1,Record func+card/folder sel.,Record/play,2 (SD card)
 SET UP1,File numbering,Continuous
 SET UP1,File numbering,Auto reset
 SET UP1,File numbering,Manual reset
+camera_menu_config,
+display_name,Canon 5Div
+css_file,Canon
