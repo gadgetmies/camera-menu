@@ -236,5 +236,6 @@ Setup,Setup 6,Select REC Folder,[set as desired],
 Setup,Setup 7,Setting Reset,,[set as desired]
 Setup,Setup 7,Version,,[set as desired]
 camera_menu_config,
-display_name,Sony A7R III
+brand,Sony
+model,A7RIII
 css_file,sonyA7Riii

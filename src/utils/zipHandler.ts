@@ -6,6 +6,8 @@ export interface ZipFileContents {
   cssContent: string
   iconData?: string
   displayName?: string
+  brand?: string
+  model?: string
   cssFileName?: string
 }
 
@@ -83,9 +85,23 @@ export const extractZipFile = async (file: File): Promise<ZipFileContents> => {
     result.iconData = base64
   }
 
+  const brandMatch = result.csvContent.match(/brand,([^\n]+)/)
+  if (brandMatch) {
+    result.brand = brandMatch[1].trim()
+  }
+
+  const modelMatch = result.csvContent.match(/model,([^\n]+)/)
+  if (modelMatch) {
+    result.model = modelMatch[1].trim()
+  }
+
   const displayNameMatch = result.csvContent.match(/display_name,([^\n]+)/)
   if (displayNameMatch) {
     result.displayName = displayNameMatch[1].trim()
+  }
+
+  if (!result.displayName && result.brand && result.model) {
+    result.displayName = `${result.brand} ${result.model}`.trim()
   }
 
   return result
@@ -109,41 +125,88 @@ export const createCustomCameraFromZip = async (file: File, customDisplayName?: 
     .find((name) => name.endsWith('.csv')) || 'custom'
   const cameraId = `custom-${Date.now()}-${Math.random().toString(36).substring(7)}`
 
+  let brand = contents.brand
+  let model = contents.model
   let displayName = customDisplayName?.trim()
-  if (!displayName) {
-    displayName = contents.displayName || csvFileName.replace('.csv', '')
+
+  if (customDisplayName && !brand && !model) {
+    const parts = customDisplayName.split(' ')
+    if (parts.length > 1) {
+      brand = parts[0]
+      model = parts.slice(1).join(' ')
+    } else {
+      brand = customDisplayName
+      model = ''
+    }
   }
 
-  if (contents.csvContent && displayName !== contents.displayName) {
+  if (!displayName) {
+    if (brand && model) {
+      displayName = `${brand} ${model}`.trim()
+    } else {
+      displayName = contents.displayName || csvFileName.replace('.csv', '')
+    }
+  }
+
+  if (contents.csvContent) {
     const configIndex = contents.csvContent.indexOf('camera_menu_config')
     if (configIndex !== -1) {
       const beforeConfig = contents.csvContent.substring(0, configIndex + 'camera_menu_config'.length + 1)
       const afterConfig = contents.csvContent.substring(configIndex + 'camera_menu_config'.length + 1)
       const configLines = afterConfig.split('\n')
       
+      let brandLineIndex = -1
+      let modelLineIndex = -1
       let displayNameLineIndex = -1
+
       for (let i = 0; i < configLines.length; i++) {
-        if (configLines[i].startsWith('display_name,')) {
+        if (configLines[i].startsWith('brand,')) {
+          brandLineIndex = i
+        } else if (configLines[i].startsWith('model,')) {
+          modelLineIndex = i
+        } else if (configLines[i].startsWith('display_name,')) {
           displayNameLineIndex = i
-          break
+        }
+      }
+
+      if (brand) {
+        if (brandLineIndex !== -1) {
+          configLines[brandLineIndex] = `brand,${brand}`
+        } else {
+          configLines.unshift(`brand,${brand}`)
+        }
+      }
+
+      if (model !== undefined) {
+        if (modelLineIndex !== -1) {
+          configLines[modelLineIndex] = `model,${model}`
+        } else {
+          const insertIndex = brandLineIndex !== -1 ? brandLineIndex + 1 : 0
+          configLines.splice(insertIndex, 0, `model,${model}`)
         }
       }
 
       if (displayNameLineIndex !== -1) {
         configLines[displayNameLineIndex] = `display_name,${displayName}`
       } else {
-        configLines.unshift(`display_name,${displayName}`)
+        configLines.push(`display_name,${displayName}`)
       }
 
       contents.csvContent = beforeConfig + configLines.join('\n')
     } else {
-      contents.csvContent = contents.csvContent.trim() + '\ncamera_menu_config,\ndisplay_name,' + displayName + '\n'
+      const configLines = []
+      if (brand) configLines.push(`brand,${brand}`)
+      if (model !== undefined) configLines.push(`model,${model}`)
+      configLines.push(`display_name,${displayName}`)
+      contents.csvContent = contents.csvContent.trim() + '\ncamera_menu_config,\n' + configLines.join('\n') + '\n'
     }
   }
 
   return {
     id: cameraId,
     displayName: displayName,
+    brand: brand,
+    model: model,
     csvContent: contents.csvContent,
     cssContent: contents.cssContent,
     cssFileName: contents.cssFileName || csvFileName.replace('.csv', ''),

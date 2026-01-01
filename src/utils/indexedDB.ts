@@ -1,6 +1,8 @@
 export interface CustomCamera {
   id: string
   displayName: string
+  brand?: string
+  model?: string
   csvContent: string
   cssContent: string
   cssFileName: string

@@ -1,0 +1,525 @@
+level0,level1,level2,level3,level4,level5,level6,level7,Comment/help
+Still Photo Shooting,<i name="camera"/>Camera,Image quality/size,JPEG/HEIF quality,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Image quality/size,Img type/size,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Image quality/size,Cropping/aspect ratio,,,,,,Select how the shooting area is displayed. When is set or an RF-S or EF-S lens is used
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,Expo.comp./AEB,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,ISO speed settings,,,,,,Select [: ISO speed settings] (). Set the desired minimum shutter speed.
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,Anti-flicker shoot.,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,HF anti-flicker shooting,,,,,,"Select [: HF anti-flicker shooting] (, ). Switch to the indicated shutter speed."
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,,,,,,"You can select the flash mode to suit your desired flash photography. With Speedlites having a zooming flash head, you can set the flash coverage. Select the settings to be cleared."
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,Elec. 1st-curtain,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,*,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,Shutter mode,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,Mechanical,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,External Speedlite control,Electronic,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,Metering mode,,,,,,"You can select how the camera determines subject brightness. Effective where there are much brighter lights around the subject due to backlight, etc."
+Still Photo Shooting,<i name="camera"/>Camera,Exposure,Detect priority AE while AF,,,,,,"Select [: Detect priority AE while AF] (, )."
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,Picture Style Selection,,,,,,"For vivid blues and greens, and very sharp and crisp images. Effective for impressive landscapes."
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,Color space,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,Clarity,,,,,,Set toward the negative end to make images look softer or toward the positive end for a sharper appearance.
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,HDR shooting (PQ),,,,,,"Select [: HDR shooting (PQ)] (, )."
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,Auto Lighting Optimizer,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Color/tone/Dynamic range,Highlight tone priority,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,White balance,,,,,,"With [] (Ambience priority), you can slightly increase the intensity of the image's warm color cast when shooting a tungsten-light scene. If you select [] (White priority), you can reduce the intensity of the image's warm color cast. A value can be set representing the white balance color temperature."
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,White balance,Display,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,Set Custom WB,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,WB Shift/Bkt.,,,,,,"Set the white balance bracketing amount. Sample setting: B/A bias, ±3 levels"
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,Lens aberration correction,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,Long exp. noise reduction,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,High ISO speed NR,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,White balance/Quality correction,Dust Delete Data,,,,,,Select [: Dust Delete Data] (). File size is essentially unaffected by Dust Delete Data appended to images.
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Multiple exposure,,,,,,"As you shoot multiple exposures (2–9), you can see how the images will be merged into a single image. Select [Select image for multi. expo.]. You can select a JPEG image shot at the same angle of view as the first selected JPEG."
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Multiple exposure,Save and exit,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Multiple exposure,Return to previous screen,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Multiple exposure,Exit without saving,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Multiple exposure,Undo last image,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Various shooting,Focus bracketing,,,,,,Larger aperture values increase the focus shift and make focus bracketing cover a wider range under the same focus increment and number of shots. Depth compositing image quality setting and images saved
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Drive mode,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Pre-cont. shooting,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Interval timer,,,,,,"With the interval timer, you can set the shooting interval and number of shots, so that the camera takes individual shots repeatedly according to your interval until your specified number of shots are taken. Set the shooting interval and number of shots. Can be set in a range of [00:00:01]–[99:59:59]."
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Bulb timer,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Silent shutter function,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Shutter mode,,,,,,You can choose the method of shutter release. Shooting activates the mechanical shutter. Recommended when shooting with the aperture of a bright lens wide open. Recommended when shooting with the aperture of a bright lens wide open.
+Still Photo Shooting,<i name="camera"/>Camera,Shutter control,Release shutter without card,,,,,,Select [: Release shutter without card] ().
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,IS (Image Stabilizer) mode,,,,,,Select [: IS (Image Stabilizer) mode] ().
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,Customize Quick Controls,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,Metering timer,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,Image review,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,High speed display,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,Blackout-free display,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,Display simulation,,,,,,
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,OVF sim. view assist,,,,,,Select [: OVF sim. view assist] ().
+Still Photo Shooting,<i name="camera"/>Camera,Assist shooting,HDR/C.Log View Assist.,,,,,,"Select [: HDR/C.Log View Assist.] (, )."
+Still Photo Shooting,AF,AF operation/area,AF operation,,,,,,Set the lens's focus mode switch to .
+Still Photo Shooting,AF,AF operation/area,AF area,,,,,,"The camera focuses in a narrower area than 1-point AF. The camera focuses using a single AF point []. When Servo AF is used, first you will focus using an AF point []."
+Still Photo Shooting,AF,AF operation/area,Whole area tracking Servo AF,,,,,,
+Still Photo Shooting,AF,AF operation/area,Focus mode,,,,,,"Set the lens's focus mode switch to . Select [: MF peaking settings] (, )."
+Still Photo Shooting,AF,Subject detection,Subject to detect,,,,,,
+Still Photo Shooting,AF,Subject detection,Eye detection,,,,,,
+Still Photo Shooting,AF,Subject detection,Register people priority,,,,,,"Select [: Register people priority] (, ). JPEG or HEIF images can be used. Process any RAW images you will use into JPEGs or HEIFs before saving them to the card. Display when registered faces are detected"
+Still Photo Shooting,AF,Subject detection,Action Priority,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Case Auto,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Case Auto character.,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Case Manual,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Tracking sensitivity,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Accel./decel. tracking,,,,,,
+Still Photo Shooting,AF,Servo AF character.,Case Special,,,,,,
+Still Photo Shooting,AF,Customize AF operation,Servo 1st image priority,,,,,,
+Still Photo Shooting,AF,Customize AF operation,One-Shot AF release prior.,,,,,,
+Still Photo Shooting,AF,Customize AF operation,Preview AF,,,,,,
+Still Photo Shooting,AF,Customize AF operation,Lens drive when AF impossible,,,,,,
+Still Photo Shooting,AF,Customize AF operation,AF-assist beam firing,,,,,,
+Still Photo Shooting,AF,Customized controls,Limit AF areas,,,,,,
+Still Photo Shooting,AF,Customized controls,Orientation linked AF point,,,,,,
+Still Photo Shooting,AF,Customized controls,Limit subject to detect,,,,,,
+Still Photo Shooting,AF,Customized controls,L/R eye detection,,,,,,
+Still Photo Shooting,AF,MF related,MF peaking settings,,,,,,
+Still Photo Shooting,AF,MF related,Focus guide,,,,,,
+Still Photo Shooting,AF,MF related,Lens electronic MF,,,,,,
+Still Photo Shooting,AF,Various settings/Various settings,Register/recall AF-related settings,,,,,,
+Still Photo Shooting,AF,Various settings/Various settings,AF Setting Guide URL,,,,,,
+Still Photo Shooting,Playback,File operation,Protect images,,,,,,
+Still Photo Shooting,Playback,File operation,Erase images,,,,,,
+Still Photo Shooting,Playback,File operation,Rotate stills,,,,,,
+Still Photo Shooting,Playback,File operation,Change mov rotate info,,,,,,Select [: Change mov rotate info] ().
+Still Photo Shooting,Playback,File operation,Rating,,,,,,"Next, select the last image (end point). A checkmark [] will be appended to all the images within the range between first and last images. Turn the dial to select a rating mark, then select [OK]."
+Still Photo Shooting,Playback,File operation,Protect when setting the rating,,,,,,Select [: Protect when setting the rating] (). Select the rating levels to protect.
+Still Photo Shooting,Playback,File operation,Image copy,,,,,,
+Still Photo Shooting,Playback,File operation,Print order,,,,,,"Select and specify the images individually. Press to print a copy of the displayed image. By turning the dial, you can set a print quantity of up to 99 copies. Press to add a checkmark [] to the box. The image will be included in the index print."
+Still Photo Shooting,Playback,File operation,Print order,File No.,,,,,
+Still Photo Shooting,Playback,File operation,Print order,Date,,,,,
+Still Photo Shooting,Playback,File operation,Print order,Off,,,,,
+Still Photo Shooting,Playback,Image processing,RAW image processing,,,,,,"Select [: RAW image processing] (). JPEG or HEIF images at the specified aspect ratio are created when you process RAW images shot with [: Cropping/aspect ratio] () set to [1:1 (aspect ratio)], [4:3 (aspect ratio)], or [16:9 (aspect ratio)]. You can adjust the image brightness up to ±1 stop in 1/3-stop increments."
+Still Photo Shooting,Playback,Image processing,In-Camera Upscaling,,,,,,
+Still Photo Shooting,Playback,Image processing,Resize,,,,,,
+Still Photo Shooting,Playback,Image processing,Cropping,,,,,,"Turn the dial to resize the cropping frame size. The smaller the cropping frame, the more magnified the cropped image will look. Check the image area to be cropped."
+Still Photo Shooting,Playback,Image processing,HEIF→JPEG conversion,,,,,,
+Still Photo Shooting,Playback,Playback method,Slide show,,,,,,Specify the images to be played back.
+Still Photo Shooting,Playback,Playback method,VR preview,,,,,,
+Still Photo Shooting,Playback,Playback method,VR preview,Play,,,,,
+Still Photo Shooting,Playback,Playback method,VR preview,Previous frame,,,,,
+Still Photo Shooting,Playback,Playback method,VR preview,Next frame,,,,,
+Still Photo Shooting,Playback,Playback method,VR preview,Skip forward,,,,,
+Still Photo Shooting,Playback,Playback method,VR preview,Skip backward,,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,,,,,,"Read the message displayed, then select [OK]. For movies, searches apply to files in the XFVC or CRM folder."
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Folder,,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Type of file (2),,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Rating,,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Date,,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Type of file (1),,,,,
+Still Photo Shooting,Playback,Playback method,Set image search conditions,Protect,,,,,
+Still Photo Shooting,Playback,Playback method,View from last seen,,,,,,Select [: View from last seen] ().
+Still Photo Shooting,Playback,Playback method,Magnification,,,,,,You can magnify display of your captured images. Magnified view starts from the center of the screen.
+Still Photo Shooting,Playback,Playback method,Blur/Out-of-Focus image detection,,,,,,[] (little blurring/lack of focus) is displayed for images that are fairly clear and in focus when viewed with the naked eye at actual size.
+Still Photo Shooting,Playback,Various settings,Playback information display,,,,,,Add a checkmark [] next to the number of screens to display.
+Still Photo Shooting,Playback,Various settings,Highlight alert,,,,,,
+Still Photo Shooting,Playback,Various settings,AF point disp.,,,,,,
+Still Photo Shooting,Playback,Various settings,Playback grid,,,,,,
+Still Photo Shooting,Playback,Various settings,Movie play count,,,,,,Select [: Movie play count] ().
+Still Photo Shooting,Playback,Various settings,Memo audio quality,,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,,,,,,"Select to name sets of settings. Use the virtual keyboard () to enter text. Change, delete, or check the settings as needed. Change, delete, or check the settings as needed."
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_R.CRT,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_C.CRT,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_C.PEM,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,EAP-TTLS,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_C.P12,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,Private key,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_C.PFX,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,PEAP,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,Client certificate,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,Root certificate,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,EAP-TLS,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Network settings,8021X_R.PEM,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Airplane mode,,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Bluetooth settings,,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Camera name,,,,,,
+Still Photo Shooting,Communication Functions,Network settings,Error details,,,,,,
+Still Photo Shooting,Communication Functions,Network settings,MAC address,,,,,,
+Still Photo Shooting,Communication Functions,Network function,Transfer images to FTP server,,,,,,"For secure FTP transfer using a root certificate, import a root certificate (). Select [: Transfer images to FTP server] (). If you have selected [Login password], enter the name and password."
+Still Photo Shooting,Communication Functions,Network function,Connect to EOS Utility,,,,,,"You can use the camera to transfer images to a computer (). You can specify the format of images to transfer to a computer (). For RAW+JPEG or RAW+HEIF images, you can specify which image to transfer."
+Still Photo Shooting,Communication Functions,Network function,Upload to image.canon,,,,,,Use the app to scan the QR code. You can select the type of movies uploaded. You can select the type of still photos uploaded.
+Still Photo Shooting,Communication Functions,Network function,Sync time between cameras,,,,,,"First, set up the camera to use as a sender. Select [: Sync time between cameras] (). Set up cameras to use as receivers."
+Still Photo Shooting,Communication Functions,Network function,Connect to smartphone(tablet),,,,,,"In [Size to send], you can select the size of images to send."
+Still Photo Shooting,Communication Functions,Network function,Live streaming,,,,,,
+Still Photo Shooting,Communication Functions,Network function,Connect to Wireless Remote,,,,,,Set up the camera for remote shooting.
+Still Photo Shooting,Communication Functions,Network function,Camera Control API,,,,,,Select items to check or change. You can change the TCP/IPv4 settings. You can change the TCP/IPv6 settings.
+Still Photo Shooting,Communication Functions,Various settings,GPS device settings,,,,,,Select [: GPS device settings] (). Update the GP-E2 firmware to Ver. 2.0.0 or later. Select [: GPS device settings] ().
+Still Photo Shooting,Communication Functions,Various settings,Choose USB connection app,,,,,,"Audio output is LPCM/16bit/2CH (channels 1 and 2), even with [: Audio format] set to [LPCM/24bit/4CH]. Select if you will use an iOS app."
+Still Photo Shooting,Communication Functions,Various settings,Save/load comm. settings on card,,,,,,
+Still Photo Shooting,Communication Functions,Various settings,Reset communication settings,,,,,,
+Still Photo Shooting,Set-up,File/card setting,Selecting Cards for Recording/Playback,,,,,,Select [: Record func+card/folder sel.] (). Set the recording method for still photos. Records still photos to the card selected in [ Record/play].
+Still Photo Shooting,Set-up,File/card setting,File numbering,,,,,,"Captured still photos saved in a folder are assigned a file number from 0001 to 9999. You can change how the image files are numbered. File numbering is reset to 0001 if you replace a card, create a folder, or switch the target card (as in →). This is useful if you want to organize images by cards or folders."
+Still Photo Shooting,Set-up,File/card setting,Clip Number,,,,,,Recorded movies saved in a folder are assigned a clip number from 001 to 999. You can change how clips are numbered. Clip numbering is reset to 001 if you replace a card or switch the target card (as in →). This is useful if you want to organize movies by cards.
+Still Photo Shooting,Set-up,File/card setting,File name,,,,,,"You can set how movie files (clips) are named. A 3-digit number from 001 to 999 preceded by C, as in C001–C999. After C999, D is used at the beginning."
+Still Photo Shooting,Set-up,File/card setting,File name,(5),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(6),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(2),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(3),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(8),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(4),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(9),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(7),,,,,
+Still Photo Shooting,Set-up,File/card setting,File name,(1),,,,,
+Still Photo Shooting,Set-up,File/card setting,Format card,,,,,,
+Still Photo Shooting,Set-up,File/card setting,Auto rotate,,,,,,
+Still Photo Shooting,Set-up,File/card setting,Add  rotate info,,,,,,Select [: Add rotate info] ().
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Date/Time/Zone,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Language,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,System frequency,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Help text size,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Beep,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Volume,,,,,,
+Still Photo Shooting,Set-up,Country/Area/Guidance/Audio settings,Audio monitor,,,,,,
+Still Photo Shooting,Set-up,Customize display,Screen brightness,,,,,,
+Still Photo Shooting,Set-up,Customize display,Viewfinder brightness,,,,,,
+Still Photo Shooting,Set-up,Customize display,Screen/viewfinder color tone,,,,,,
+Still Photo Shooting,Set-up,Customize display,Fine-tune VF color tone,,,,,,
+Still Photo Shooting,Set-up,Customize display,Screen/viewfinder display,,,,,,"You can specify to use the screen or viewfinder for display, to avoid accidentally activating the viewfinder sensor when the screen is open. Always use the screen for display when it is open. Use the screen for display when it is closed and facing you, and switch to the viewfinder when you look through it."
+Still Photo Shooting,Set-up,Customize display,UI magnification,,,,,,You can magnify menu screens by double-tapping with two fingers. Double-tap again to restore the original display size.
+Still Photo Shooting,Set-up,Customize display,HDMI resolution,,,,,,
+Still Photo Shooting,Set-up,Various settings,Cooling fan settings,,,,,,Select [: Cooling fan settings] ().
+Still Photo Shooting,Set-up,Various settings,Shutter at shutdown,,,,,,You can set whether to leave the shutter open or close it when the camera's power switch is set to . Select [: Shutter at shutdown] (). Leaves the shutter open. This keeps camera quieter when the power switch is set to or . Useful when you want to shoot quietly.
+Still Photo Shooting,Set-up,Various settings,Sensor cleaning,,,,,,Always use a fully charged battery.
+Still Photo Shooting,Set-up,Various settings,Manage password,,,,,,"Reenter the password, then select [OK]."
+Still Photo Shooting,Set-up,Various settings,Power saving,,,,,,
+Still Photo Shooting,Set-up,Reset/All settings,Reset camera,,,,,,
+Still Photo Shooting,Set-up,Reset/All settings,Custom shooting mode (C1-C3),,,,,,
+Still Photo Shooting,Set-up,Reset/All settings,Save/load cam settings on card,,,,,,
+Still Photo Shooting,Set-up,Various settings,Battery info.,,,,,,
+Still Photo Shooting,Set-up,Various settings,Copyright information,,,,,,
+Still Photo Shooting,Set-up,Various settings,Show log,,,,,,
+Still Photo Shooting,Set-up,Various settings,Manual/software URL,,,,,,
+Still Photo Shooting,Set-up,Various settings,Certification Logo Display,,,,,,
+Still Photo Shooting,Set-up,Various settings,Firmware,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),Customize buttons for shooting,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),Customize dials/control ring,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),direction to set Tv/Av,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),direction to set Tv/Av,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),Switch / when shooting,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),Touch Shutter,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (still photo shooting),Multi function lock,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),Customize buttons for shooting,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),Shutter btn function for movies,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),Customize dials/control ring,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),direction to set Tv/Av,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),direction to set Tv/Av,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),Switch / when shooting,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting (movie recording),Multi function lock,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,Touch & drag AF settings,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,AF area selection control,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,sensitivity- AF pt select,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,Focus/control ring,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,Focus ring rotation,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when shooting,RF lens MF focus ring sensitivity,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when playback,Customize buttons for playback,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when playback,Image jump w/,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when playback,Img jump w/+,,,,,,
+Still Photo Shooting,Control Customization,Customized controls when playback,Switch / during playback,,,,,,
+Still Photo Shooting,Control Customization,Customized controls/Reset,Eye control,,,,,,"With [: AF area] set to [Whole area AF], the camera focuses in the area near the pointer. Choose [Orange], [Purple], or [White] as the pointer color. Choose [] or [] as the style of pointer displayed."
+Still Photo Shooting,Control Customization,Customized controls/Reset,Touch control,,,,,,
+Still Photo Shooting,Control Customization,Customized controls/Reset,Clear all customized controls,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Restrict shooting modes,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Exposure level increments,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,ISO speed setting increments,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Speed from metering/ISO Auto,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Bracketing auto cancel,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Bracketing sequence,,,,,,
+Still Photo Shooting,Custom Functions,Shooting mode/Exposure,Number of bracketed shots,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,Safety shift,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,Same expo. for new aperture,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,AE lock meter. mode after focus,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,Set shutter speed range,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,Set aperture range,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,AE Microadjustment,,,,,,
+Still Photo Shooting,Custom Functions,Exposure,FE Microadjustment,,,,,,
+Still Photo Shooting,Custom Functions,Drive,Continuous shooting speed,,,,,,
+Still Photo Shooting,Custom Functions,Drive,Limit continuous shot count,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Add cropping information,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Default Erase option,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Av setting without lens,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Release shutter w/o lens,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Retract lens on power off,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Add IPTC information,,,,,,
+Still Photo Shooting,Custom Functions,Various settings/Reset,Clear all Custom Func. (C.Fn),,,,,,
+Still Photo Shooting,<i name="star"/>My Menu,My Menu management,Add My Menu tab,,,,,,
+Still Photo Shooting,<i name="star"/>My Menu,My Menu management,Delete all My Menu tabs,,,,,,
+Still Photo Shooting,<i name="star"/>My Menu,My Menu management,Delete all items,,,,,,
+Still Photo Shooting,<i name="star"/>My Menu,My Menu management,Menu display,,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Movie rec. size,,,,,,With [: Main rec. format] set to [RAW] () Mainly for cinematic purposes. (23.98 fps) is available when [: System frequency] is set to [59.94Hz:NTSC]. Test cards by recording a few movies to make sure they can record correctly at your specified size ().
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Movie rec. size,50.00 Hz: PAL,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Movie rec. size,/,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Movie rec. size,59.94Hz: NTSC,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,High Frame Rate,,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,,,,,,You can specify the format of movie files recorded. Select [: Main rec. format] (). XF-HEVC S can be used to record 10-bit YCC 4:2:2 signals.
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,XF-AVC S YCC420 8bit,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,"XF-AVC S YCC420 8bit XF-AVC S YCC422 10bit",,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,XF-AVC S YCC422 10bit,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,Recording Format,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,"3840×2160 1920×1080",,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,RAW,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,XF-HEVC S YCC422 10bit,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,XF-HEVC S YCC420 10bit,,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Main rec. format,"XF-HEVC S YCC422 10bit XF-HEVC S YCC420 10bit",,,,,
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Movie cropping,,,,,,"With RF or EF lenses, you can record movies cropped around the center of the image area, as if captured with a telephoto lens."
+Movie Recording,<i name="camera"/>Camera,Image quality/size,Dual shooting (still&movie),,,,,,Select [: Dual shooting (still&movie)] ().
+Movie Recording,<i name="camera"/>Camera,Sound-rec. settings,Sound recording,,,,,,
+Movie Recording,<i name="camera"/>Camera,Sound-rec. settings,Audio format,,,,,,You can choose the audio format used for sound in movie recording.
+Movie Recording,<i name="camera"/>Camera,Sound-rec. settings,Audio settings,,,,,,
+Movie Recording,<i name="camera"/>Camera,Sound-rec. settings,Audio Status,,,,,,
+Movie Recording,<i name="camera"/>Camera,Exposure,Exposure comp.,,,,,,
+Movie Recording,<i name="camera"/>Camera,Exposure,ISO speed settings,,,,,,
+Movie Recording,<i name="camera"/>Camera,Exposure,HF anti-flicker shooting,,,,,,"Select [: HF anti-flicker shooting] (, ). Switch to the indicated shutter speed."
+Movie Recording,<i name="camera"/>Camera,Exposure,Av 1/8-stop incr.,,,,,,
+Movie Recording,<i name="camera"/>Camera,Exposure,Auto slow shutter,,,,,,
+Movie Recording,<i name="camera"/>Camera,Exposure,Detect priority AE while AF,,,,,,"Select [: Detect priority AE while AF] (, )."
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,,,,,,Available when the [Gamma/Color Space] gamma is set to [HLG] and color space is [BT.2020] Sets the center frequency for edge enhancement Settings to correct image areas with certain color characteristics
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Area B Revision Phase,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,"Color Matrix Tuning Fine-tuning of image color tones",,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Coring Level,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Detail Frequency,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,BT.709 Standard,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Chroma,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Canon Log 2,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Y Level,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Gain,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Off,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,C3: Canon Log 3,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Delete,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Over 100%,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,C1: Canon 709,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Custom Picture,Canon 709,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Picture Style Selection,,,,,,"For vivid blues and greens, and very sharp and crisp images. Effective for impressive landscapes."
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Clarity,,,,,,Set toward the negative end to make images look softer or toward the positive end for a sharper appearance.
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,HDR shooting (PQ),,,,,,"Select [: HDR shooting (PQ)] (, )."
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,HDR Movie Mode,,,,,,This setting is available when [: HDR shooting (PQ)] is set to [HDR PQ].
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Auto Lighting Optimizer,,,,,,
+Movie Recording,<i name="camera"/>Camera,Color/tone/Dynamic range,Highlight tone priority,,,,,,
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,White balance,,,,,,"With [] (Ambience priority), you can slightly increase the intensity of the image's warm color cast when shooting a tungsten-light scene. If you select [] (White priority), you can reduce the intensity of the image's warm color cast. A value can be set representing the white balance color temperature."
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,White balance,Display,,,,,
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,Set Custom WB,,,,,,
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,WB correction,,,,,,"Set the white balance bracketing amount. Sample setting: B/A bias, ±3 levels"
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,Lens aberration correction,,,,,,
+Movie Recording,<i name="camera"/>Camera,White balance/Quality correction,High ISO speed NR,,,,,,
+Movie Recording,<i name="camera"/>Camera,Various shooting,Pre-recording set.,,,,,,
+Movie Recording,<i name="camera"/>Camera,Various shooting,Time-lapse movie,,,,,,"With [Main rec. format] set to [XF-HEVC S YCC422 10bit] With [Main rec. format] set to [XF-AVC S YCC422 10bit] or [XF-AVC S YCC420 8bit] Indicates the time required to shoot the set number of shots with the set interval. If it exceeds 24 hours, “*** days” will be displayed."
+Movie Recording,<i name="camera"/>Camera,Various shooting,Time-lapse movie,Test-recording screen,,,,,
+Movie Recording,<i name="camera"/>Camera,Various shooting,Time-lapse movie,Recording standby,,,,,
+Movie Recording,<i name="camera"/>Camera,Various shooting,Time-lapse movie,During time-lapse Movie Recording,<i name="camera"/>Camera,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Movie self-timer,,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Tally lamp,,,,,,The tally lamp lights up or blinks to indicate camera status.
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Tally lamp,Blinking slowly,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Tally lamp,Blinking rapidly,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,IS (Image Stabilizer) mode,,,,,,Select [: IS (Image Stabilizer) mode] (). Select [: IS (Image Stabilizer) mode] (). Camera shake will be corrected. The image will be slightly magnified.
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Auto level,,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Customize Quick Controls,,,,,,
+Movie Recording,<i name="camera"/>Camera,Shutter control/Assist shooting,Metering timer,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Metadata,,,,,,You can clear (delete) metadata registered to the camera. You can review details of the metadata registered to the camera.
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Time code,,,,,,"To set up the time code, use [: Time code]. You can set the initial time of the time code. Time codes can be added to movies as you record them to an external device via HDMI."
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Time code,Disable,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,HDR/C.Log View Assist.,,,,,,"Select [: HDR/C.Log View Assist.] (, )."
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,,,,,,Select [: False color set.] ().
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Blue,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Green,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Red,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Neutral color,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Yellow,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Pink,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,False color set.,Purple,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Zebra settings,,,,,,"To simplify exposure adjustment before or during Movie Recording,<i name="camera"/>Camera, you can display a striped pattern over or around image areas of a specified brightness."
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Shooting info. disp.,,,,,,Select [: Shooting info. disp.] (). Select [: Shooting info. disp.] (). Select [: Shooting info. disp.] ().
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Quick Ctrl screen,,,,,,Select [: Quick Ctrl screen] ().
+Movie Recording,<i name="camera"/>Camera,Assist shooting,VF display format,,,,,,"Select [: VF display format] (, )."
+Movie Recording,<i name="camera"/>Camera,Assist shooting,Reverse display,,,,,,"Select [: Reverse display] (, )."
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,Auto pwr off temp.,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,Standby: Low res.,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,Shutdown warning guidance,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,HDMI display,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,HDMI RAW output,,,,,,
+Movie Recording,<i name="camera"/>Camera,Assist shooting/HDMI,HDMI output range for C. Log,,,,,,Select [: HDMI output range for C. Log] (). Narrow-range (video range) output is used.
+Movie Recording,AF,AF operation/area,Movie Servo AF,,,,,,Set the still photo shooting/movie recording switch to .
+Movie Recording,AF,AF operation/area,AF area,,,,,,
+Movie Recording,AF,AF operation/area,Focus mode,,,,,,"Set the lens's focus mode switch to . Select [: MF peaking settings] (, )."
+Movie Recording,AF,Subject detection,Subject to detect,,,,,,
+Movie Recording,AF,Subject detection,Eye detection,,,,,,
+Movie Recording,AF,Subject detection,Register people priority,,,,,,"Select [: Register people priority] (, ). JPEG or HEIF images can be used. Process any RAW images you will use into JPEGs or HEIFs before saving them to the card. Display when registered faces are detected"
+Movie Recording,AF,Subject detection,Switching tracked subjects,,,,,,
+Movie Recording,AF,Servo AF character.,Movie Servo AF speed,,,,,,
+Movie Recording,AF,Servo AF character.,Movie Servo AF track sens.,,,,,,
+Movie Recording,AF,Customize AF operation/Customized controls,Lens drive when AF impossible,,,,,,
+Movie Recording,AF,Customize AF operation/Customized controls,Limit AF areas,,,,,,
+Movie Recording,AF,Customize AF operation/Customized controls,Limit subject to detect,,,,,,
+Movie Recording,AF,Customize AF operation/Customized controls,L/R eye detection,,,,,,
+Movie Recording,AF,MF related,MF peaking settings,,,,,,
+Movie Recording,AF,MF related,Focus guide,,,,,,
+Movie Recording,AF,MF related,Lens electronic MF,,,,,,
+Movie Recording,Playback,File operation,Protect images,,,,,,
+Movie Recording,Playback,File operation,Erase images,,,,,,
+Movie Recording,Playback,File operation,Rotate stills,,,,,,
+Movie Recording,Playback,File operation,Change mov rotate info,,,,,,Select [: Change mov rotate info] ().
+Movie Recording,Playback,File operation,Rating,,,,,,"Next, select the last image (end point). A checkmark [] will be appended to all the images within the range between first and last images. Turn the dial to select a rating mark, then select [OK]."
+Movie Recording,Playback,File operation,Protect when setting the rating,,,,,,Select [: Protect when setting the rating] (). Select the rating levels to protect.
+Movie Recording,Playback,File operation,Image copy,,,,,,
+Movie Recording,Playback,File operation,Print order,,,,,,"Select and specify the images individually. Press to print a copy of the displayed image. By turning the dial, you can set a print quantity of up to 99 copies. Press to add a checkmark [] to the box. The image will be included in the index print."
+Movie Recording,Playback,File operation,Print order,File No.,,,,,
+Movie Recording,Playback,File operation,Print order,Date,,,,,
+Movie Recording,Playback,File operation,Print order,Off,,,,,
+Movie Recording,Playback,Image processing,RAW image processing,,,,,,"Select [: RAW image processing] (). JPEG or HEIF images at the specified aspect ratio are created when you process RAW images shot with [: Cropping/aspect ratio] () set to [1:1 (aspect ratio)], [4:3 (aspect ratio)], or [16:9 (aspect ratio)]. You can adjust the image brightness up to ±1 stop in 1/3-stop increments."
+Movie Recording,Playback,Image processing,In-Camera Upscaling,,,,,,
+Movie Recording,Playback,Image processing,Resize,,,,,,
+Movie Recording,Playback,Image processing,Cropping,,,,,,"Turn the dial to resize the cropping frame size. The smaller the cropping frame, the more magnified the cropped image will look. Check the image area to be cropped."
+Movie Recording,Playback,Image processing,HEIF→JPEG conversion,,,,,,
+Movie Recording,Playback,Playback method,Slide show,,,,,,Specify the images to be played back.
+Movie Recording,Playback,Playback method,VR preview,,,,,,
+Movie Recording,Playback,Playback method,VR preview,Play,,,,,
+Movie Recording,Playback,Playback method,VR preview,Previous frame,,,,,
+Movie Recording,Playback,Playback method,VR preview,Next frame,,,,,
+Movie Recording,Playback,Playback method,VR preview,Skip forward,,,,,
+Movie Recording,Playback,Playback method,VR preview,Skip backward,,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,,,,,,"Read the message displayed, then select [OK]. For movies, searches apply to files in the XFVC or CRM folder."
+Movie Recording,Playback,Playback method,Set image search conditions,Folder,,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,Type of file (2),,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,Rating,,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,Date,,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,Type of file (1),,,,,
+Movie Recording,Playback,Playback method,Set image search conditions,Protect,,,,,
+Movie Recording,Playback,Playback method,View from last seen,,,,,,Select [: View from last seen] ().
+Movie Recording,Playback,Playback method,Magnification,,,,,,You can magnify display of your captured images. Magnified view starts from the center of the screen.
+Movie Recording,Playback,Playback method,Blur/Out-of-Focus image detection,,,,,,[] (little blurring/lack of focus) is displayed for images that are fairly clear and in focus when viewed with the naked eye at actual size.
+Movie Recording,Playback,Various settings,Playback information display,,,,,,Add a checkmark [] next to the number of screens to display.
+Movie Recording,Playback,Various settings,Highlight alert,,,,,,
+Movie Recording,Playback,Various settings,AF point disp.,,,,,,
+Movie Recording,Playback,Various settings,Playback grid,,,,,,
+Movie Recording,Playback,Various settings,Movie play count,,,,,,Select [: Movie play count] ().
+Movie Recording,Playback,Various settings,Memo audio quality,,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,,,,,,"Select to name sets of settings. Use the virtual keyboard () to enter text. Change, delete, or check the settings as needed. Change, delete, or check the settings as needed."
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_R.CRT,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_C.CRT,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_C.PEM,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,EAP-TTLS,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_C.P12,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,Private key,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_C.PFX,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,PEAP,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,Client certificate,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,Root certificate,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,EAP-TLS,,,,,
+Movie Recording,Communication Functions,Network settings,Network settings,8021X_R.PEM,,,,,
+Movie Recording,Communication Functions,Network settings,Airplane mode,,,,,,
+Movie Recording,Communication Functions,Network settings,Bluetooth settings,,,,,,
+Movie Recording,Communication Functions,Network settings,Camera name,,,,,,
+Movie Recording,Communication Functions,Network settings,Error details,,,,,,
+Movie Recording,Communication Functions,Network settings,MAC address,,,,,,
+Movie Recording,Communication Functions,Network function,Transfer images to FTP server,,,,,,"For secure FTP transfer using a root certificate, import a root certificate (). Select [: Transfer images to FTP server] (). If you have selected [Login password], enter the name and password."
+Movie Recording,Communication Functions,Network function,Connect to EOS Utility,,,,,,"You can use the camera to transfer images to a computer (). You can specify the format of images to transfer to a computer (). For RAW+JPEG or RAW+HEIF images, you can specify which image to transfer."
+Movie Recording,Communication Functions,Network function,Upload to image.canon,,,,,,Use the app to scan the QR code. You can select the type of movies uploaded. You can select the type of still photos uploaded.
+Movie Recording,Communication Functions,Network function,Sync time between cameras,,,,,,"First, set up the camera to use as a sender. Select [: Sync time between cameras] (). Set up cameras to use as receivers."
+Movie Recording,Communication Functions,Network function,Connect to smartphone(tablet),,,,,,"In [Size to send], you can select the size of images to send."
+Movie Recording,Communication Functions,Network function,Live streaming,,,,,,
+Movie Recording,Communication Functions,Network function,Connect to Wireless Remote,,,,,,Set up the camera for remote shooting.
+Movie Recording,Communication Functions,Network function,Camera Control API,,,,,,Select items to check or change. You can change the TCP/IPv4 settings. You can change the TCP/IPv6 settings.
+Movie Recording,Communication Functions,Various settings,GPS device settings,,,,,,Select [: GPS device settings] (). Update the GP-E2 firmware to Ver. 2.0.0 or later. Select [: GPS device settings] ().
+Movie Recording,Communication Functions,Various settings,Choose USB connection app,,,,,,"Audio output is LPCM/16bit/2CH (channels 1 and 2), even with [: Audio format] set to [LPCM/24bit/4CH]. Select if you will use an iOS app."
+Movie Recording,Communication Functions,Various settings,Save/load comm. settings on card,,,,,,
+Movie Recording,Communication Functions,Various settings,Reset communication settings,,,,,,
+Movie Recording,Set-up,File/card setting,Selecting Cards for Recording/Playback,,,,,,Select [: Record func+card/folder sel.] (). Set the recording method for still photos. Records still photos to the card selected in [ Record/play].
+Movie Recording,Set-up,File/card setting,File numbering,,,,,,"Captured still photos saved in a folder are assigned a file number from 0001 to 9999. You can change how the image files are numbered. File numbering is reset to 0001 if you replace a card, create a folder, or switch the target card (as in →). This is useful if you want to organize images by cards or folders."
+Movie Recording,Set-up,File/card setting,Clip Number,,,,,,Recorded movies saved in a folder are assigned a clip number from 001 to 999. You can change how clips are numbered. Clip numbering is reset to 001 if you replace a card or switch the target card (as in →). This is useful if you want to organize movies by cards.
+Movie Recording,Set-up,File/card setting,File name,,,,,,"You can set how movie files (clips) are named. A 3-digit number from 001 to 999 preceded by C, as in C001–C999. After C999, D is used at the beginning."
+Movie Recording,Set-up,File/card setting,File name,(5),,,,,
+Movie Recording,Set-up,File/card setting,File name,(6),,,,,
+Movie Recording,Set-up,File/card setting,File name,(2),,,,,
+Movie Recording,Set-up,File/card setting,File name,(3),,,,,
+Movie Recording,Set-up,File/card setting,File name,(8),,,,,
+Movie Recording,Set-up,File/card setting,File name,(4),,,,,
+Movie Recording,Set-up,File/card setting,File name,(9),,,,,
+Movie Recording,Set-up,File/card setting,File name,(7),,,,,
+Movie Recording,Set-up,File/card setting,File name,(1),,,,,
+Movie Recording,Set-up,File/card setting,Format card,,,,,,
+Movie Recording,Set-up,File/card setting,Auto rotate,,,,,,
+Movie Recording,Set-up,File/card setting,Add  rotate info,,,,,,Select [: Add rotate info] ().
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Date/Time/Zone,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Language,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,System frequency,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Help text size,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Beep,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Volume,,,,,,
+Movie Recording,Set-up,Country/Area/Guidance/Audio settings,Audio monitor,,,,,,
+Movie Recording,Set-up,Customize display,Screen brightness,,,,,,
+Movie Recording,Set-up,Customize display,Viewfinder brightness,,,,,,
+Movie Recording,Set-up,Customize display,Screen/viewfinder color tone,,,,,,
+Movie Recording,Set-up,Customize display,Fine-tune VF color tone,,,,,,
+Movie Recording,Set-up,Customize display,Screen/viewfinder display,,,,,,"You can specify to use the screen or viewfinder for display, to avoid accidentally activating the viewfinder sensor when the screen is open. Always use the screen for display when it is open. Use the screen for display when it is closed and facing you, and switch to the viewfinder when you look through it."
+Movie Recording,Set-up,Customize display,UI magnification,,,,,,You can magnify menu screens by double-tapping with two fingers. Double-tap again to restore the original display size.
+Movie Recording,Set-up,Customize display,HDMI resolution,,,,,,
+Movie Recording,Set-up,Various settings,Cooling fan settings,,,,,,Select [: Cooling fan settings] ().
+Movie Recording,Set-up,Various settings,Shutter at shutdown,,,,,,You can set whether to leave the shutter open or close it when the camera's power switch is set to . Select [: Shutter at shutdown] (). Leaves the shutter open. This keeps camera quieter when the power switch is set to or . Useful when you want to shoot quietly.
+Movie Recording,Set-up,Various settings,Sensor cleaning,,,,,,Always use a fully charged battery.
+Movie Recording,Set-up,Various settings,Manage password,,,,,,"Reenter the password, then select [OK]."
+Movie Recording,Set-up,Various settings,Power saving,,,,,,
+Movie Recording,Set-up,Reset/All settings,Reset camera,,,,,,
+Movie Recording,Set-up,Reset/All settings,Custom shooting mode (C1-C3),,,,,,
+Movie Recording,Set-up,Reset/All settings,Save/load cam settings on card,,,,,,
+Movie Recording,Set-up,Various settings,Battery info.,,,,,,
+Movie Recording,Set-up,Various settings,Copyright information,,,,,,
+Movie Recording,Set-up,Various settings,Show log,,,,,,
+Movie Recording,Set-up,Various settings,Manual/software URL,,,,,,
+Movie Recording,Set-up,Various settings,Certification Logo Display,,,,,,
+Movie Recording,Set-up,Various settings,Firmware,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),Customize buttons for shooting,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),Customize dials/control ring,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),direction to set Tv/Av,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),direction to set Tv/Av,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),Switch / when shooting,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),Touch Shutter,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (still photo shooting),Multi function lock,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),Customize buttons for shooting,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),Shutter btn function for movies,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),Customize dials/control ring,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),direction to set Tv/Av,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),direction to set Tv/Av,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),Switch / when shooting,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting (movie recording),Multi function lock,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,Touch & drag AF settings,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,AF area selection control,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,sensitivity- AF pt select,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,Focus/control ring,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,Focus ring rotation,,,,,,
+Movie Recording,Control Customization,Customized controls when shooting,RF lens MF focus ring sensitivity,,,,,,
+Movie Recording,Control Customization,Customized controls when playback,Customize buttons for playback,,,,,,
+Movie Recording,Control Customization,Customized controls when playback,Image jump w/,,,,,,
+Movie Recording,Control Customization,Customized controls when playback,Img jump w/+,,,,,,
+Movie Recording,Control Customization,Customized controls when playback,Switch / during playback,,,,,,
+Movie Recording,Control Customization,Customized controls/Reset,Eye control,,,,,,"With [: AF area] set to [Whole area AF], the camera focuses in the area near the pointer. Choose [Orange], [Purple], or [White] as the pointer color. Choose [] or [] as the style of pointer displayed."
+Movie Recording,Control Customization,Customized controls/Reset,Touch control,,,,,,
+Movie Recording,Control Customization,Customized controls/Reset,Clear all customized controls,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Restrict shooting modes,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Exposure level increments,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,ISO speed setting increments,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Speed from metering/ISO Auto,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Bracketing auto cancel,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Bracketing sequence,,,,,,
+Movie Recording,Custom Functions,Shooting mode/Exposure,Number of bracketed shots,,,,,,
+Movie Recording,Custom Functions,Exposure,Safety shift,,,,,,
+Movie Recording,Custom Functions,Exposure,Same expo. for new aperture,,,,,,
+Movie Recording,Custom Functions,Exposure,AE lock meter. mode after focus,,,,,,
+Movie Recording,Custom Functions,Exposure,Set shutter speed range,,,,,,
+Movie Recording,Custom Functions,Exposure,Set aperture range,,,,,,
+Movie Recording,Custom Functions,Exposure,AE Microadjustment,,,,,,
+Movie Recording,Custom Functions,Exposure,FE Microadjustment,,,,,,
+Movie Recording,Custom Functions,Drive,Continuous shooting speed,,,,,,
+Movie Recording,Custom Functions,Drive,Limit continuous shot count,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Add cropping information,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Default Erase option,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Av setting without lens,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Release shutter w/o lens,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Retract lens on power off,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Add IPTC information,,,,,,
+Movie Recording,Custom Functions,Various settings/Reset,Clear all Custom Func. (C.Fn),,,,,,
+Movie Recording,<i name="star"/>My Menu,My Menu management,Add My Menu tab,,,,,,
+Movie Recording,<i name="star"/>My Menu,My Menu management,Delete all My Menu tabs,,,,,,
+Movie Recording,<i name="star"/>My Menu,My Menu management,Delete all items,,,,,,
+Movie Recording,<i name="star"/>My Menu,My Menu management,Menu display,,,,,,
+camera_menu_config
+display_name,Canon EOS R5 Mark II
+css_file,canonR5ii
+

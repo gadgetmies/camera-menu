@@ -168,7 +168,6 @@
   flex: 1;
 }
 
-
 .level-1.scroll-container {
   flex-grow: 0;
 }
@@ -182,10 +181,30 @@
   justify-content: center;
   padding-bottom: 4px;
   min-height: 62px;
+  counter-reset: item-counter;
+  position: relative;
 }
 
 .level-1 .item {
   text-align: center;
+  counter-increment: item-counter;
+}
+
+.level-1 .item.selected::after {
+  content: counter(item-counter);
+  display: block;
+  order: 2;
+  position: absolute;
+  top: 4px;
+  right: 3.3ch;
+}
+
+.level-1.container::after {
+  content: "/ " counter(item-counter);
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
 }
 
 .level-1 .item.selected {
@@ -205,7 +224,7 @@
 }
 
 .level-1 .item:not(.selected) {
-  order: 1;
+  order: 3;
 }
 
 .level-1 .item:not(.selected)::after {
@@ -258,10 +277,13 @@
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #101010;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .level-3 .level-heading  {

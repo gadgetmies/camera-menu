@@ -20,6 +20,8 @@ Object.keys(cssRawModules).forEach((path) => {
 })
 
 const cameraCsvs: Record<string, string> = {}
+const cameraBrands: Record<string, string> = {}
+const cameraModels: Record<string, string> = {}
 const cameraDisplayNames: Record<string, string> = {}
 const cameraCssFiles: Record<string, string> = {}
 const customCameraCssBlobs: Record<string, string> = {}
@@ -34,7 +36,11 @@ Object.keys(csvModules).forEach((path) => {
   if (configIndex !== -1) {
     const configLines = csvContent.substring(configIndex).split('\n')
     for (const line of configLines) {
-      if (line.startsWith('display_name,')) {
+      if (line.startsWith('brand,')) {
+        cameraBrands[key] = line.substring('brand,'.length).trim()
+      } else if (line.startsWith('model,')) {
+        cameraModels[key] = line.substring('model,'.length).trim()
+      } else if (line.startsWith('display_name,')) {
         cameraDisplayNames[key] = line.substring('display_name,'.length).trim()
       } else if (line.startsWith('css_file,')) {
         cameraCssFiles[key] = line.substring('css_file,'.length).trim()
@@ -42,8 +48,25 @@ Object.keys(csvModules).forEach((path) => {
     }
   }
 
+  if (!cameraBrands[key] && cameraDisplayNames[key]) {
+    const parts = cameraDisplayNames[key].split(' ')
+    if (parts.length > 1) {
+      cameraBrands[key] = parts[0]
+      cameraModels[key] = parts.slice(1).join(' ')
+    } else {
+      cameraBrands[key] = cameraDisplayNames[key]
+      cameraModels[key] = ''
+    }
+  }
+
+  if (!cameraBrands[key]) {
+    cameraBrands[key] = fileName
+  }
+  if (!cameraModels[key]) {
+    cameraModels[key] = fileName
+  }
   if (!cameraDisplayNames[key]) {
-    cameraDisplayNames[key] = fileName
+    cameraDisplayNames[key] = `${cameraBrands[key]} ${cameraModels[key]}`.trim()
   }
   if (!cameraCssFiles[key]) {
     cameraCssFiles[key] = fileName
@@ -110,7 +133,7 @@ const render = (
 
             return (
               <div
-                className={`${selected[level] === i ? 'selected' : ''} ${helpMode && hasHelp ? 'has-help' : ''} item-${i} item`}
+                className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
                 key={key}
                 onClick={handleClick}
               >
@@ -123,6 +146,7 @@ const render = (
                   )}
                   {label}
                 </span>
+                <div className={`${helpMode && hasHelp ? 'has-help' : ''}`}></div>
               </div>
             )
           })}
@@ -243,6 +267,39 @@ function App() {
         cameraDisplayNames[camera.id] = camera.displayName
         cameraCssFiles[camera.id] = camera.cssFileName
 
+        if (camera.brand) {
+          cameraBrands[camera.id] = camera.brand
+        }
+        if (camera.model) {
+          cameraModels[camera.id] = camera.model
+        }
+
+        const configIndex = camera.csvContent.indexOf('camera_menu_config')
+        if (configIndex !== -1) {
+          const configLines = camera.csvContent.substring(configIndex).split('\n')
+          for (const line of configLines) {
+            if (line.startsWith('brand,')) {
+              cameraBrands[camera.id] = line.substring('brand,'.length).trim()
+            } else if (line.startsWith('model,')) {
+              cameraModels[camera.id] = line.substring('model,'.length).trim()
+            }
+          }
+        }
+
+        if (!cameraBrands[camera.id]) {
+          const parts = camera.displayName.split(' ')
+          if (parts.length > 1) {
+            cameraBrands[camera.id] = parts[0]
+            cameraModels[camera.id] = parts.slice(1).join(' ')
+          } else {
+            cameraBrands[camera.id] = camera.displayName
+            cameraModels[camera.id] = ''
+          }
+        }
+        if (!cameraModels[camera.id]) {
+          cameraModels[camera.id] = ''
+        }
+
         const cssBlob = new Blob([camera.cssContent], { type: 'text/css' })
         const cssUrl = URL.createObjectURL(cssBlob)
         customCameraCssBlobs[camera.id] = cssUrl
@@ -318,6 +375,39 @@ function App() {
       cameraDisplayNames[customCamera.id] = customCamera.displayName
       cameraCssFiles[customCamera.id] = customCamera.cssFileName
 
+      if (customCamera.brand) {
+        cameraBrands[customCamera.id] = customCamera.brand
+      }
+      if (customCamera.model) {
+        cameraModels[customCamera.id] = customCamera.model
+      }
+
+      const configIndex = customCamera.csvContent.indexOf('camera_menu_config')
+      if (configIndex !== -1) {
+        const configLines = customCamera.csvContent.substring(configIndex).split('\n')
+        for (const line of configLines) {
+          if (line.startsWith('brand,')) {
+            cameraBrands[customCamera.id] = line.substring('brand,'.length).trim()
+          } else if (line.startsWith('model,')) {
+            cameraModels[customCamera.id] = line.substring('model,'.length).trim()
+          }
+        }
+      }
+
+      if (!cameraBrands[customCamera.id]) {
+        const parts = customCamera.displayName.split(' ')
+        if (parts.length > 1) {
+          cameraBrands[customCamera.id] = parts[0]
+          cameraModels[customCamera.id] = parts.slice(1).join(' ')
+        } else {
+          cameraBrands[customCamera.id] = customCamera.displayName
+          cameraModels[customCamera.id] = ''
+        }
+      }
+      if (!cameraModels[customCamera.id]) {
+        cameraModels[customCamera.id] = ''
+      }
+
       const cssBlob = new Blob([customCamera.cssContent], { type: 'text/css' })
       const cssUrl = URL.createObjectURL(cssBlob)
       customCameraCssBlobs[customCamera.id] = cssUrl
@@ -357,6 +447,8 @@ function App() {
     try {
       await deleteCustomCamera(cameraId)
       delete cameraCsvs[cameraId]
+      delete cameraBrands[cameraId]
+      delete cameraModels[cameraId]
       delete cameraDisplayNames[cameraId]
       delete cameraCssFiles[cameraId]
       if (customCameraCssBlobs[cameraId]) {
@@ -422,7 +514,7 @@ function App() {
     const data = {}
     const helpMap: Record<string, string> = {}
 
-    const config: { icons: Record<string, string>; displayName?: string; cssFile?: string } = { icons: {} }
+    const config: { icons: Record<string, string>; brand?: string; model?: string; displayName?: string; cssFile?: string } = { icons: {} }
     const csvContent = cameraCsvs[camera]
     if (!csvContent) return { data: {}, config: { icons: {} }, helpMap: {} }
     const [_headerLine, ...rest] = csvContent.split('\n')
@@ -522,7 +614,11 @@ function App() {
     const configStartIndex = rest.findIndex((line) => line.startsWith('camera_menu_config'))
     if (configStartIndex !== -1) {
       for (const line of rest.slice(configStartIndex + 1)) {
-        if (line.startsWith('display_name,')) {
+        if (line.startsWith('brand,')) {
+          config.brand = line.substring('brand,'.length).trim()
+        } else if (line.startsWith('model,')) {
+          config.model = line.substring('model,'.length).trim()
+        } else if (line.startsWith('display_name,')) {
           config.displayName = line.substring('display_name,'.length).trim()
         } else if (line.startsWith('css_file,')) {
           config.cssFile = line.substring('css_file,'.length).trim()
@@ -618,6 +714,32 @@ function App() {
   const allCameras = Object.keys(cameraCsvs)
   const isCustomCamera = (cameraId: string) => customCameras.some((c) => c.id === cameraId)
 
+  const getCameraLabel = (cameraId: string) => {
+    const brand = cameraBrands[cameraId] || ''
+    const model = cameraModels[cameraId] || ''
+    if (brand && model) {
+      return `${brand} ${model}`.trim()
+    }
+    return cameraDisplayNames[cameraId] || cameraId
+  }
+
+  const camerasByBrand = allCameras.reduce((acc, cameraId) => {
+    const brand = cameraBrands[cameraId] || 'Other'
+    if (!acc[brand]) {
+      acc[brand] = []
+    }
+    acc[brand].push(cameraId)
+    return acc
+  }, {} as Record<string, string[]>)
+
+  Object.keys(camerasByBrand).forEach((brand) => {
+    camerasByBrand[brand].sort((a, b) => {
+      const labelA = getCameraLabel(a)
+      const labelB = getCameraLabel(b)
+      return labelA.localeCompare(labelB)
+    })
+  })
+
   const handleHelpClick = (helpText: string, path: string) => {
     setHelpModalContent({ text: helpText, path })
     setHelpModalOpen(true)
@@ -638,10 +760,14 @@ function App() {
                 _setCameraData(cameraSettings(value))
               }}
             >
-              {allCameras.map((key) => (
-                <option key={key} value={key}>
-                  {cameraDisplayNames[key]}
-                </option>
+              {Object.keys(camerasByBrand).sort().map((brand) => (
+                <optgroup key={brand} label={brand}>
+                  {camerasByBrand[brand].map((cameraId) => (
+                    <option key={cameraId} value={cameraId}>
+                      {getCameraLabel(cameraId)}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
             <div className={'camera-select-buttons'}>
