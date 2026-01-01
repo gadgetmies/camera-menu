@@ -76,8 +76,11 @@ const render = (
   selected: Array<number>,
   setSelected: SetSelectedFn,
   classNames: string = '',
+  helpMap: Record<string, string> = {},
+  helpMode: boolean = false,
+  onHelpClick?: (helpText: string, path: string) => void,
+  currentPath: string[] = [],
 ): JSX.Element => {
-  console.log('node', node)
   if (Object.keys(node).length === 0) {
     return <></>
   }
@@ -90,11 +93,26 @@ const render = (
             const iconMatch = key.match(/<i name="([^"]+)"\/>/)
             const iconName = iconMatch ? iconMatch[1] : null
             const label = key.replace(/<i name="[^"]+"\/>/g, '')
+            const itemPath = [...currentPath, label]
+            const pathString = itemPath.join(' > ')
+            const nodeValue = node[key]
+            const hasHelpFromNode = nodeValue && typeof nodeValue === 'object' && (nodeValue as any).__help__
+            const hasHelp = helpMap[pathString] !== undefined || hasHelpFromNode
+            const helpText = helpMap[pathString]
+
+            const handleClick = () => {
+              if (helpMode && hasHelp && helpText && onHelpClick) {
+                onHelpClick(helpText, pathString)
+              } else {
+                setSelected(level, i)
+              }
+            }
+
             return (
               <div
-                className={`${selected[level] === i ? 'selected' : ''} item-${i} item`}
+                className={`${selected[level] === i ? 'selected' : ''} ${helpMode && hasHelp ? 'has-help' : ''} item-${i} item`}
                 key={key}
-                onClick={() => setSelected(level, i)}
+                onClick={handleClick}
               >
                 <span className={'index'}>{i + 1}</span>
                 <span className={'label'}>
@@ -120,6 +138,10 @@ const render = (
               selected,
               setSelected,
               `${classNames} ${level === 0 ? `category-${index}` : ''}`,
+              helpMap,
+              helpMode,
+              onHelpClick,
+              [...currentPath, Object.keys(node)[selected[level]].replace(/<i name="[^"]+"\/>/g, '')],
             )
           : null,
       )}
@@ -395,17 +417,55 @@ function App() {
   }
 
   const cameraSettings = (camera: string) => {
-    if (!camera) return { data: {}, config: { icons: {} } }
+    if (!camera) return { data: {}, config: { icons: {} }, helpMap: {} }
 
     const data = {}
+    const helpMap: Record<string, string> = {}
 
     const config: { icons: Record<string, string>; displayName?: string; cssFile?: string } = { icons: {} }
     const csvContent = cameraCsvs[camera]
-    if (!csvContent) return { data: {}, config: { icons: {} } }
-    const [_, ...rest] = csvContent.split('\n')
-    const menuLines = rest.slice(0, rest.indexOf('camera_menu_config'))
+    if (!csvContent) return { data: {}, config: { icons: {} }, helpMap: {} }
+    const [_headerLine, ...rest] = csvContent.split('\n')
+    const menuLines = rest.slice(
+      0,
+      rest.indexOf('camera_menu_config') >= 0 ? rest.indexOf('camera_menu_config') : rest.length,
+    )
 
     let previousRowCells: string[] = []
+    let hasHelpColumn = false
+    let helpColumnIndex = -1
+
+    if (menuLines.length > 0) {
+      for (const line of menuLines) {
+        if (line.trim() === '') {
+          continue
+        }
+
+        if (line.startsWith('camera_menu_config')) {
+          break
+        }
+
+        const cells = line.split(',')
+        const lastColumnIndex = cells.length - 1
+        const lastColumnValue = cells[lastColumnIndex].trim()
+
+        if (lastColumnValue !== '') {
+          let hasEmptyBeforeLast = false
+          for (let i = lastColumnIndex - 1; i > 0; i--) {
+            if (cells[i]?.trim() === '') {
+              hasEmptyBeforeLast = true
+              break
+            }
+          }
+
+          if (hasEmptyBeforeLast) {
+            hasHelpColumn = true
+            helpColumnIndex = lastColumnIndex
+            break
+          }
+        }
+      }
+    }
 
     for (const line of menuLines) {
       if (line.startsWith('camera_menu_config')) {
@@ -414,23 +474,49 @@ function App() {
 
       const currentRowCells = line.split(',')
 
-      if (previousRowCells.length > 0) {
-        for (let i = 0; i < currentRowCells.length; i++) {
-          const isEmpty = currentRowCells[i].trim() === ''
-          const hasLaterValues = currentRowCells.some((cell, index) => index > i && cell.trim() !== '')
+      fillEmptyCellsFromPreviousRow(currentRowCells)
 
-          if (isEmpty && hasLaterValues && i < previousRowCells.length && previousRowCells[i].trim() !== '') {
-            currentRowCells[i] = previousRowCells[i]
-          }
+      let helpText: string | undefined = undefined
+      let cellsForProcessing = currentRowCells
+
+      if (helpColumnIndex > 0 && helpColumnIndex < currentRowCells.length) {
+        helpText = currentRowCells[helpColumnIndex]?.trim() || undefined
+        if (helpText) {
+          cellsForProcessing = currentRowCells.slice(0, helpColumnIndex)
         }
       }
 
-      const filledLine = currentRowCells.join(',')
-      process(data, filledLine)
+      const filledLine = cellsForProcessing.join(',')
+      if (filledLine.trim() !== '') {
+        if (hasHelpColumn && helpText) {
+          const pathParts: string[] = []
+          let current: Record<string, any> = data
+          const allCells = cellsForProcessing.filter((c) => c.trim() !== '')
 
-      if (currentRowCells.some((cell) => cell.trim() !== '')) {
-        previousRowCells = currentRowCells
+          for (let i = 0; i < allCells.length; i++) {
+            const cell = allCells[i].trim()
+            if (cell !== '') {
+              const cellLabel = cell.replace(/<i name="[^"]+"\/>/g, '')
+              pathParts.push(cellLabel)
+              if (i < allCells.length - 1) {
+                if (!current[cell]) {
+                  current[cell] = {}
+                }
+                current = current[cell] as Record<string, any>
+              } else {
+                if (!current[cell]) {
+                  current[cell] = {}
+                }
+                helpMap[pathParts.join(' > ')] = helpText
+              }
+            }
+          }
+        } else {
+          process(data, filledLine)
+        }
       }
+
+      previousRowCells = currentRowCells
     }
 
     const configStartIndex = rest.findIndex((line) => line.startsWith('camera_menu_config'))
@@ -449,7 +535,22 @@ function App() {
       }
     }
 
-    return { data, config }
+    return { data, config, helpMap }
+
+    function fillEmptyCellsFromPreviousRow(currentRowCells: string[]) {
+      if (previousRowCells.length > 0) {
+        for (let i = 0; i < helpColumnIndex; i++) {
+          const isEmpty = currentRowCells[i].trim() === ''
+          const hasLaterValues = currentRowCells.some(
+            (cell, index) => index > i && index < helpColumnIndex && cell.trim() !== '',
+          )
+
+          if (isEmpty && hasLaterValues && i < previousRowCells.length && previousRowCells[i].trim() !== '') {
+            currentRowCells[i] = previousRowCells[i]
+          }
+        }
+      }
+    }
   }
 
   const getInitialCamera = () => {
@@ -465,9 +566,13 @@ function App() {
   const [cameraData, _setCameraData] = useState(cameraSettings(selectedCamera))
   const data = cameraData.data
   const config = cameraData.config
+  const helpMap = cameraData.helpMap || {}
   const [selected, _setSelected] = useState([0, 0])
   const [searchString, setSearchString] = useState('')
   const [isSearchFocused, setIsSearchFocused] = useState(false)
+  const [helpMode, setHelpMode] = useState(false)
+  const [helpModalOpen, setHelpModalOpen] = useState(false)
+  const [helpModalContent, setHelpModalContent] = useState<{ text: string; path: string } | null>(null)
 
   const handleSearchBlur = () => {
     setTimeout(() => {
@@ -513,6 +618,11 @@ function App() {
   const allCameras = Object.keys(cameraCsvs)
   const isCustomCamera = (cameraId: string) => customCameras.some((c) => c.id === cameraId)
 
+  const handleHelpClick = (helpText: string, path: string) => {
+    setHelpModalContent({ text: helpText, path })
+    setHelpModalOpen(true)
+  }
+
   return (
     <div className={'root'}>
       <div className={'controls-header'}>
@@ -557,6 +667,14 @@ function App() {
           </div>
           <button className={'upload-button'} onClick={() => setIsUploadModalOpen(true)}>
             Upload
+          </button>
+          <button
+            className={`help-mode-button ${helpMode ? 'active' : ''}`}
+            onClick={() => setHelpMode(!helpMode)}
+            title="Toggle help mode"
+            aria-label="Toggle help mode"
+          >
+            ?
           </button>
         </div>
         <div className={`control-group search-group ${isSearchFocused ? 'expanded' : ''}`}>
@@ -605,7 +723,7 @@ function App() {
         >
           <div className={'container'}>
             {crumbPath(data, selected)}
-            {render(config, data, undefined, 0, selected, select)}
+            {render(config, data, undefined, 0, selected, select, '', helpMap, helpMode, handleHelpClick)}
             <div className={'nav-buttons'}>
               <div className={'back-button'} onClick={() => _setSelected(selected.slice(0, -1))}></div>
             </div>
@@ -700,6 +818,27 @@ function App() {
               </button>
               <button className={'modal-upload-button'} onClick={handleUpload} disabled={!uploadFile || isUploading}>
                 {isUploading ? 'Uploading...' : 'Upload'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {helpModalOpen && helpModalContent && (
+        <div className={'modal-overlay'} onClick={() => setHelpModalOpen(false)}>
+          <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
+            <div className={'modal-header'}>
+              <h2>Help</h2>
+              <button className={'modal-close'} onClick={() => setHelpModalOpen(false)}>
+                ×
+              </button>
+            </div>
+            <div className={'modal-body'}>
+              <div className={'help-path'}>{helpModalContent.path}</div>
+              <div className={'help-text'}>{helpModalContent.text}</div>
+            </div>
+            <div className={'modal-footer'}>
+              <button className={'modal-cancel-button'} onClick={() => setHelpModalOpen(false)}>
+                Close
               </button>
             </div>
           </div>

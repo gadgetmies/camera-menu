@@ -1,5 +1,5 @@
-level0,level1,level2,level3,level4,level5,level6,level7
-<i name="star"/>My Menu,My Menu 1,,,,,,
+level0,level1,level2,level3,level4,level5,level6,level7,Comment/help
+<i name="star"/>My Menu,My Menu 1,,,,,,,Foo
 <i name="star"/>My Menu,My Menu 2,,,,,,
 <i name="star"/>My Menu,My Menu 3,,,,,,
 <i name="star"/>My Menu,My Menu Setting,Add Item,,,,,
@@ -57,7 +57,7 @@ level0,level1,level2,level3,level4,level5,level6,level7
 <i name="camera"/>Shooting,Image Quality,Lens Compensation,Chromatic Aberration Comp.,Off,,,
 <i name="camera"/>Shooting,Image Quality,Lens Compensation,Distortion Comp.,Auto,,,
 <i name="camera"/>Shooting,Image Quality,Lens Compensation,Distortion Comp.,Off,,,
-<i name="camera"/>Shooting,Media,Format,Slot 1,,,,
+<i name="camera"/>Shooting,Media,Format,Slot 1,,,,,Foo
 <i name="camera"/>Shooting,Media,Format,Slot 2,,,,
 <i name="camera"/>Shooting,Media,Rec. Media Settings,(still) Recording Media,Slot 1,,,
 <i name="camera"/>Shooting,Media,Rec. Media Settings,(still) Recording Media,Slot 2,,,
