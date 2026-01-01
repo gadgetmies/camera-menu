@@ -35,9 +35,9 @@ Object.keys(csvModules).forEach((path) => {
     const configLines = csvContent.substring(configIndex).split('\n')
     for (const line of configLines) {
       if (line.startsWith('display_name,')) {
-        cameraDisplayNames[key] = line.substring('display_name,'.length)
+        cameraDisplayNames[key] = line.substring('display_name,'.length).trim()
       } else if (line.startsWith('css_file,')) {
-        cameraCssFiles[key] = line.substring('css_file,'.length)
+        cameraCssFiles[key] = line.substring('css_file,'.length).trim()
       }
     }
   }
@@ -437,9 +437,9 @@ function App() {
     if (configStartIndex !== -1) {
       for (const line of rest.slice(configStartIndex + 1)) {
         if (line.startsWith('display_name,')) {
-          config.displayName = line.substring('display_name,'.length)
+          config.displayName = line.substring('display_name,'.length).trim()
         } else if (line.startsWith('css_file,')) {
-          config.cssFile = line.substring('css_file,'.length)
+          config.cssFile = line.substring('css_file,'.length).trim()
         } else if (line.startsWith('icon')) {
           const commaIndex = line.indexOf(',')
           if (commaIndex !== -1) {

@@ -1,490 +1,198 @@
 Tab,Category,Menu Item (click link for Sony Help Guide),Sub Menu Item,Comments/Defaults
-My Menu,My Menu 1,,,
-My Menu,My Menu 2,,,
-My Menu,My Menu 3,,,
-My Menu,My Menu Setting,Add Item,,
-My Menu,My Menu Setting,Sort Item,,
-My Menu,My Menu Setting,Delete Item,,
-My Menu,My Menu Setting,Delete Page,,
-My Menu,My Menu Setting,Delete All,,
-My Menu,My Menu Setting,Display From My Menu,,
-Camera 1,Quality / Image Size1,File Format,RAW,
-Camera 1,Quality / Image Size1,File Format,RAW & JPEG,
-Camera 1,Quality / Image Size1,File Format,JPEG,
-Camera 1,Quality / Image Size1,RAW File Type,Compressed,
-Camera 1,Quality / Image Size1,RAW File Type,Uncompressed,
-Camera 1,Quality / Image Size1,JPEG Quality,Extra Fine,
-Camera 1,Quality / Image Size1,JPEG Quality,Fine,
-Camera 1,Quality / Image Size1,JPEG Quality,Standard,
-Camera 1,Quality / Image Size1,JPEG Image Size,L: 24M,
-Camera 1,Quality / Image Size1,JPEG Image Size,M: 10M,
-Camera 1,Quality / Image Size1,JPEG Image Size,S: 6.0M,
-Camera 1,Quality / Image Size1,Aspect Ratio (still image),3:2,
-Camera 1,Quality / Image Size1,Aspect Ratio (still image),16:9,
-Camera 1,Quality / Image Size1,APS-C/Super 35mm,Shooting,Auto,
-Camera 1,Quality / Image Size1,APS-C/Super 35mm,Shooting:Manual,
-Camera 1,Quality / Image Size2,Long Exposure NR,On,
-Camera 1,Quality / Image Size2,Long Exposure NR,Off,
-Camera 1,Quality / Image Size2,High ISO NR,Normal,
-Camera 1,Quality / Image Size2,High ISO NR,Low,
-Camera 1,Quality / Image Size2,High ISO NR,Off,
-Camera 1,Quality / Image Size2,Color Space,sRGB,
-Camera 1,Quality / Image Size2,Color Space,AdobeRGB,
-Camera 1,Quality / Image Size2,Lens Comp.,Shading Comp.,Auto
-Camera 1,Quality / Image Size2,Lens Comp.,Shading Comp.,Off
-Camera 1,Quality / Image Size2,Lens Comp.,Chro. Aber. Comp.,Auto
-Camera 1,Quality / Image Size2,Lens Comp.,Chro. Aber. Comp.,Off
-Camera 1,Quality / Image Size2,Lens Comp.,Distortion Comp.,Auto
-Camera 1,Quality / Image Size2,Lens Comp.,Distortion Comp.,Off
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Bracketing,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Portrait,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Sports Action,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Macro,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Landscape,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Sunset,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Night Scene,
-Camera 1,Shoot Mode/Drive1,Scene Selection,Night Portrait,
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Shooting,
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Shooting,Continuous Shooting: Lo
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,5 Sec
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,2 Sec
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer,2 Sec
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),2 Sec. 3 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),2 Sec. 5 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),10 Sec. 3 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),10 Sec. 5 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),5 Sec. 3 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Self-timer(Cont.),5 Sec. 5 Img.
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.3EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.5EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,0.7EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,1.0EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,2.0EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,3.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Cont. Bracket,3.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.3EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.5EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,0.7EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,1.0EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,2.0EV 9 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,3.0EV 3 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,Single Bracket,3.0EV 5 Image
-Camera 1,Shoot Mode/Drive1,Drive Mode,White Balance Bracket,Lo
-Camera 1,Shoot Mode/Drive1,Drive Mode,White Balance Bracket,High
-Camera 1,Shoot Mode/Drive1,Drive Mode,DRO Bracket,Lo
-Camera 1,Shoot Mode/Drive1,Drive Mode,DRO Bracket,High
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,Off
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,2 Sec
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,5 Sec
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,10 Sec
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Bracket order,0→-→+
-Camera 1,Shoot Mode/Drive1,Bracket Settings,Bracket order,-→0→+
-Camera 1,Shoot Mode/Drive1,Recall
-Camera 1,Shoot Mode/Drive1,Memory
-Camera 1,Shoot Mode/Drive1,Select Media,Slot 1
-Camera 1,Shoot Mode/Drive1,Select Media,Slot 2
-Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 1
-Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 2
-Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,Recall Custom hold 3
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Interval Shooting,Off
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Interval Shooting,On
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Shooting Start Time,Minutes and seconds
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Shooting Interval,Minutes and seconds
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,Number of Shots,0-9999
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,High
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,Mid
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,1,AE Tracking Sens.,Low
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Silent Shoot. in Intvl.,On
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Silent Shoot. in Intvl.,Off
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Shoot. Intvl. Priority,Off
-Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,2,Shoot. Intvl. Priority,On
-Camera 1,AF1,Focus Mode,Single-shot AF
-Camera 1,AF1,Focus Mode,Automatic AF
-Camera 1,AF1,Focus Mode,Continuous AF
-Camera 1,AF1,Focus Mode,DMF
-Camera 1,AF1,Focus Mode,Manual Focus
-Camera 1,AF1,Priority Set in AF-S,AF
-Camera 1,AF1,Priority Set in AF-S,Release
-Camera 1,AF1,Priority Set in AF-S,Balanced Emphasis
-Camera 1,AF1,Priority Set in AF-C,AF
-Camera 1,AF1,Priority Set in AF-C,Release
-Camera 1,AF1,Priority Set in AF-C,Balanced Emphasis
-Camera 1,AF1,Focus Area,Wide
-Camera 1,AF1,Focus Area,Zone
-Camera 1,AF1,Focus Area,Center
-Camera 1,AF1,Focus Area,Flexible Spot, S
-Camera 1,AF1,Focus Area,Flexible Spot, M
-Camera 1,AF1,Focus Area,Flexible Spot, L
-Camera 1,AF1,Focus Area,Expand Flexible Spot
-Camera 1,AF1,Focus Area,Lock-on AF,Wide
-Camera 1,AF1,Focus Area,Lock-on AF,Zone
-Camera 1,AF1,Focus Area,Lock-on AF,Center
-Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot S
-Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot M
-Camera 1,AF1,Focus Area,Lock-on AF,Flexible Spot L
-Camera 1,AF1,Focus Area,Lock-on AF,Expand Flexible Spot
-Camera 1,AF1,Focus Settings,,
-Camera 1,AF1,Swt. V/H AF Area,Off
-Camera 1,AF1,Swt. V/H AF Area,AF Point Only
-Camera 1,AF1,Swt. V/H AF Area,AF Point + AF Area
-Camera 1,AF2,AF Illuminator,Auto,
-Camera 1,AF2,AF Illuminator,Off,
-Camera 1,AF2,Center Lock-on AF,Off,
-Camera 1,AF2,Center Lock-on AF,On,
-Camera 1,AF2,Face/Eye AF Set.,Face/Eye Prty in AF,On
-Camera 1,AF2,Face/Eye AF Set.,Face/Eye Prty in AF,Off
-Camera 1,AF2,Face/Eye AF Set.,Subject Detection,Human
-Camera 1,AF2,Face/Eye AF Set.,Subject Detection,Animal
-Camera 1,AF2,Face/Eye AF Set.,Face Dtct Frame Dsp,On
-Camera 1,AF2,Face/Eye AF Set.,Face Dtct Frame Dsp,Off
-Camera 1,AF2,Face/Eye AF Set.,Animal Eye Display,On
-Camera 1,AF2,Face/Eye AF Set.,Animal Eye Display,Off
-Camera 1,AF2,AF Track Sens,5(Responsive),
-Camera 1,AF2,AF Track Sens,4,
-Camera 1,AF2,AF Track Sens,3(Standard)
-Camera 1,AF2,AF Track Sens,2
-Camera 1,AF2,AF Track Sens,1(Locked on)
-Camera 1,AF2,AF System,Phase Detection AF,
-Camera 1,AF2,AF System,Contrast AF,
-Camera 1,AF2,AF w/ shutter,On
-Camera 1,AF2,AF w/ shutter,Off
-Camera 1,AF3,Pre-AF,Invalid lens!!!
-Camera 1,AF3,Eye-Start AF,Invalid lens!!!
-Camera 1,AF3,AF Area Regist.,On
-Camera 1,AF3,AF Area Regist.,Off
-Camera 1,AF3,Del. Reg. AF Area
-Camera 1,AF3,AF Area Auto Clear,On
-Camera 1,AF3,AF Area Auto Clear,Off
-Camera 1,AF3,Disp. cont. AF area,On
-Camera 1,AF3,Disp. cont. AF area,Off
-Camera 1,AF4,AF Micro Adj.,AF Adjustment Set.,On
-Camera 1,AF4,AF Micro Adj.,AF Adjustment Set.,Off
-Camera 1,AF4,AF Micro Adj.,amount!!!
-Camera 1,AF4,AF Micro Adj.,Clear
-Camera 1,AF4,Aperture Drive in AF,Invalid lens!!!
-
-Camera 1,Exposure1,Exposure Comp.,-5-+5,
-Camera 1,Exposure1,Reset EV Comp.,Maintain
-Camera 1,Exposure1,Reset EV Comp.,Reset
-Camera 1,Exposure1,ISO,Auto
-Camera 1,Exposure1,ISO,50
-Camera 1,Exposure1,ISO,64
-Camera 1,Exposure1,ISO,80
-Camera 1,Exposure1,ISO,100
-Camera 1,Exposure1,ISO,125
-Camera 1,Exposure1,ISO,160
-Camera 1,Exposure1,ISO,200
-Camera 1,Exposure1,ISO,250
-Camera 1,Exposure1,ISO,320
-Camera 1,Exposure1,ISO,400
-Camera 1,Exposure1,ISO,500
-Camera 1,Exposure1,ISO,640
-Camera 1,Exposure1,ISO,800
-Camera 1,Exposure1,ISO,1000
-Camera 1,Exposure1,ISO,1250
-Camera 1,Exposure1,ISO,1600
-Camera 1,Exposure1,ISO,2000
-Camera 1,Exposure1,ISO,2500
-Camera 1,Exposure1,ISO,3200
-Camera 1,Exposure1,ISO,4000
-Camera 1,Exposure1,ISO,5000
-Camera 1,Exposure1,ISO,6400
-Camera 1,Exposure1,ISO,8000
-Camera 1,Exposure1,ISO,10000
-Camera 1,Exposure1,ISO,12800
-Camera 1,Exposure1,ISO,16000
-Camera 1,Exposure1,ISO,20000
-Camera 1,Exposure1,ISO,25600
-Camera 1,Exposure1,ISO,51200
-Camera 1,Exposure1,ISO,64000
-Camera 1,Exposure1,ISO,80000
-Camera 1,Exposure1,ISO,102400
-Camera 1,Exposure1,ISO,128000
-Camera 1,Exposure1,ISO,160000
-Camera 1,Exposure1,ISO,204800
-Camera 1,Exposure1,ISO AUTO Min. SS,Standard
-Camera 1,Exposure1,ISO AUTO Min. SS,Fast
-Camera 1,Exposure1,ISO AUTO Min. SS,Faster
-Camera 1,Exposure1,ISO AUTO Min. SS,Slower
-Camera 1,Exposure1,ISO AUTO Min. SS,Slow
-Camera 1,Exposure1,ISO AUTO Min. SS,1/8000
-Camera 1,Exposure1,ISO AUTO Min. SS,1/4000
-Camera 1,Exposure1,ISO AUTO Min. SS,1/2000
-Camera 1,Exposure1,ISO AUTO Min. SS,1/1000
-Camera 1,Exposure1,ISO AUTO Min. SS,1/500
-Camera 1,Exposure1,ISO AUTO Min. SS,1/250
-Camera 1,Exposure1,ISO AUTO Min. SS,1/125
-Camera 1,Exposure1,ISO AUTO Min. SS,1/60
-Camera 1,Exposure1,ISO AUTO Min. SS,1/30
-Camera 1,Exposure1,ISO AUTO Min. SS,1/15
-Camera 1,Exposure1,ISO AUTO Min. SS,1/8
-Camera 1,Exposure1,ISO AUTO Min. SS,1/4
-Camera 1,Exposure1,ISO AUTO Min. SS,0.5"
-Camera 1,Exposure1,ISO AUTO Min. SS,1"
-Camera 1,Exposure1,ISO AUTO Min. SS,2"
-Camera 1,Exposure1,ISO AUTO Min. SS,4"
-Camera 1,Exposure1,ISO AUTO Min. SS,8"
-Camera 1,Exposure1,ISO AUTO Min. SS,15"
-Camera 1,Exposure1,ISO AUTO Min. SS,30"
-Camera 1,Exposure1,Metering Mode,Multi
-Camera 1,Exposure1,Metering Mode,Center
-Camera 1,Exposure1,Metering Mode,Spot: Standard
-Camera 1,Exposure1,Metering Mode,Spot: Large
-Camera 1,Exposure1,Metering Mode,Entire Screen Avg.
-Camera 1,Exposure1,Metering Mode,Highlight
-Camera 1,Exposure1,Face Prty in Mlti Mtr,On,
-Camera 1,Exposure1,Face Prty in Mlti Mtr,Off,
-Camera 1,Exposure2,Spot Metering Point,Center,
-Camera 1,Exposure2,Spot Metering Point,Focus Point Link,
-Camera 1,Exposure2,Exposure step,0.5EV,
-Camera 1,Exposure2,Exposure step,0.3EV,
-Camera 1,Exposure2,AEL w/ shutter,Auto,
-Camera 1,Exposure2,AEL w/ shutter,On,
-Camera 1,Exposure2,AEL w/ shutter,Off,
-Camera 1,Exposure2,Exposure Std. Adjust,,
-Camera 1,Flash,Flash Mode,Flash Off,
-Camera 1,Flash,Flash Mode,Autoflash,
-Camera 1,Flash,Flash Mode,Fill-flash
-Camera 1,Flash,Flash Mode,Slow Sync.
-Camera 1,Flash,Flash Mode,Rear Sync.
-Camera 1,Flash,Flash Comp.,-3-+3,
-Camera 1,Flash,Exp.comp.set,Ambient&Flash,
-Camera 1,Flash,Exp.comp.set,Ambient only
-Camera 1,Flash,Wireless Flash,Off,
-Camera 1,Flash,Wireless Flash,On,
-Camera 1,Flash,Red Eye Reduction,On,
-Camera 1,Flash,Red Eye Reduction,Off,
-Camera 1,Flash,External Flash Set.,Ext. Flash Firing Set.
-Camera 1,Flash,External Flash Set.,Ext. Flash Cust. Set.
-Camera 1,Color/WB/Img Processing,White Balance,Auto,
-Camera 1,Color/WB/Img Processing,White Balance,Daylight,
-Camera 1,Color/WB/Img Processing,White Balance,Shade,
-Camera 1,Color/WB/Img Processing,White Balance,Cloudy,
-Camera 1,Color/WB/Img Processing,White Balance,Incandescent,
-Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Warm White,
-Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Cool White,
-Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Day White,
-Camera 1,Color/WB/Img Processing,White Balance,Fluor.: Daylight,
-Camera 1,Color/WB/Img Processing,White Balance,Flash,
-Camera 1,Color/WB/Img Processing,White Balance,Underwater Auto,
-Camera 1,Color/WB/Img Processing,White Balance,C.Temp./Filter,
-Camera 1,Color/WB/Img Processing,White Balance,Custom 1
-Camera 1,Color/WB/Img Processing,White Balance,Custom 2
-Camera 1,Color/WB/Img Processing,White Balance,Custom 3
-Camera 1,Color/WB/Img Processing,White Balance,Custom Setup
-Camera 1,Color/WB/Img Processing,Priority Set in AWB,Standard
-Camera 1,Color/WB/Img Processing,Priority Set in AWB,Ambience
-Camera 1,Color/WB/Img Processing,Priority Set in AWB,White
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Auto
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv1
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv2
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv3
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv4
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,D-Range Optimizer,Lv5
-Camera 1,Color/WB/Img Processing,DRO/Auto HDR,Auto HDR: Exposure Diff. Auto
-Camera 1,Color/WB/Img Processing,Creative Style,Standard,
-Camera 1,Color/WB/Img Processing,Creative Style,Vivid,
-Camera 1,Color/WB/Img Processing,Creative Style,Neutral,
-Camera 1,Color/WB/Img Processing,Creative Style,Clear,
-Camera 1,Color/WB/Img Processing,Creative Style,Deep,
-Camera 1,Color/WB/Img Processing,Creative Style,Light,
-Camera 1,Color/WB/Img Processing,Creative Style,Portrait,
-Camera 1,Color/WB/Img Processing,Creative Style,Landscape,
-Camera 1,Color/WB/Img Processing,Creative Style,Sunset,
-Camera 1,Color/WB/Img Processing,Creative Style,Night Scene,
-Camera 1,Color/WB/Img Processing,Creative Style,Autumn leaves,
-Camera 1,Color/WB/Img Processing,Creative Style,Black & White,
-Camera 1,Color/WB/Img Processing,Creative Style,Sepia,
-Camera 1,Color/WB/Img Processing,Creative Style,1 Standard,
-Camera 1,Color/WB/Img Processing,Creative Style,2 Vivid,
-Camera 1,Color/WB/Img Processing,Creative Style,3 Neutral,
-Camera 1,Color/WB/Img Processing,Creative Style,4 Portrait,
-Camera 1,Color/WB/Img Processing,Creative Style,5 Landscape,
-Camera 1,Color/WB/Img Processing,Creative Style,6 Black & White,
-
-Camera 1,Color/WB/Img Processing,Picture Effect,[set as desired],
-Camera 1,Color/WB/Img Processing,Picture Profile,Options,
-Camera 1,Color/WB/Img Processing,Priority Set in AWB,,
-Camera 1,Focus Assist,AF in Focus Mag. (still image),,
-Camera 1,Focus Assist,Focus Magnif. Time,,
-Camera 1,Focus Assist,Focus Magnifier,,
-Camera 1,Focus Assist,Initial Focus Mag.(still image),,
-Camera 1,Focus Assist,MF Assist (still image),,
-Camera 1,Focus Assist,Peaking Setting,Peaking Display,
-Camera 1,Focus Assist,Peaking Setting,Peaking Level,
-Camera 1,Focus Assist,Peaking Setting,Peaking Color,
-Camera 1,Shooting Assist,Anti-flicker Shoot. (still image),,
-Camera 1,Shooting Assist,Face Registration,,
-Camera 1,Shooting Assist,Regist. Faces Priority,,
-Camera 2,Movie 1,File Format (movie),,
-Camera 2,Movie 1,Movie:Exposure Mode,RAW & JPEG,
-Camera 2,Movie 1,Proxy Recording,Off,
-Camera 2,Movie 1,Record Setting (movie),,
-Camera 2,Movie 1,S&Q Motion: Exposure Mode,Uncompressed,
-Camera 2,Movie 1,S&Q Settings,,Record Setting
-Camera 2,Movie 1,S&Q Settings,,Frame Rate
-Camera 2,Movie 2,AF drive speed (movie),On,
-Camera 2,Movie 2,AF Track Sens (movie),,
-Camera 2,Movie 2,Audio Level Display,Off,
-Camera 2,Movie 2,Audio Rec Level,Off,
-Camera 2,Movie 2,Audio Recording,Off,
-Camera 2,Movie 2,Auto Slow Shut. (movie),,
-Camera 2,Movie 3,Audio Out Timing,SingleShooting,
-Camera 2,Movie 3,Marker Display(movie),Off,
-Camera 2,Movie 3,Marker Settings(movie),0→ - → +,Center
-Camera 2,Movie 3,Marker Settings(movie),OFF,Aspect
-Camera 2,Movie 3,Marker Settings(movie),,Safety Zone
-Camera 2,Movie 3,Marker Settings(movie),[set as desired],Guideframe
-Camera 2,Movie 3,Movie w/ shutter,Slot 1,
-Camera 2,Movie 3,Video Light Mode,[set as desired],
-Camera 2,Movie 3,Wind Noise Reduct.,--,
-Camera 2,Shutter/Steady Shot,e-Front Curtain Shut.,,
-Camera 2,Shutter/Steady Shot,Release w/o Card,Balanced Emphasis,
-Camera 2,Shutter/Steady Shot,Release w/o Lens,AF-S,
-Camera 2,Shutter/Steady Shot,Silent Shooting(still image),Refer to TAB Reg Cust Shoot Set,
-Camera 2,Shutter/Steady Shot,SteadyShot,Balanced Emphasis,
-Camera 2,Shutter/Steady Shot,SteadyShot Settings,Wide,SteadyShotAdjust
-Camera 2,Shutter/Steady Shot,SteadyShot Settings,,SteadyS.FocalLen
-Camera 2,Zoom,Clear Image Zoom/Digital Zoom (Zoom),,
-Camera 2,Zoom,Zoom Ring Rotate,Off ,
-Camera 2,Zoom,Zoom Setting,Auto,
-Camera 2,Display/Auto Review 1,DISP Button(Monitor/Finder),Off ,
-Camera 2,Display/Auto Review 1,Exposure Set. Guide,,
-Camera 2,Display/Auto Review 1,Finder Frame Rate (still image),,
-Camera 2,Display/Auto Review 1,FINDER/MONITOR,3 Std,
-Camera 2,Display/Auto Review 1,Grid Line,Off,
-Camera 2,Display/Auto Review 1,Zebra Setting,On,Display
-Camera 2,Display/Auto Review 1,Zebra Setting,100,Level
-Camera 2,Display/Auto Review 2,Auto Review,On,
-Camera 2,Display/Auto Review 2,Displaying continuous shooting remaining time indicator (Cont. Shoot. Length),Off,
-Camera 2,Display/Auto Review 2,Live View Display,[set as desired],
-Camera 2,Custom Operation 1,Av/Tv Rotate,,
-Camera 2,Custom Operation 1,Custom Key Movie Page 1,Auto,Control Wheel
-Camera 2,Custom Operation 1,Custom Key Movie Page 2,Off,Multi-Slc Center Button
-Camera 2,Custom Operation 1,Custom Key Movie Page 3,Auto,AEL Button
-Camera 2,Custom Operation 1,Custom Key Playbac Page 1,[set as desired],Custom Button 1
-Camera 2,Custom Operation 1,Custom Key Still Page 1,Off,Control Wheel
-Camera 2,Custom Operation 1,Custom Key Still Page 2,ISO Auto,Multi-Slc Center Button
-Camera 2,Custom Operation 1,Custom Key Still Page 3,On,AEL Button
-Camera 2,Custom Operation 1,Dial Setup,,
-Camera 2,Custom Operation 1,Function Menu Set.- Lower,Function Lower 1,
-Camera 2,Custom Operation 2,Audio signals,,
-Camera 2,Custom Operation 2,Dial Ev Comp,,
-Camera 2,Custom Operation 2,Function Ring(Lens),,
-Camera 2,Custom Operation 2,Lock Operation Parts,,
-Camera 2,Custom Operation 2,MOVIE Button,,
-Network,Network 1,Airplane Mode,,
-Network,Network 1,Ctrl w/ Smartphone,,
-Network,Network 1,FTP Transfer Func.,,
-Network,Network 1,Send to Computer,,
-Network,Network 1,Send to Smartphone,Send to Smartphone,
-Network,Network 1,Send to Smartphone, Sending Target (proxy movies),
-Network,Network 1,View on TV,,
-Network,Network 2,Bluetooth Settings,,
-Network,Network 2,Edit Device Name,,
-Network,Network 2,Importing root certification to the camera ,,
-Network,Network 2,Loc. Info. Link Set.,,GPS
-Network,Network 2,Reset Network Set.,,
-Network,Network 2,WPS Push,,WiFi Settings
-Network,Network 2,Access Point Set.,,WiFi Settings
-Network,Network 2,Disp MAC Address,,WiFi Settings
-Network,Network 2,SSID/PW Reset,,WiFi Settings
-Network,Network 3,Bluetooth Rmt Ctrl,,
-Playback,Playback 1,Deleting multiple selected images (Delete),,
-Playback,Playback 1,Protecting images (Protect),,
-Playback,Playback 1,Rating,,
-Playback,Playback 1,Rating Set(Cust Key),,
-Playback,Playback 1,Rotating an image (Rotate),,
-Playback,Playback 1,Specifying images to be printed (Specify Printing),,
-Playback,Playback 2,Copying images from one memory card to another (Copy),,
-Playback,Playback 2,Enlarge Init. Mag.,,
-Playback,Playback 2,Enlarge Initial Pos.,,
-Playback,Playback 2,Enlarging an image being played back (Enlarge Image),,
-Playback,Playback 2,Photo Capture,,
-Playback,Playback 2,Playing back images using slideshow (Slide Show),,
-Playback,Playback 3,Disp Cont Shoot Grp,,
-Playback,Playback 3,Playing back images on the image index screen (Image Index),,
-Playback,Playback 3,Rotating recorded images automatically (Display Rotation),,
-Playback,Playback 3,Selecting which memory card to play back (Select PB Media),,
-Playback,Playback 3,Setting the method for jumping between images (Image Jump Setting),,
-Playback,Playback 3,Switching between still images and movies (View Mode),,
-Playback,Playback 4,Cont. PB for Intvl.,,
-Playback,Playback 4,PB Speed for Intvl,,
-Setup,Setup 1,Delete confirm.,Cancel first,
-Setup,Setup 1,Finder Color Temp.,[set as desired],
-Setup,Setup 1,Gamma Disp. Assist,Off,
-Setup,Setup 1,Monitor Brightness,[set as desired],
-Setup,Setup 1,Viewfinder Bright.,Auto,
-Setup,Setup 1,Volume Settings,[set as desired],
-Setup,Setup 2,Auto Pwr OFF Temp.,Std. ,
-Setup,Setup 2,Cleaning Mode,[set as desired],
-Setup,Setup 2,Display Quality,Std. ,
-Setup,Setup 2,NTSC/PAL Selector,[set as desired],
-Setup,Setup 2,Pwr Save Start Time,1min,
-Setup,Setup 2,Touch Operation,On,
-Setup,Setup 3,Demo Mode,,
-Setup,Setup 3,HDMI Settings,HDMI Resolution,
-Setup,Setup 3,HDMI Settings,24p/60p Output (movie)(Only for 1080 60i compatible models),
-Setup,Setup 3,HDMI Settings,HDMI Info. Display,
-Setup,Setup 3,HDMI Settings,TC Output (movie),
-Setup,Setup 3,HDMI Settings,REC Control (movie),
-Setup,Setup 3,HDMI Settings,CTRL FOR HDMI,
-Setup,Setup 3,Remote Ctrl,,
-Setup,Setup 3,TC/UB Settings,,TC/UB Disp Setting
-Setup,Setup 3,TC/UB Settings,,TC Preset
-Setup,Setup 3,TC/UB Settings,,UB Preset
-Setup,Setup 3,TC/UB Settings,,TC Format
-Setup,Setup 3,TC/UB Settings,,TC Run
-Setup,Setup 3,TC/UB Settings,,TC Make
-Setup,Setup 3,TC/UB Settings,,UB Time Rec
-Setup,Setup 3,Touch Pad Settings,,Operation in V Orientation
-Setup,Setup 3,Touch Pad Settings,,Touch Position Mode
-Setup,Setup 3,Touch Pad Settings,,Operation Area
-Setup,Setup 3,Touch Panel/Pad,,
-Setup,Setup 4,Language,English,
-Setup,Setup 4,PC Remote Settings,,Still Img. Save Dest.
-Setup,Setup 4,PC Remote Settings,,RAW+J PC Save Img
-Setup,Setup 4,USB Connection,,
-Setup,Setup 4,USB LUN Setting,,
-Setup,Setup 4,USB Power Supply,,
-Setup,Setup 4,4K Output Sel. (movie),,
-Setup,Setup 5,Area Setting,[set as desired],
-Setup,Setup 5,Copyright Info,[set as desired],
-Setup,Setup 5,Date/Time Setup,[set as desired],
-Setup,Setup 5,File Number,[set as desired],
-Setup,Setup 5,Format,[set as desired],
-Setup,Setup 5,Set File Name,[set as desired],
-Setup,Setup 6,Display Media Info.,[set as desired],
-Setup,Setup 6,Folder Name,[set as desired],
-Setup,Setup 6,New Folder,[set as desired],
-Setup,Setup 6,Rec. Media Settings,Slot 1,Prioritize Rec. Media
-Setup,Setup 6,Rec. Media Settings,,Recording Mode
-Setup,Setup 6,Rec. Media Settings,,Auto Switch Media
-Setup,Setup 6,Recover Image DB,[set as desired],
-Setup,Setup 6,Select REC Folder,[set as desired],
-Setup,Setup 7,Setting Reset,,[set as desired]
-Setup,Setup 7,Version,,[set as desired]
-camera_menu_config,
+<i name="camera"/>Camera 1,Quality/Image Size1,File Format,,
+<i name="camera"/>Camera 1,Quality/Image Size1,RAW File Type,,
+<i name="camera"/>Camera 1,Quality/Image Size1,JPEG Quality,,
+<i name="camera"/>Camera 1,Quality/Image Size1,JPEG Image Size,,
+<i name="camera"/>Camera 1,Quality/Image Size1,Aspect Ratio,,
+<i name="camera"/>Camera 1,Quality/Image Size1,APS-C/Super 35mm,,
+<i name="camera"/>Camera 1,Quality/Image Size2,Long Exposure NR,,
+<i name="camera"/>Camera 1,Quality/Image Size2,High ISO NR,,
+<i name="camera"/>Camera 1,Quality/Image Size2,Color Space,,
+<i name="camera"/>Camera 1,Quality/Image Size2,Lens Comp,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,Scene Selection,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,Drive Mode,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,Bracket Settings,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,MR Recall,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,MR Memory,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive1,Select Media,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,,
+<i name="camera"/>Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,,
+<i name="camera"/>Camera 1,AF1,Focus Mode,,
+<i name="camera"/>Camera 1,AF1,Priority Set in AF-S,,
+<i name="camera"/>Camera 1,AF1,Priority Set in AF-C,,
+<i name="camera"/>Camera 1,AF1,Focus Area,,
+<i name="camera"/>Camera 1,AF1,Focus Settings,,
+<i name="camera"/>Camera 1,AF1,Swt. V/H AF Area,,
+<i name="camera"/>Camera 1,AF2,AF Illuminator,,
+<i name="camera"/>Camera 1,AF2,Center Lock-on AF,,
+<i name="camera"/>Camera 1,AF2,Set. Face Prty in AF,,
+<i name="camera"/>Camera 1,AF2,AF Track Sens,,
+<i name="camera"/>Camera 1,AF2,AF System,,
+<i name="camera"/>Camera 1,AF2,AF w/ shutter,,
+<i name="camera"/>Camera 1,AF3,Pre-AF,,
+<i name="camera"/>Camera 1,AF3,Eye-Start AF,,
+<i name="camera"/>Camera 1,AF3,AF Area Regist,,
+<i name="camera"/>Camera 1,AF3,Del. Reg. AF Area,,
+<i name="camera"/>Camera 1,AF3,AF Area Auto Clear,,
+<i name="camera"/>Camera 1,AF3,Disp. cont. AF area,,
+<i name="camera"/>Camera 1,AF4,AF Micro Adj,,
+<i name="camera"/>Camera 1,AF4,Aperture Drive in AF,,
+<i name="camera"/>Camera 1,Exposure1,Exposure Comp,,
+<i name="camera"/>Camera 1,Exposure1,Reset EV Comp,,
+<i name="camera"/>Camera 1,Exposure1,ISO,,
+<i name="camera"/>Camera 1,Exposure1,ISO AUTO Min. SS,,
+<i name="camera"/>Camera 1,Exposure1,Metering Mode,,
+<i name="camera"/>Camera 1,Exposure1,Face Prty in Mlti Mtr,,
+<i name="camera"/>Camera 1,Exposure2,Spot Metering Point,,
+<i name="camera"/>Camera 1,Exposure2,Exposure step,,
+<i name="camera"/>Camera 1,Exposure2,AEL w/ shutter,,
+<i name="camera"/>Camera 1,Exposure2,Exposure Std. Adjust,,
+<i name="camera"/>Camera 1,Flash,Flash Mode,,
+<i name="camera"/>Camera 1,Flash,Flash Comp,,
+<i name="camera"/>Camera 1,Flash,Exp. comp. set,,
+<i name="camera"/>Camera 1,Flash,Wireless Flash,,
+<i name="camera"/>Camera 1,Flash,Red Eye Reduction,,
+<i name="camera"/>Camera 1,Flash,External Flash Set.,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,White Balance,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,Priority Set in AWB,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,DRO/Auto HDR,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,Creative Style,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,Picture Effect,,
+<i name="camera"/>Camera 1,Color/WB/Img. Processing,Picture Profile,,
+<i name="camera"/>Camera 1,Focus Assist,Focus Magnifier,,
+<i name="camera"/>Camera 1,Focus Assist,Focus Magnif. Time,,
+<i name="camera"/>Camera 1,Focus Assist,Initial Focus Mag,,
+<i name="camera"/>Camera 1,Focus Assist,AF in Focus Mag,,
+<i name="camera"/>Camera 1,Focus Assist,MF Assist,,
+<i name="camera"/>Camera 1,Focus Assist,Peaking Setting,,
+<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Anti-flicker Shoot,,
+<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Face Registration,,
+<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Regist. Faces Priority,,
+<i name="camera"/>Camera 2,Movie1,Exposure Mode,,
+<i name="camera"/>Camera 2,Movie1,Exposure Mode,,
+<i name="camera"/>Camera 2,Movie1,File Format,,
+<i name="camera"/>Camera 2,Movie1,Record Setting,,
+<i name="camera"/>Camera 2,Movie1,S&Q Settings,,
+<i name="camera"/>Camera 2,Movie1,Proxy Recording,,
+<i name="camera"/>Camera 2,Movie2,AF drive speed,,
+<i name="camera"/>Camera 2,Movie2,AF Track Sens,,
+<i name="camera"/>Camera 2,Movie2,Auto Slow Shut,,
+<i name="camera"/>Camera 2,Movie2,Audio Recording,,
+<i name="camera"/>Camera 2,Movie2,Audio Rec Level,,
+<i name="camera"/>Camera 2,Movie2,Audio Level Display,,
+<i name="camera"/>Camera 2,Movie3,Audio Out Timing,,
+<i name="camera"/>Camera 2,Movie3,Wind Noise Reduct,,
+<i name="camera"/>Camera 2,Movie3,Marker Display,,
+<i name="camera"/>Camera 2,Movie3,Marker Settings,,
+<i name="camera"/>Camera 2,Movie3,Video Light Mode,,
+<i name="camera"/>Camera 2,Movie3,Movie w/ shutter,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,Silent Shooting,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,e-Front Curtain Shut.,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,Release w/o Lens,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,Release w/o Card,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,SteadyShot,,
+<i name="camera"/>Camera 2,Shutter/SteadyShot,SteadyShot Settings,,
+<i name="camera"/>Camera 2,Zoom,Zoom,,
+<i name="camera"/>Camera 2,Zoom,Zoom Setting,,
+<i name="camera"/>Camera 2,Zoom,Zoom Ring Rotate,,
+<i name="camera"/>Camera 2,Display/Auto Review1,DISP Button,,
+<i name="camera"/>Camera 2,Display/Auto Review1,FINDER/MONITOR,,
+<i name="camera"/>Camera 2,Display/Auto Review1,Zebra Setting,,
+<i name="camera"/>Camera 2,Display/Auto Review1,Grid Line,,
+<i name="camera"/>Camera 2,Display/Auto Review1,Exposure Set. Guide,,
+<i name="camera"/>Camera 2,Display/Auto Review1,Live View Display,,
+<i name="camera"/>Camera 2,Display/Auto Review2,Cont. Shoot. Length,,
+<i name="camera"/>Camera 2,Display/Auto Review2,Auto Review,,
+<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,
+<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,
+<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,
+<i name="camera"/>Camera 2,Custom Operation1,Function Menu Set,,
+<i name="camera"/>Camera 2,Custom Operation1,Dial Setup,,
+<i name="camera"/>Camera 2,Custom Operation1,Av/Tv Rotate,,
+<i name="camera"/>Camera 2,Custom Operation2,Dial Ev Comp,,
+<i name="camera"/>Camera 2,Custom Operation2,MOVIE Button,,
+<i name="camera"/>Camera 2,Custom Operation2,Lock Operation Parts,,
+<i name="camera"/>Camera 2,Custom Operation2,Audio signals,,
+<i name="camera"/>Camera 2,Custom Operation2,Function Ring(Lens),,
+Network,Network1,Snd to Smrtphn Func,,
+Network,Network1,Send to Computer,,
+Network,Network1,FTP Transfer Func,,
+Network,Network1,View on TV,,
+Network,Network1,Ctrl w/ Smartphone,,
+Network,Network1,Airplane Mode,,
+Network,Network2,Wi-Fi Settings,,
+Network,Network2,Bluetooth Settings,,
+Network,Network2,Loc. Info. Link Set,,
+Network,Network2,Edit Device Name,,
+Network,Network2,Imp Root Certificate,,
+Network,Network2,Reset Network Set,,
+Network,Network3,Bluetooth Rmt Ctrl,,
+Playback,Playback1,Protect,,
+Playback,Playback1,Rotate,,
+Playback,Playback1,Delete,,
+Playback,Playback1,Rating,,
+Playback,Playback1,Rating Set(Cust Key),,
+Playback,Playback1,Specify Printing,,
+Playback,Playback2,Copy,,
+Playback,Playback2,Photo Capture,,
+Playback,Playback2,Enlarge Image,,
+Playback,Playback2,Enlarge Init. Mag,,
+Playback,Playback2,Enlarge Initial Pos,,
+Playback,Playback2,Slide Show,,
+Playback,Playback3,Select PB Media,,
+Playback,Playback3,View Mode,,
+Playback,Playback3,Image Index,,
+Playback,Playback3,Display as Group,,
+Playback,Playback3,Display Rotation,,
+Playback,Playback3,Image Jump Setting,,
+Playback,Playback4,Cont. PB for Intvl.,,
+Playback,Playback4,PB Speed for Intvl,,
+Setup,Setup1,Monitor Brightness,,
+Setup,Setup1,Viewfinder Bright,,
+Setup,Setup1,Finder Color Temp,,
+Setup,Setup1,Gamma Disp. Assist,,
+Setup,Setup1,Volume Settings,,
+Setup,Setup1,Delete confirm,,
+Setup,Setup2,Display Quality,,
+Setup,Setup2,Pwr Save Start Time,,
+Setup,Setup2,Auto Pwr OFF Temp,,
+Setup,Setup2,NTSC/PAL Selector,,
+Setup,Setup2,Cleaning Mode,,
+Setup,Setup2,Touch Operation,,
+Setup,Setup3,Touch Panel/Pad,,
+Setup,Setup3,Touch Pad Settings,,
+Setup,Setup3,Demo Mode,,
+Setup,Setup3,TC/UB Settings,,
+Setup,Setup3,Remote Ctrl,,
+Setup,Setup3,HDMI Settings,,
+Setup,Setup4,4K Output Sel.,,
+Setup,Setup4,USB Connection,,
+Setup,Setup4,USB LUN Setting,,
+Setup,Setup4,USB Power Supply,,
+Setup,Setup4,PC Remote Settings,,
+Setup,Setup4,Language,,
+Setup,Setup5,Date/Time Setup,,
+Setup,Setup5,Area Setting,,
+Setup,Setup5,Copyright Info,,
+Setup,Setup5,Format,,
+Setup,Setup5,File Number,,
+Setup,Setup5,Set File Name,,
+Setup,Setup6,Rec. Media Settings,,
+Setup,Setup6,Select REC Folder,,
+Setup,Setup6,New Folder,,
+Setup,Setup6,Folder Name,,
+Setup,Setup6,Recover Image DB,,
+Setup,Setup6,Display Media Info,,
+Setup,Setup7,Version,,
+Setup,Setup7,Setting Reset,,
+<i name="star"/>My Menu,My Menu1,,,
+<i name="star"/>My Menu,My Setting,Add Item,,
+<i name="star"/>My Menu,My Setting,Sort Item,,
+<i name="star"/>My Menu,My Setting,Delete Item,,
+<i name="star"/>My Menu,My Setting,Delete Page,,
+<i name="star"/>My Menu,My Setting,Delete All,,
+camera_menu_config
 display_name,Sony A7III
 css_file,sonyA7iii
-Ctrl w/ Smartphone disables USB Connection selection
+icon:camera,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAXCAYAAAD3CERpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGPGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDIgNzkuYTZhNjM5NjhhLCAyMDI0LzAzLzA2LTExOjUyOjA1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjUuMTIgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDI1LTAyLTI1VDEyOjA3OjI3KzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyNS0wMi0yNlQwOTowNjo0MiswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNS0wMi0yNlQwOTowNjo0MiswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N2Y3ZjE5N2YtYTQyZS00OWQzLThlMmQtMjRjZjIyMTgxNTExIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YzAzMGVmZWMtYzZiOC1hODRlLThjM2QtYmVmNDMzNDkxYjVlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6N2Y2YWQ1NzktZDE5Yi00OGY5LTg4YjctNDllOWJhYTc5NzkwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo3ZjZhZDU3OS1kMTliLTQ4ZjktODhiNy00OWU5YmFhNzk3OTAiIHN0RXZ0OndoZW49IjIwMjUtMDItMjVUMTI6MDc6MjcrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNS4xMiAoTWFjaW50b3NoKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo3ZjdmMTk3Zi1hNDJlLTQ5ZDMtOGUyZC0yNGNmMjIxODE1MTEiIHN0RXZ0OndoZW49IjIwMjUtMDItMjZUMDk6MDY6NDIrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNS4xMiAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6694MmAAACqUlEQVRIia2WvWtUURDFf/dtsvlCBEU0hYIRJIWdsbBRsFaCYCMoWggq2lj4j9haiYVoCgsRNFUsLbWwsdG0IpKv3cTd947Fndkdn6t5AQce9+29754zc+7M3E2SaGiTwDxwANgABFS2VgIfmgIhqemzLOmHpK6kjqSepJ+StiVtSLrRFKsp4SUj6EjaUbZSUt/GrqTvkg7/L9IpSZuSKv3bupIeNyEtdlF/HLgFjAHJ5qpwln1g255x4BpwZrcjTZZIi8BDSw4BBbAGLACHDHTK9pRAz5xo2yibr4AOsAps2vy4ff8eeAR8TZIWgBUj8miSRdcKjni29mxMATSSuwN1K8yR4wVw2cDbBuBk6yZfFZ5XwEXgJHCUXEJ3DawP7ARH3FqGWQITwBySHoQsrEJW+ntP0pak65LSX5JjUtJLK59S0rrtq+N0Jc0XFrZLGqVMtlYAd4CnNj/KtoErwOcQnR+Xq+SYKmpARRg3yef3Alj6C1m0Erhge6ZrQUT8ViyZGKGAGQN4YpE0sW/Aa6AbsNwGSVnUFlN479jal4aEbksMExCGR+QSV657JHY5Jmzc2iPpGjlbqzDnmCUWaapt8mhb9vvIHklPMUykiDkgH9UGo1eJ3K2aWgLuB9xYDQO+erlEr0pykd8DTjQkXQRmGUYan4GNksCtTU6I/cAz4OAuhOeA5+aoBxG7mXMkz9560dfP9TS58M+S/0FE2wfcBN6R1SnJyZT4vRr8ImGMP3WPWefR9oxshVxCy8An4DxZ0tK+m7BxhmFFVEY2uAictBcWPVIv5op8rfVtbg64XYskRtSuKRG7XB9oJ0nHgI/ks4g918fK1srgZBmUiTXeMmC3+nX3Brjql/gsuWG7vA7kIDPkDjUdVBll0+QrMTZ8x1wF3gLdX9+0RtkZdOa+AAAAAElFTkSuQmCC
+icon:star,iVBORw0KGgoAAAANSUhEUgAAAKYAAACfCAYAAABz/aISAAAACXBIWXMAAC4jAAAuIwF4pT92AAAGPGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDIgNzkuYTZhNjM5NjhhLCAyMDI0LzAzLzA2LTExOjUyOjA1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjUuMTIgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDI1LTAyLTI1VDEyOjA3OjI3KzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyNS0wMi0yNlQwOTozMDowMyswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNS0wMi0yNlQwOTozMDowMyswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjUwZGRlMzktNGYyMy00YjRlLWE0MjMtOWQ2NDMwYzVkODk3IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NWQzYzRlMjctYWFlOC0xZjQwLTg0NWEtMzY3YjcxZmU0MDliIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NGE2NWU2MjEtMjVjOC00YzZmLTkzNDctYWNhZmYyNjVlYTdlIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo0YTY1ZTYyMS0yNWM4LTRjNmYtOTM0Ny1hY2FmZjI2NWVhN2UiIHN0RXZ0OndoZW49IjIwMjUtMDItMjVUMTI6MDc6MjcrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNS4xMiAoTWFjaW50b3NoKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyNTBkZGUzOS00ZjIzLTRiNGUtYTQyMy05ZDY0MzBjNWQ4OTciIHN0RXZ0OndoZW49IjIwMjUtMDItMjZUMDk6MzA6MDMrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNS4xMiAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7alw0ZAAA3AElEQVR4nN19/YtcR5bl6a5EBTIlJKhGogU2bdowyxgadmD/+v19YYYdmGGGNniwaYGMhAskVFhQIgvvD5Gn4ryT5973siTPtn0hyZfx4jtu3O+I/N3PP/98BmCHAfvD8x4T9Hd6h5W09HvfpCvs5NnL7FD3N5VJdXSQ+pnaTPVvmaNqrKmd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
