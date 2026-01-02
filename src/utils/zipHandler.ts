@@ -1,5 +1,6 @@
 import JSZip from 'jszip'
 import { CustomCamera } from './indexedDB'
+import { parseCSVRows } from './csvParser'
 
 export interface ZipFileContents {
   csvContent: string
@@ -85,19 +86,20 @@ export const extractZipFile = async (file: File): Promise<ZipFileContents> => {
     result.iconData = base64
   }
 
-  const brandMatch = result.csvContent.match(/brand,([^\n]+)/)
-  if (brandMatch) {
-    result.brand = brandMatch[1].trim()
-  }
-
-  const modelMatch = result.csvContent.match(/model,([^\n]+)/)
-  if (modelMatch) {
-    result.model = modelMatch[1].trim()
-  }
-
-  const displayNameMatch = result.csvContent.match(/display_name,([^\n]+)/)
-  if (displayNameMatch) {
-    result.displayName = displayNameMatch[1].trim()
+  const allRows = parseCSVRows(result.csvContent)
+  const configRowIndex = allRows.findIndex((row) => row.length > 0 && row[0] === 'camera_menu_config')
+  if (configRowIndex >= 0) {
+    const configRows = allRows.slice(configRowIndex + 1)
+    for (const row of configRows) {
+      if (row.length === 0) continue
+      if (row[0] === 'brand' && row.length > 1) {
+        result.brand = row[1].trim()
+      } else if (row[0] === 'model' && row.length > 1) {
+        result.model = row[1].trim()
+      } else if (row[0] === 'display_name' && row.length > 1) {
+        result.displayName = row[1].trim()
+      }
+    }
   }
 
   if (!result.displayName && result.brand && result.model) {

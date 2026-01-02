@@ -1,205 +1,462 @@
-Tab,Category,Menu Item,Sub Menu Item,Comments/Defaults,
-<i name="camera"/>Camera 1,Quality/Image Size1,,,,
-<i name="camera"/>Camera 1,Quality/Image Size1,File Format,,,Sets the file format for still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,File Format,RAW,,Sets the file format for still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,File Format,RAW & HEIF,,Sets the file format for still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,File Format,HEIF,,Sets the file format for still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,RAW File Type,,,Selects the file type for RAW images.
-,,,Uncompressed,,
-,,,Lossless Comp (L),,
-,,,Lossless Comp (M),,
-,,,Lossless Comp (S),,
-<i name="camera"/>Camera 1,Quality/Image Size1,JPEG Quality,,,Selects the JPEG image quality for [RAW & JPEG] or [JPEG] under [ File Format]. JPEG Image Size Selects the size of still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,JPEG Image Size,,,Selects the size of still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,Aspect Ratio,,,Selects the aspect ratio for still images.
-<i name="camera"/>Camera 1,Quality/Image Size1,APS-C/Super 35mm,,Foo,Sets whether to record in
-<i name="camera"/>Camera 1,Quality/Image Size2,,,,
-<i name="camera"/>Camera 1,Quality/Image Size2,Long Exposure NR,,,Sets noise reduction processing for shots with a shutter speed of 1 second
-<i name="camera"/>Camera 1,Quality/Image Size2,High ISO NR,,,Sets noise reduction processing for high-sensitivity shooting.
-<i name="camera"/>Camera 1,Quality/Image Size2,Color Space,,,Changes the color space (range of reproducible colors).
-<i name="camera"/>Camera 1,Quality/Image Size2,Lens Comp,,,Selects the type of lens compensation.
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,Scene Selection,,,Selects pre-set settings to match various scene conditions.
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,Drive Mode,,,"Sets the drive mode, such as for continuous shooting. ([Self-timer] / [Cont. Bracket], etc.)"
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,Bracket Settings,,,"Sets self-timer shooting in bracket mode, shooting order for exposure"
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,MR Recall,,,
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,MR Memory,,,
-<i name="camera"/>Camera 1,Shoot Mode/Drive1,Select Media,,,Selects the memory card slot from which settings are recalled or to which
-<i name="camera"/>Camera 1,Shoot Mode/Drive2,Reg Cust Shoot Set,,,
-<i name="camera"/>Camera 1,Shoot Mode/Drive2,Intvl. Shoot. Func.,,,
-<i name="camera"/>Camera 1,AF1,Focus Mode,,,"Selects the focus mode. ([Single-shot AF] / [Continuous AF], etc.)"
-<i name="camera"/>Camera 1,AF1,Priority Set in AF-S,,,Sets the timing of the shutter release when [Focus Mode] is
-<i name="camera"/>Camera 1,AF1,Priority Set in AF-C,,,Sets the timing of the shutter release when [Focus Mode] is set to
-<i name="camera"/>Camera 1,AF1,Focus Area,,,Selects the area of focus.
-<i name="camera"/>Camera 1,AF1,Focus Settings,,,"Allows you to focus using the front dial, rear dial or control wheel."
-<i name="camera"/>Camera 1,AF1,Swt. V/H AF Area,,,Sets whether to adjust the [Focus Area] and the position of the
-<i name="camera"/>Camera 1,AF2,AF Illuminator,,,"Sets the AF illuminator, which provides light to aid focusing in dark"
-<i name="camera"/>Camera 1,AF2,Center Lock-on AF,,,Sets the function to track a subject and continue focusing when pressing
-<i name="camera"/>Camera 1,AF2,Set. Face Prty in AF,,,Sets whether the camera focuses based on detected faces.
-<i name="camera"/>Camera 1,AF2,AF Track Sens,,,Sets the AF tracking sensitivity for the still image mode.
-<i name="camera"/>Camera 1,AF2,AF System,,,Sets the auto focus method when an LA-EA1/LA-EA3 Mount Adaptor
-<i name="camera"/>Camera 1,AF2,AF w/ shutter,,,Sets whether to perform auto focusing when the shutter button is
-<i name="camera"/>Camera 1,AF3,Pre-AF,,,Sets whether or not to perform auto focus before the shutter button is half
-<i name="camera"/>Camera 1,AF3,Eye-Start AF,,,Sets whether to use auto focus when you look through the viewfinder if
-<i name="camera"/>Camera 1,AF3,AF Area Regist,,,Sets whether to move the focusing frame to a preassigned position when
-<i name="camera"/>Camera 1,AF3,Del. Reg. AF Area,,,Deletes the focusing frame position information that was registered using
-<i name="camera"/>Camera 1,AF3,AF Area Auto Clear,,,Sets whether the focus area is displayed all the time or disappears
-<i name="camera"/>Camera 1,AF3,Disp. cont. AF area,,,Sets whether or not to display the focus area in [Continuous AF] mode.
-<i name="camera"/>Camera 1,AF4,AF Micro Adj,,,"adjusts the autofocused position, when using the LA-EA2"
-<i name="camera"/>Camera 1,AF4,Aperture Drive in AF,,,
-<i name="camera"/>Camera 1,Exposure1,Exposure Comp,,,Compensates for the brightness of the entire image.
-<i name="camera"/>Camera 1,Exposure1,Reset EV Comp,,,Sets whether to maintain the exposure value set using
-<i name="camera"/>Camera 1,Exposure1,ISO,,,"Sets the ISO sensitivity. ([ISO AUTO], etc.)"
-<i name="camera"/>Camera 1,Exposure1,ISO AUTO Min. SS,,,Sets the slowest shutter speed at which ISO sensitivity will start to
-<i name="camera"/>Camera 1,Exposure1,Metering Mode,,,Selects the method for measuring brightness.
-<i name="camera"/>Camera 1,Exposure1,Face Prty in Mlti Mtr,,,Sets whether the camera measures brightness based on detected faces
-<i name="camera"/>Camera 1,Exposure2,Spot Metering Point,,,Sets whether to coordinate the spot metering point with the
-<i name="camera"/>Camera 1,Exposure2,Exposure step,,,"Selects the size of the increment step for shutter speed, aperture, and"
-<i name="camera"/>Camera 1,Exposure2,AEL w/ shutter,,,Sets whether to lock the exposure when the shutter button is pressed
-<i name="camera"/>Camera 1,Exposure2,Exposure Std. Adjust,,,Adjusts the standard for the correct exposure value for each metering
-<i name="camera"/>Camera 1,Flash,Flash Mode,,,Sets the flash settings.
-<i name="camera"/>Camera 1,Flash,Flash Comp,,,Adjusts the intensity of flash output.
-<i name="camera"/>Camera 1,Flash,Exp. comp. set,,,Sets whether to reflect exposure compensation value to flash
-<i name="camera"/>Camera 1,Flash,Wireless Flash,,,Sets whether to shoot with the wireless flash.
-<i name="camera"/>Camera 1,Flash,Red Eye Reduction,,,Reduces the red-eye phenomenon when using flash.
-<i name="camera"/>Camera 1,Flash,External Flash Set.,,,
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,White Balance,,,Corrects the tone effect of the ambient light to shoot whitish objects
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,Priority Set in AWB,,,Selects which tone to prioritize when shooting under lighting conditions
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,DRO/Auto HDR,,,Analyzes the contrast of light and shadow between the subject and the
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,Creative Style,,,Selects the desired image processing.
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,Picture Effect,,,Shoots images with a texture unique to the selected effect.
-<i name="camera"/>Camera 1,Color/WB/Img. Processing,Picture Profile,,,Changes settings such as color and tone when recording images.
-<i name="camera"/>Camera 1,Focus Assist,Focus Magnifier,,,Enlarges the image before shooting so that you can check the focus.
-<i name="camera"/>Camera 1,Focus Assist,Focus Magnif. Time,,,Sets the length of time the image will be shown in an enlarged form.
-<i name="camera"/>Camera 1,Focus Assist,Initial Focus Mag,,,Sets the initial magnification scale when using [Focus Magnifier].
-<i name="camera"/>Camera 1,Focus Assist,AF in Focus Mag,,,Sets whether or not to autofocus when an enlarged image is being
-<i name="camera"/>Camera 1,Focus Assist,MF Assist,,,Displays an enlarged image when focusing manually.
-<i name="camera"/>Camera 1,Focus Assist,Peaking Setting,,,"Sets the peaking function, which enhances the outline of in-focus areas"
-<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Anti-flicker Shoot,,,Detects flickering/blinking from artificial light sources such as
-<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Face Registration,,,changes the person to be given priority when focusing.
-<i name="camera"/>Camera 1,Face Detection/Shoot Assist,Regist. Faces Priority,,,Detects the registered face with higher priority using
-<i name="camera"/>Camera 2,Movie1,Exposure Mode,,,Sets the exposure mode when shooting movies.
-<i name="camera"/>Camera 2,Movie1,Exposure Mode,,,Sets the exposure mode when shooting movies.
-<i name="camera"/>Camera 2,Movie1,File Format,,,Sets the file format for still images.
-<i name="camera"/>Camera 2,Movie1,Record Setting,,,Selects a frame-rate and bit-rate for the movie.
-<i name="camera"/>Camera 2,Movie1,S&Q Settings,,,Changes the settings for slow-motion and quick-motion movie shooting.
-<i name="camera"/>Camera 2,Movie1,Proxy Recording,,,Records low-bit-rate proxy files simultaneously when recording
-<i name="camera"/>Camera 2,Movie2,AF drive speed,,,Switches focusing speed when using autofocus in movie mode.
-<i name="camera"/>Camera 2,Movie2,AF Track Sens,,,Sets the AF tracking sensitivity for the still image mode.
-<i name="camera"/>Camera 2,Movie2,Auto Slow Shut,,,Sets the function that automatically adjusts the shutter speed following
-<i name="camera"/>Camera 2,Movie2,Audio Recording,,,Sets whether to record audio when shooting a movie.
-<i name="camera"/>Camera 2,Movie2,Audio Rec Level,,,Adjusts the audio recording level during movie recording.
-<i name="camera"/>Camera 2,Movie2,Audio Level Display,,,Sets whether to display the audio level.
-<i name="camera"/>Camera 2,Movie3,Audio Out Timing,,,Sets the timing of audio output during the movie recording.
-<i name="camera"/>Camera 2,Movie3,Wind Noise Reduct,,,Reduces wind noise during movie recording.
-<i name="camera"/>Camera 2,Movie3,Marker Display,,,Sets whether to display markers on the monitor when recording movies.
-<i name="camera"/>Camera 2,Movie3,Marker Settings,,,Sets which markers to display on the monitor when recording movies.
-<i name="camera"/>Camera 2,Movie3,Video Light Mode,,,Sets the illumination setting for the
-<i name="camera"/>Camera 2,Movie3,Movie w/ shutter,,,Records movies using the shutter button.
-<i name="camera"/>Camera 2,Shutter/SteadyShot,Silent Shooting,,,Shoots images without the shutter sound.
-<i name="camera"/>Camera 2,Shutter/SteadyShot,e-Front Curtain Shut.,,,
-<i name="camera"/>Camera 2,Shutter/SteadyShot,Release w/o Lens,,,Sets whether to release the shutter when the lens is not attached.
-<i name="camera"/>Camera 2,Shutter/SteadyShot,Release w/o Card,,,Sets whether to release the shutter when a memory card is not inserted.
-<i name="camera"/>Camera 2,Shutter/SteadyShot,SteadyShot,,,Sets whether to activate SteadyShot for shooting.
-<i name="camera"/>Camera 2,Shutter/SteadyShot,SteadyShot Settings,,,Sets SteadyShot settings.
-<i name="camera"/>Camera 2,Zoom,Zoom,,,Sets the zoom scale for zoom functions other than the optical zoom.
-<i name="camera"/>Camera 2,Zoom,Zoom Setting,,,Sets whether to use the Clear Image
-<i name="camera"/>Camera 2,Zoom,Zoom Ring Rotate,,,Assigns the zoom in/out to the rotational direction of the zoom lens.
-<i name="camera"/>Camera 2,Display/Auto Review1,DISP Button,,,Sets the type of information to be displayed on the monitor or in the
-<i name="camera"/>Camera 2,Display/Auto Review1,FINDER/MONITOR,,,Sets the method for switching the display between the electronic
-<i name="camera"/>Camera 2,Display/Auto Review1,Zebra Setting,,,Sets the stripes displayed to adjust brightness.
-<i name="camera"/>Camera 2,Display/Auto Review1,Grid Line,,,Displays grid lines for adjusting the image composition.
-<i name="camera"/>Camera 2,Display/Auto Review1,Exposure Set. Guide,,,Sets the guide displayed when exposure settings are changed in the
-<i name="camera"/>Camera 2,Display/Auto Review1,Live View Display,,,Sets whether to reflect settings such as exposure compensation in screen
-<i name="camera"/>Camera 2,Display/Auto Review2,Cont. Shoot. Length,,,Sets whether to display an indicator continuous shooting can be performed at the same shooting speed.
-<i name="camera"/>Camera 2,Display/Auto Review2,Auto Review,,,Sets auto review to display the captured image after shooting.
-<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,,Assigns functions to the various keys so that you can perform operations
-<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,,Assigns functions to the various keys so that you can perform operations
-<i name="camera"/>Camera 2,Custom Operation1,Custom Key,,,Assigns functions to the various keys so that you can perform operations
-<i name="camera"/>Camera 2,Custom Operation1,Function Menu Set,,,Customizes the functions displayed when the Fn (Function) button is
-<i name="camera"/>Camera 2,Custom Operation1,Dial Setup,,,Sets the functions of the front and rear dials when the exposure mode
-<i name="camera"/>Camera 2,Custom Operation1,Av/Tv Rotate,,,Sets the direction of turning the front or rear dial or the control wheel to
-<i name="camera"/>Camera 2,Custom Operation2,Dial Ev Comp,,,Sets whether to compensate the exposure with the front or rear dial.
-<i name="camera"/>Camera 2,Custom Operation2,MOVIE Button,,,Enables or disables for the MOVIE button.
-<i name="camera"/>Camera 2,Custom Operation2,Lock Operation Parts,,,"Sets whether to disable the multi- selector, control wheel, or front and"
-<i name="camera"/>Camera 2,Custom Operation2,Audio signals,,,Selects whether the camera beeps during auto focus and self-timer
-<i name="camera"/>Camera 2,Custom Operation2,Function Ring(Lens),,,
-Network,Network1,Snd to Smrtphn Func,,,"Sets movies to be transferred to a smartphone, or transfers images to a smartphone"
-Network,Network1,Send to Computer,,,Backs up images by transferring them to a computer connected to a network
-Network,Network1,FTP Transfer Func,,,Sets image transfer using FTP and executes it. * Basic knowledge of FTP servers is required.
-Network,Network1,View on TV,,,Allows you to view images on a network-enabled TV.
-Network,Network1,Ctrl w/ Smartphone,,,Sets the condition for connecting the camera to a smartphone.
-Network,Network1,Airplane Mode,,,"Disables wireless communications from the device such as Wi-Fi, NFC,"
-Network,Network2,Wi-Fi Settings,,,Allows you to register your access point and check or change the Wi-Fi
-Network,Network2,Bluetooth Settings,,,Controls the settings for connecting the camera with a smartphone via a
-Network,Network2,Loc. Info. Link Set,,,Obtains location information from the
-Network,Network2,Edit Device Name,,,Changes the device name under Wi-Fi
-Network,Network2,Imp Root Certificate,,,Imports a root certificate to the camera.
-Network,Network2,Reset Network Set,,,Resets all the network settings.
-Network,Network3,Bluetooth Rmt Ctrl,,,
-Playback,Playback1,Protect,,,Protects recorded images against accidental erasure.
-Playback,Playback1,Rotate,,,Rotates the image.
-Playback,Playback1,Delete,,,Deletes images.
-Playback,Playback1,Rating,,,Assigns rating to recorded images on a scale from ★ to ★★★★★.
-Playback,Playback1,Rating Set(Cust Key),,,Assigns rating to recorded images on a scale from ★ to ★★★★★.
-Playback,Playback1,Specify Printing,,,Specifies in advance on the memory card which still images to print out
-Playback,Playback2,Copy,,,Copies images from the memory card in the memory card slot designated in
-Playback,Playback2,Photo Capture,,,Captures a chosen scene in a movie to save as a still image.
-Playback,Playback2,Enlarge Image,,,Enlarges the playback images.
-Playback,Playback2,Enlarge Init. Mag,,,Sets the initial magnification scale when playing back enlarged images.
-Playback,Playback2,Enlarge Initial Pos,,,Sets the initial magnification area when playing back enlarged images.
-Playback,Playback2,Slide Show,,,Plays a slide show.
-Playback,Playback3,Select PB Media,,,Selects the memory card slot of the memory card to be played back.
-Playback,Playback3,View Mode,,,Plays back images from a specified date or specified folder of still images
-Playback,Playback3,Image Index,,,Displays multiple images at the same time.
-Playback,Playback3,Display as Group,,,
-Playback,Playback3,Display Rotation,,,Sets the playback orientation for images shot vertically.
-Playback,Playback3,Image Jump Setting,,,Sets which dial and method to use for jumping between images during
-Playback,Playback4,Cont. PB for Intvl.,,,
-Playback,Playback4,PB Speed for Intvl,,,
-Setup,Setup1,Monitor Brightness,,,Adjusts the brightness of the screen.
-Setup,Setup1,Viewfinder Bright,,,Sets the brightness of the electronic viewfinder.
-Setup,Setup1,Finder Color Temp,,,Sets the color temperature of the viewfinder.
-Setup,Setup1,Gamma Disp. Assist,,,Adjusts the screen to make monitoring easier when displaying an
-Setup,Setup1,Volume Settings,,,Sets the volume for movie playback.
-Setup,Setup1,Delete confirm,,,Sets whether [Delete] or [Cancel] is preselected in the delete confirmation
-Setup,Setup2,Display Quality,,,"Sets the display quality. * When [High] is selected, the battery"
-Setup,Setup2,Pwr Save Start Time,,,Sets the time intervals to automatically switch to power save
-Setup,Setup2,Auto Pwr OFF Temp,,,Sets the camera temperature at which the camera turns off automatically
-Setup,Setup2,NTSC/PAL Selector,,,
-Setup,Setup2,Cleaning Mode,,,Starts the cleaning mode to clean the image sensor.
-Setup,Setup2,Touch Operation,,,"Sets whether or not to activate the touch operation of the monitor. 72 73 Touch Panel/Pad Selects whether to activate touch panel operation when shooting with the monitor, or touch pad operation when shooting with the viewfinder."
-Setup,Setup3,Touch Panel/Pad,,,"Selects whether to activate touch panel operation when shooting with the monitor, or touch pad operation when shooting with the viewfinder."
-Setup,Setup3,Touch Pad Settings,,,Adjusts settings related to touch pad operation.
-Setup,Setup3,Demo Mode,,,Sets demonstration playback of movies to on or off.
-Setup,Setup3,TC/UB Settings,,,Sets the time code (TC) and user bit (UB).
-Setup,Setup3,Remote Ctrl,,,Sets whether to use the infrared remote control.
-Setup,Setup3,HDMI Settings,,,Sets the HDMI settings. * Images will not appear on the
-Setup,Setup4,4K Output Sel.,,,
-Setup,Setup4,USB Connection,,,Sets the USB connection method.
-Setup,Setup4,USB LUN Setting,,,
-Setup,Setup4,USB Power Supply,,,Sets whether to supply power via
-Setup,Setup4,PC Remote Settings,,,Controls the PC remote shooting settings.
-Setup,Setup4,Language,,,"Selects the language. Date/Time Setup Sets the date, time, and daylight savings."
-Setup,Setup5,Date/Time Setup,,,"Sets the date, time, and daylight savings."
-Setup,Setup5,Area Setting,,,Sets the location of use.
-Setup,Setup5,Copyright Info,,,Sets copyright information for still images.
-Setup,Setup5,Format,,,Formats the memory card.
-Setup,Setup5,File Number,,,Sets the method used to assign file numbers.
-Setup,Setup5,Set File Name,,,Changes the first 3 characters of the file names for still images.
-Setup,Setup6,Rec. Media Settings,,,Sets the method for recording images to two memory card slots.
-Setup,Setup6,Select REC Folder,,,Changes the folder selected for storing still images.
-Setup,Setup6,New Folder,,,Creates a new folder for storing still images.
-Setup,Setup6,Folder Name,,,Sets the folder format for still images.
-Setup,Setup6,Recover Image DB,,,
-Setup,Setup6,Display Media Info,,,Displays the remaining recording time
-Setup,Setup7,Version,,,Displays the camera software version.
-Setup,Setup7,Setting Reset,,,
-"<i name=""star""/>My Menu",My Menu1,,,,
-"<i name=""star""/>My Menu",My Setting,Add Item,,,
-"<i name=""star""/>My Menu",My Setting,Sort Item,,,
-"<i name=""star""/>My Menu",My Setting,Delete Item,,,Deletes MENU items added to
-"<i name=""star""/>My Menu",My Setting,Delete Page,,,Deletes all the MENU items on a page
-"<i name=""star""/>My Menu",My Setting,Delete All,,,Deletes all the MENU items added to
+Tab,Category,Menu Item,Sub Menu Item,Comments/Defaults
+"<i name=""camera""/>Camera 1",Quality/Image Size1,,,
+"<i name=""camera""/>Camera 1",Quality/Image Size1,File Format,,
+"<i name=""camera""/>Camera 1",Quality/Image Size1,File Format,RAW,Images before processing are recorded in this file format. Select this format to process images on a computer for professional purposes. Sets the file format for still images.
+"<i name=""camera""/>Camera 1",Quality/Image Size1,File Format,RAW & HEIF,Sets the file format for still images.
+"<i name=""camera""/>Camera 1",Quality/Image Size1,File Format,HEIF,Sets the file format for still images.
+"<i name=""camera""/>Camera 1",Quality/Image Size1,RAW File Type,,Selects the file type for RAW images.
+,,,Uncompressed,
+,,,Lossless Comp (L),
+,,,Lossless Comp (M),
+,,,Lossless Comp (S),
+"<i name=""camera""/>Camera 1",Quality/Image Size1,JPEG Quality,,"Since the compression rate increases from [Extra fine] to [Fine] to [Standard], the file size decreases in the same order. This allows more files to be recorded on one memory card, but the image quality is lower. Selects the JPEG image quality for [RAW & JPEG] or [JPEG] under [ File Format]. JPEG Image Size Selects the size of still images."
+"<i name=""camera""/>Camera 1",Quality/Image Size1,JPEG Quality,Extra fine
+"<i name=""camera""/>Camera 1",Quality/Image Size1,JPEG Quality,Fine
+"<i name=""camera""/>Camera 1",Quality/Image Size1,JPEG Quality,Standard
+"<i name=""camera""/>Camera 1",Quality/Image Size1,JPEG Image Size,,Selects the size of still images.
+"<i name=""camera""/>Camera 1",Quality/Image Size1,Aspect Ratio,3:2,Same aspect ratio as 35 mm plate film Selects the aspect ratio for still images.
+,,,16:9,An aspect ratio suitable for viewing on a TV that supports high definition
+"<i name=""camera""/>Camera 1",Quality/Image Size1,APS-C/Super 35mm,Shooting,Foo Sets whether to record in
+,,,Shoot.: Manual,Sets whether to record in either an APS-C-equivalent size or Super 35mm-equivalent size when [Shooting] is set to [Manual]. (Off/On)
+"<i name=""camera""/>Camera 1",Quality/Image Size2,,,
+"<i name=""camera""/>Camera 1",Quality/Image Size2,Long Exposure NR,On,"Activates noise reduction for the same duration that the shutter is open. When noise reduction is in progress, a message appears and you cannot take another picture. Select this to prioritize the image quality. Sets noise reduction processing for shots with a shutter speed of 1 second"
+,,,Off,Does not activate noise reduction. Select this to prioritize the timing of shooting.
+"<i name=""camera""/>Camera 1",Quality/Image Size2,High ISO NR,Normal,Activates high ISO noise reduction normally. Sets noise reduction processing for high-sensitivity shooting.
+,,,Low,Activates high ISO noise reduction moderately.
+,,,Off,Does not activate high ISO noise reduction. Select this to prioritize the timing of shooting.
+"<i name=""camera""/>Camera 1",Quality/Image Size2,Color Space,sRGB,"This is the standard color space of the digital camera. Use [sRGB] in normal shooting, such as when you intend to print out the images without any modification. Changes the color space (range of reproducible colors)."
+,,,AdobeRGB,"This color space has a wide range of color reproduction. When a large part of the subject is vivid green or red, Adobe RGB is effective. The file name of the recorded image starts with “_.”"
+"<i name=""camera""/>Camera 1",Quality/Image Size2,Lens Comp,Shading Comp.,Sets whether to automatically compensate for darkness in the corners of the screen. ([Auto]/[Off]) Selects the type of lens compensation.
+,,,Chro. Aber. Comp.,Sets whether to automatically reduce  color deviation at the corners of the screen. ([Auto]/[Off])
+,,,Distortion Comp.,Sets whether to automatically compensate for distortion of the screen. ([Auto]/[Off])
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,Scene Selection,Portrait,Blurs background and sharpens the subject. Accentuates the skin tones softly. Selects pre-set settings to match various scene conditions.
+,,,Sports Action,Shoots a moving subject at a fast shutter speed so that the subject looks as if it is standing still. The product shoots images continuously while the shutter button is pressed.
+,,,Macro,"Shoots close-ups of the subjects, such as flowers, insects, food, or small items."
+,,,Landscape,Shoots the entire range of a scenery in sharp focus with vivid colors.
+,,,Sunset,Shoots the red of the sunset beautifully.
+,,,Night Scene,Shoots night scenes without losing the dark atmosphere.
+,,,Night Portrait,Shoots night scene portraits using the flash (sold separately).
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,Drive Mode,Single Shooting,"Normal shooting mode. Sets the drive mode, such as for continuous shooting. ([Self-timer] / [Cont. Bracket], etc.)"
+,,,Cont. Shooting,Shoots images continuously while you press and hold down the shutter button.
+,,,Self-timer,Shoots an image using the self-timer after a designated number of seconds have elapsed since the shutter button was pressed.
+,,,Self-timer(Cont),Shoots a designated number of images using the self-timer after a designated number of seconds have elapsed since the shutter button was pressed.
+,,,Cont. Bracket,"Shoots images while holding the shutter button down, each with different degrees of exposure."
+,,,Single Bracket,"Shoots a specified number of images, one by one, each with a different degrees of exposure."
+,,,WB bracket,"Shoots a total of three images, each with different color tones according to the selected settings for white balance, color temperature and color filter."
+,,,DRO Bracket,"Shoots a total of three images, each at a different degree of D-Range Optimizer."
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,Bracket Settings,Selftimer during Brkt,"Sets whether to use the self-timer during bracket shooting. Also sets the number of seconds until the shutter is released if using the self-timer. (OFF/2 Sec/5 Sec/10 Sec) Sets self-timer shooting in bracket mode, shooting order for exposure"
+,,,Bracket order,Sets the order of exposure bracketing and white balance bracketing. (0→-→+/-→0→+)
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,MR Recall,,
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,MR Memory,,
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive1,Select Media,Slot 1,Selects the slot 1. Selects the memory card slot from which settings are recalled or to which
+,,,Slot 2,Selects the slot 2.
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive2,Reg Cust Shoot Set,,
+"<i name=""camera""/>Camera 1",Shoot Mode/Drive2,Intvl. Shoot. Func.,Interval Shooting,Sets whether to perform interval shooting. ([On]/[Off])
+,,,Shooting Start Time,Sets the time from when you press the shutter button to when interval shooting starts. (1 second to 99 minutes 59 seconds)
+,,,Shooting Interval,Sets the shooting interval (time from when one exposure starts to when the exposure for the next shot starts). (1 second to 60 seconds)
+,,,Number of Shots,Sets the number of shots for interval shooting. (1 shot to 9999 shots)
+,,,AE Tracking Sens.,"Sets the tracking sensitivity of the auto exposure against the change in luminance during interval shooting. If you select [Low], exposure changes during interval shooting will be smoother. ([High]/[Mid]/[Low])"
+,,,Silent Shoot. in Intvl.,Sets whether or not to perform silent shooting during interval shooting. ([On]/[Off])
+,,,Shoot. Intvl. Priority,Sets whether or not to prioritize the shooting interval when the exposure mode is [Program Auto] or [Aperture Priority] and the shutter speed becomes longer than the time set for [Shooting Interval]. ([On]/[Off])
+"<i name=""camera""/>Camera 1",AF1,Focus Mode,,"Selects the focus mode. ([Single-shot AF] / [Continuous AF], etc.)"
+"<i name=""camera""/>Camera 1",AF1,Priority Set in AF-S,AF,Prioritizes focusing. The shutter will not be released until the subject is in focus. Sets the timing of the shutter release when [Focus Mode] is
+,,,Release,Prioritizes the shutter's release. The shutter will be released even if the subject is out of focus.
+,,,Balanced Emphasis,Shoots with a balanced emphasis on both focusing and shutter release.
+"<i name=""camera""/>Camera 1",AF1,Priority Set in AF-C,AF,Prioritizes focusing. The shutter will not be released until the subject is in focus. Sets the timing of the shutter release when [Focus Mode] is set to
+,,,Release,Prioritizes the shutter's release. The shutter will be released even if the subject is out of focus.
+,,,Balanced Emphasis,Shoots with a balanced emphasis on both focusing and shutter release.
+"<i name=""camera""/>Camera 1",AF1,Focus Area,Wide,"Focuses on a subject covering the whole range of the screen automatically.  When you press the shutter button halfway down in the still image shooting mode, a green frame is displayed around the area that is in focus. Selects the area of focus."
+,,,Zone,"Select a zone on the monitor on which to focus, and the product will automatically select a focus area."
+,,,Center,Focuses automatically on a subject in the center of the image. Use together with the focus-lock function to create the composition you want.
+,,,Flexible Spot,Allows you to move the focusing frame to a desired point on the screen and focus on an extremely small subject in a narrow area.
+,,,Expand Flexible Spot,"If the product cannot focus on a single selected point, it uses focus points around the flexible spot as a secondary priority area for focusing."
+,,,Lock-on AF,"When the shutter button is pressed and held halfway down, the product tracks the subject within the selected autofocus area.  This setting is available only when the [Focus Mode] is set to [Continuous AF]. Point the cursor at [Lock-on AF] on the [Focus Area] setting screen, and then select the desired area to start tracking using the left/right sides of the control wheel. You can also move the tracking start area to the desired point by designating the area as a zone, flexible spot or expand flexible spot."
+"<i name=""camera""/>Camera 1",AF1,Focus Settings,,"Allows you to focus using the front dial, rear dial or control wheel."
+"<i name=""camera""/>Camera 1",AF1,Swt. V/H AF Area,Off,Does not switch the [Focus Area] and the position of the focusing frame according to the orientation of the camera (horizontal/vertical). Sets whether to adjust the [Focus Area] and the position of the
+,,,AF Point Only,Switches the position of the focusing frame according to the orientation of the camera (horizontal/vertical). The [Focus Area] is fixed.
+,,,AF Point + AF Area,Switches both the [Focus Area] and the position of the focusing frame according to the orientation of the camera (horizontal/vertical).
+"<i name=""camera""/>Camera 1",AF2,AF Illuminator,Auto,"The AF illuminator lights up automatically in dark surroundings. Sets the AF illuminator, which provides light to aid focusing in dark"
+,,,Off,Does not use the AF illuminator.
+"<i name=""camera""/>Camera 1",AF2,Center Lock-on AF,,Sets the function to track a subject and continue focusing when pressing
+"<i name=""camera""/>Camera 1",AF2,Set. Face Prty in AF,,Sets whether the camera focuses based on detected faces.
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,5(Responsive) / 4 / 3(Standard) / 2 / 1(Locked on),Select [5(Responsive)] to focus responsively on subjects at different distances.  Select [1(Locked on)] to keep the focus on a specific subject when other things are crossing in front of the subject. Sets the AF tracking sensitivity for the still image mode.
+"<i name=""camera""/>Camera 1",AF2,AF System,Phase Detection AF,Focuses with Phase Detection AF. The focusing speed is very fast. Sets the auto focus method when an LA-EA1/LA-EA3 Mount Adaptor
+,,,Contrast AF,Always focuses with Contrast AF. The focusing speed is slower. Use when you cannot focus with [Phase Detection AF].
+"<i name=""camera""/>Camera 1",AF2,AF w/ shutter,On,The auto focus operates when you press the shutter button halfway down. Sets whether to perform auto focusing when the shutter button is
+,,,Off,The auto focus does not operate even if you press the shutter button halfway down.
+"<i name=""camera""/>Camera 1",AF3,Pre-AF,On,Adjusts focus before you press the shutter button halfway down. Sets whether or not to perform auto focus before the shutter button is half
+,,,Off,Does not adjust focus before you press the shutter button halfway down.
+"<i name=""camera""/>Camera 1",AF3,Eye-Start AF,,Sets whether to use auto focus when you look through the viewfinder if
+"<i name=""camera""/>Camera 1",AF3,AF Area Regist,,Sets whether to move the focusing frame to a preassigned position when
+"<i name=""camera""/>Camera 1",AF3,Del. Reg. AF Area,,Deletes the focusing frame position information that was registered using
+"<i name=""camera""/>Camera 1",AF3,AF Area Auto Clear,On,The focus area disappears automatically shortly after focus is achieved. Sets whether the focus area is displayed all the time or disappears
+,,,Off,The focus area is displayed all the time.
+"<i name=""camera""/>Camera 1",AF3,Disp. cont. AF area,On,Displays the focus area that is in focus. Sets whether or not to display the focus area in [Continuous AF] mode.
+,,,Off,Does not display the focus area that is in focus.
+"<i name=""camera""/>Camera 1",AF4,AF Micro Adj,,"adjusts the autofocused position, when using the LA-EA2"
+"<i name=""camera""/>Camera 1",AF4,Aperture Drive in AF,Standard,Uses the standard aperture drive system.
+,,,Silent Priority,Changes the aperture drive system to prioritize silence so that the sound from the aperture drive is quieter than in [Standard].
+"<i name=""camera""/>Camera 1",Exposure1,Exposure Comp,,Compensates for the brightness of the entire image.
+"<i name=""camera""/>Camera 1",Exposure1,Reset EV Comp,Maintain,Maintains the settings. Sets whether to maintain the exposure value set using
+,,,Reset,Resets the settings.
+"<i name=""camera""/>Camera 1",Exposure1,ISO,ISO AUTO,"Sets the ISO sensitivity automatically. Sets the ISO sensitivity. ([ISO AUTO], etc.)"
+,,,ISO 50 – ISO 204800,Sets the ISO sensitivity manually. Selecting a larger number increases the ISO sensitivity.
+"<i name=""camera""/>Camera 1",Exposure1,ISO AUTO Min. SS,FASTER (Faster)/FAST (Fast),"The ISO sensitivity will start to change at shutter speeds faster than [Standard], so you can prevent camera shake and subject blurring. Sets the slowest shutter speed at which ISO sensitivity will start to"
+,,,STD (Standard),The camera automatically sets the shutter speed based on the focal length of the lens.
+,,,SLOW (Slow)/SLOWER (Slower),"The ISO sensitivity will start to change at shutter speeds slower than [Standard], so you can shoot images with less noise."
+,,,"1/8000 ― 30"",The ISO sensitivity starts to change at the shutter speed you have set.,
+<i name=camera""/>Camera 1",Exposure1 Metering Mode Multi Measures light on each area after dividing the total area into multiple areas and determines the proper exposure of the entire screen (Multi-pattern metering). Selects the method for measuring brightness.
+,,,Center,"Measures the average brightness of the entire screen, while emphasizing the central area of the screen (Center-weighted metering)."
+,,,Spot,Measures only the central area (Spot metering). This mode is suitable for measuring light on a specified part of the entire screen. The size of the metering circle can be selected from [Spot: Standard] and [Spot: Large]. The position of the metering circle depends the setting for [Spot Metering Point].
+,,,Entire Screen Avg.,Measures the average brightness of the entire screen. The exposure will be stable even if the composition or the position of the subject changes.
+,,,Highlight,Measures the brightness while emphasizing the highlighted area on the screen. This mode is suitable for shooting the subject while avoiding overexposure.
+"<i name=""camera""/>Camera 1",Exposure1,Face Prty in Mlti Mtr,On,The camera measures brightness based on detected faces. Sets whether the camera measures brightness based on detected faces
+,,,Off,"The camera measures brightness using the [Multi] setting, without detecting faces."
+"<i name=""camera""/>Camera 1",Exposure2,Spot Metering Point,Center,"The spot metering position does not coordinate with the focus area, but always meters brightness at the center. Sets whether to coordinate the spot metering point with the"
+,,,Focus Point Link,The spot metering position coordinates with the focus area.
+"<i name=""camera""/>Camera 1",Exposure2,Exposure step,,"Selects the size of the increment step for shutter speed, aperture, and"
+"<i name=""camera""/>Camera 1",Exposure2,AEL w/ shutter,Auto,"Fixes the exposure after adjusting the focus automatically when you press the shutter button halfway down when [Focus Mode] is set to [Single-shot AF]. When [Focus Mode] is set to [Automatic AF], and the product determines that the subject is moving, or you shoot burst images, the fixed exposure is cancelled. Sets whether to lock the exposure when the shutter button is pressed"
+,,,On,Fixes the exposure when you press the shutter button halfway down.
+,,,Off,Does not fix the exposure when you press the shutter button halfway down. Use this mode when you want to adjust focus and exposure separately.  The product keeps adjusting the exposure while shooting in [Cont. Shooting] mode.
+"<i name=""camera""/>Camera 1",Exposure2,Exposure Std. Adjust,,Adjusts the standard for the correct exposure value for each metering
+"<i name=""camera""/>Camera 1",Flash,Flash Mode,Flash Off,The flash does not operate. Sets the flash settings.
+,,,Autoflash,The flash works in dark environments or when shooting towards bright light.
+,,,Fill-flash,The flash works every time you trigger the shutter.
+,,,Slow Sync.,The flash works every time you trigger the shutter. Slow sync shooting allows you to shoot a clear image of both the subject and the background by slowing the shutter speed.
+,,,Rear Sync.,The flash works right before the exposure is completed every time you trigger the shutter. Rear sync shooting allows you to shoot a natural image of the trail of a moving subject such as a moving car or a walking person.
+"<i name=""camera""/>Camera 1",Flash,Flash Comp,,Adjusts the intensity of flash output.
+"<i name=""camera""/>Camera 1",Flash,Exp. comp. set,,Sets whether to reflect exposure compensation value to flash
+"<i name=""camera""/>Camera 1",Flash,Wireless Flash,Off,Does not use the wireless flash function. Sets whether to shoot with the wireless flash.
+,,,On,Uses the wireless flash function to make an external flash or flashes emit light at a distance from the camera.
+"<i name=""camera""/>Camera 1",Flash,Red Eye Reduction,On,The flash is always fired to reduce the red-eye phenomenon. Reduces the red-eye phenomenon when using flash.
+,,,Off,Does not use Red Eye Reduction.
+"<i name=""camera""/>Camera 1",Flash,External Flash Set.,Ext. Flash Firing Set.,"Allows you to configure settings related to the firing of the flash, such as the flash mode, flash level, etc."
+,,,Ext. Flash Cust. Set.,"Allows you to configure other flash settings, wireless settings, and flash unit settings."
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,White Balance,,Corrects the tone effect of the ambient light to shoot whitish objects
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,Priority Set in AWB,Standard,Shoots with standard auto white balance. The camera automatically adjusts the color tones. Selects which tone to prioritize when shooting under lighting conditions
+,,,Ambience,Prioritizes the color tone of the light source. This is suitable when you want to produce a warm atmosphere.
+,,,White,Prioritizes a reproduction of white color when the color temperature of the light source is low.
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,DRO/Auto HDR,Auto HDR: Exposure Diff. Auto,Corrects the brightness automatically. Analyzes the contrast of light and shadow between the subject and the
+,,,Auto HDR: Exposure Diff. 1.0EV ― Auto HDR: Exposure Diff. 6.0EV,"Sets the exposure difference, based on the contrast of the subject. Select the optimization level from 1.0EV (weak) to 6.0EV (strong).  For example, if you set the exposure value to 2.0 EV, three images will be composed with the following exposure levels: -1.0 EV, correct exposure and +1.0 EV."
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,Creative Style,Standard,For shooting various scenes with rich gradation and beautiful colors. Selects the desired image processing.
+,,,Vivid,"The saturation and contrast are heightened for shooting striking images of colorful scenes and subjects such as flowers, spring greenery, blue sky, or ocean views."
+,,,Neutral,The saturation and sharpness are lowered for shooting images in subdued tones. This is also suitable for capturing image material to be modified with a computer.
+,,,Clear,"For shooting images in clear tones with limpid colors in highlight, suitable for capturing radiant light."
+,,,Deep,"For shooting images with deep and dense colors, suitable for capturing the solid presence of the subject."
+,,,Light,"For shooting images with bright and simple colors, suitable for capturing a refreshingly light ambience."
+,,,Portrait,"For capturing skin in a soft tone, ideally suited for shooting portraits."
+,,,Landscape,"The saturation, contrast, and sharpness are heightened for shooting vivid and crisp scenery. Distant landscapes also stand out more."
+,,,Sunset,For shooting the beautiful red of the setting sun.
+,,,Night Scene,The contrast is lowered for reproducing night scenes.
+,,,Autumn leaves,"For shooting autumn scenes, vividly highlighting the reds and yellows of changing leaves."
+,,,Black & White,For shooting images in black and white monotone.
+,,,Sepia,For shooting images in sepia monotone.
+,,,Registering preferred settings (Style Box),Select the six style box (the boxes with numbers on the left side ()) to register preferred settings. Then select the desired settings using the right button.  You can call up the same style with slightly different settings.
+,,,Contrast,"The higher the value selected, the more the difference of light and shadow is accentuated, and the bigger the effect on the image."
+,,,Saturation,"The higher the value selected, the more vivid the color. When a lower value is selected, the color of the image is restrained and subdued."
+,,,Sharpness,"Adjusts the sharpness. The higher the value selected, the more the contours are accentuated, and the lower the value selected, the more the contours are softened."
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,Picture Effect,Off,Disables the [Picture Effect] function. Shoots images with a texture unique to the selected effect.
+,,,Toy Camera,Creates a soft image with shaded corners and reduced sharpness.
+,,,Pop Color,Creates a vivid look by emphasizing color tones.
+,,,Posterization,"Creates a high contrast, abstract look by heavily emphasizing primary colors, or in black and white."
+,,,Retro Photo,Creates the look of an aged photo with sepia color tones and faded contrast.
+,,,Soft High-key,"Creates an image with the indicated atmosphere: bright, transparent, ethereal, tender, soft."
+,,,Partial Color,"Creates an image which retains a specific color, but converts others to black and white."
+,,,High Contrast Mono.,Creates a high-contrast image in black and white.
+,,,Rich-tone Mono.,Creates an image in black and white with rich gradation and reproduction of details.
+"<i name=""camera""/>Camera 1",Color/WB/Img. Processing,Picture Profile,PP1,Example setting using [Movie] gamma. Changes settings such as color and tone when recording images.
+,,,PP2,Example setting using [Still] gamma.
+,,,PP3,Example setting of natural color tone using the [ITU709] gamma.
+,,,PP4,Example setting of a color tone faithful to the ITU709 standard.
+,,,PP5,Example setting using [Cine1] gamma.
+,,,PP6,Example setting using [Cine2] gamma.
+,,,PP7,Example setting using [S-Log2] gamma.
+,,,PP8,Example setting using the [S-Log3] gamma and the [S-Gamut3.Cine] under [Color Mode].
+,,,PP9,Example setting using the [S-Log3] gamma and the [S-Gamut3] under [Color Mode].
+,,,PP10,Example setting for recording HDR movies using [HLG2] gamma.
+,,,Black Level,Sets the black level. (–15 to +15)
+,,,Gamma,Selects a gamma curve.
+,,,Black Gamma,Corrects gamma in low intensity areas.
+,,,Knee,"Sets knee point and slope for video signal compression to prevent over-exposure by limiting signals in high intensity areas of the subject to the dynamic range of your camera. [Knee] is disabled if [Mode] is set to [Auto] when [Gamma] is set to [Still], [Cine1], [Cine2], [Cine3], [Cine4], [ITU709(800%)], [S-Log2], [S-Log3], [HLG], [HLG1], [HLG2], or [HLG3]. To enable [Knee], set [Mode] to [Manual]."
+,,,Color Mode,"Sets type and level of colors. In [Color Mode], only [BT.2020] and [709] are available when [Gamma] is set to [HLG], [HLG1], [HLG2], or [HLG3]."
+,,,Saturation,Sets the color saturation. (-32 to +32)
+,,,Color Phase,Sets the color phase. (-7 to +7)
+,,,Color Depth,"Sets the color depth for each color phase. This function is more effective for chromatic colors and less effective for achromatic colors.  The color looks deeper as you increase the setting value towards the positive side, and lighter as you decrease the value towards the negative side. This function is effective even if you set [Color Mode] to [Black & White]."
+,,,Detail,Sets items for [Detail].
+,,,To copy the settings to another picture profile number,You can copy the settings of the picture profile to another picture profile number.
+,,,To Reset the picture profile to the default setting,You can reset the picture profile to the default setting. You cannot reset all picture profile settings at once.
+"<i name=""camera""/>Camera 1",Focus Assist,Focus Magnifier,,Enlarges the image before shooting so that you can check the focus.
+"<i name=""camera""/>Camera 1",Focus Assist,Focus Magnif. Time,2 Sec,Magnifies the images for 2 seconds. Sets the length of time the image will be shown in an enlarged form.
+,,,5 Sec,Magnifies the images for 5 seconds.
+,,,No Limit,Magnifies the images until you press the shutter button.
+"<i name=""camera""/>Camera 1",Focus Assist,Initial Focus Mag,x1.0,Displays the image with the same magnification as the shooting screen. Sets the initial magnification scale when using [Focus Magnifier].
+,,,x5.9,Displays a 5.9-times enlarged image.
+,,,x1.0,Displays the image with the same magnification as the shooting screen.
+,,,x3.8,Displays a 3.8-times enlarged image.
+"<i name=""camera""/>Camera 1",Focus Assist,AF in Focus Mag,,Sets whether or not to autofocus when an enlarged image is being
+"<i name=""camera""/>Camera 1",Focus Assist,MF Assist,,Displays an enlarged image when focusing manually.
+"<i name=""camera""/>Camera 1",Focus Assist,Peaking Setting,Peaking Display,"Sets whether to display peaking. Sets the peaking function, which enhances the outline of in-focus areas"
+,,,Peaking Level,Sets the level of enhancement of in-focus areas.
+,,,Peaking Color,Sets the color used to enhance in-focus areas.
+"<i name=""camera""/>Camera 1",Face Detection/Shoot Assist,Anti-flicker Shoot,Off,Does not reduce influences caused by flickering. Detects flickering/blinking from artificial light sources such as
+,,,On,"Reduces influences caused by flickering. When the camera detects flickering while the shutter button is pressed halfway down,  (flicker icon) will be displayed."
+"<i name=""camera""/>Camera 1",Face Detection/Shoot Assist,Face Registration,,changes the person to be given priority when focusing.
+"<i name=""camera""/>Camera 1",Face Detection/Shoot Assist,Regist. Faces Priority,On,Focuses with higher priority on faces registered using [Face Registration]. Detects the registered face with higher priority using
+,,,Off,Focuses without giving higher priority to  registered faces.
+"<i name=camera""/>Camera 2""",Movie1,Exposure Mode,Program Auto,Allows you to shoot with the exposure adjusted automatically (both the shutter speed and the aperture value). Sets the exposure mode when shooting movies.
+,,,Aperture Priority,Allows you to shoot after adjusting the aperture value manually.
+,,,Shutter Priority,Allows you to shoot after adjusting the shutter speed manually.
+,,,Manual Exposure,Allows you to shoot after adjusting the exposure (both the shutter speed and the aperture value) manually.
+"<i name=camera""/>Camera 2""",Movie1,Exposure Mode,,Sets the exposure mode when shooting movies.
+"<i name=camera""/>Camera 2""",Movie1,File Format,,Sets the file format for still images.
+"<i name=camera""/>Camera 2""",Movie1,Record Setting,,Selects a frame-rate and bit-rate for the movie.
+"<i name=camera""/>Camera 2""",Movie1,S&Q Settings,Record Setting,Selects the frame rate of the movie. Changes the settings for slow-motion and quick-motion movie shooting.
+,,,Frame Rate,Selects the shooting frame rate.
+"<i name=camera""/>Camera 2""",Movie1,Proxy Recording,On,Proxy movies are simultaneously recorded. Records low-bit-rate proxy files simultaneously when recording
+,,,Off,Proxy movies are not recorded.
+"<i name=camera""/>Camera 2""",Movie2,AF drive speed,Fast,"Sets the AF drive speed to fast. This mode is suitable for shooting active scenes, such as sports. Switches focusing speed when using autofocus in movie mode."
+,,,Normal,Sets the AF drive speed to normal.
+,,,Slow,"Sets the AF drive speed to slow. With this mode, the focus switches smoothly when the subject to be focused is changed."
+"<i name=camera""/>Camera 2""",Movie2,AF Track Sens,,Sets the AF tracking sensitivity for the still image mode.
+"<i name=camera""/>Camera 2""",Movie2,Auto Slow Shut,On,Uses Auto Slow Shutter. The shutter speed automatically slows when recording in dark locations. You can reduce noise in the movie by using a slow shutter speed when recording in dark locations. Sets the function that automatically adjusts the shutter speed following
+,,,Off,"Does not use Auto Slow Shutter. The recorded movie will be darker than when [On] is selected, but you can record movies with smoother motion and less object blur."
+"<i name=camera""/>Camera 2""",Movie2,Audio Recording,On,Records sound (stereo). Sets whether to record audio when shooting a movie.
+,,,Off,Does not record sound.
+"<i name=camera""/>Camera 2""",Movie2,Audio Rec Level,+,Turns up the audio recording level. Adjusts the audio recording level during movie recording.
+,,,-,Turns down the audio recording level.
+,,,Reset,Resets the audio recording level to the default setting.
+"<i name=camera""/>Camera 2""",Movie2,Audio Level Display,On,Displays the audio level. Sets whether to display the audio level.
+,,,Off,Does not display the audio level.
+"<i name=camera""/>Camera 2""",Movie3,Audio Out Timing,Live,Outputs audio without delay. Select this setting when audio deviation is a problem during audio monitoring. Sets the timing of audio output during the movie recording.
+,,,Lip Sync,Outputs audio and video in sync. Select this setting to prevent undesirable deviations between video and audio.
+"<i name=camera""/>Camera 2""",Movie3,Wind Noise Reduct,On,Reduces wind noise. Reduces wind noise during movie recording.
+,,,Off,Does not reduce wind noise.
+"<i name=camera""/>Camera 2""",Movie3,Marker Display,On,Markers are displayed. The markers are not recorded. Sets whether to display markers on the monitor when recording movies.
+,,,Off,No marker is displayed.
+"<i name=camera""/>Camera 2""",Movie3,Marker Settings,Center,Sets whether or not to display the center marker in the center of the shooting screen.   [Off]/[On] Sets which markers to display on the monitor when recording movies.
+,,,Aspect,Sets the aspect marker display.   [Off]/[4:3]/[13:9]/[14:9]/[15:9]/[1.66:1]/[1.85:1]/[2.35:1]
+,,,Safety Zone,Sets the safety zone display. This becomes the standard range that can be received by a general household TV. [Off]/[80%]/[90%]
+,,,Guideframe,Sets whether or not to display the guide frame. You can verify whether the subject is level or perpendicular to the ground. [Off]/[On]
+"<i name=camera""/>Camera 2""",Movie3,Video Light Mode,Power Link,The video light turns on/off in sync with the ON/OFF operation of this camera. Sets the illumination setting for the
+,,,REC Link,The video light turns on/off in sync with movie recording start/stop.
+,,,REC Link&STBY,The video light turns on when movie recording starts and dims when not recording (STBY).
+,,,Auto,The video light automatically turns on when it is dark.
+"<i name=camera""/>Camera 2""",Movie3,Movie w/ shutter,On,Enables movie recording using the shutter button when the shooting mode is set to [Movie] or [S&Q Motion]. Records movies using the shutter button.
+,,,Off,Disables movie recording using the shutter button.
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,Silent Shooting,On,You can shoot images without the shutter sound. Shoots images without the shutter sound.
+,,,Off,[Silent Shooting] is deactivated.
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,e-Front Curtain Shut.,On,Uses the electronic front curtain shutter function.
+,,,Off,Does not use the electronic front curtain shutter function.
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,Release w/o Lens,Enable,"Releases the shutter when no lens is attached. Select [Enable] when attaching the product to an astronomical telescope, etc. Sets whether to release the shutter when the lens is not attached."
+,,,Disable,Does not release the shutter when a lens is not attached.
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,Release w/o Card,Enable,Releases the shutter even if no memory card has been inserted. Sets whether to release the shutter when a memory card is not inserted.
+,,,Disable,Does not release the shutter when no memory card has been inserted.
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,SteadyShot,On,Uses [SteadyShot]. Sets whether to activate SteadyShot for shooting.
+,,,Off,"Does not use [SteadyShot].  We recommend that you set [Off] when using a tripod, etc."
+"<i name=camera""/>Camera 2""",Shutter/SteadyShot,SteadyShot Settings,Auto,Performs the SteadyShot function automatically according to the information obtained from the attached lens. Sets SteadyShot settings.
+,,,Manual,Performs the SteadyShot function according to the focal-length set using [SteadyS. Focal Len.]. (8mm-1000mm) Check the focal-length index (A) and set the focal-length.
+"<i name=camera""/>Camera 2""",Zoom,Zoom,,Sets the zoom scale for zoom functions other than the optical zoom.
+"<i name=camera""/>Camera 2""",Zoom,Zoom Setting,Optical zoom only,Limits the zoom range to the optical zoom. You can use the Smart Zoom function if you set [JPEG Image Size] to [M] or [S]. Sets whether to use the Clear Image
+,,,On:ClearImage Zoom,"Select this setting to use Clear Image Zoom. Even if the zoom range exceeds the optical zoom, the product magnifies images within the range in which image quality does not deteriorate significantly."
+,,,On:Digital Zoom,"When the zoom range of the Clear Image Zoom is exceeded, the product magnifies images to the largest scale. However, the image quality will deteriorate."
+"<i name=camera""/>Camera 2""",Zoom,Zoom Ring Rotate,Left(W)/Right(T),Assigns zoom out (W) function to left-handed rotation and zoom-in (T) function to right-handed rotation. Assigns the zoom in/out to the rotational direction of the zoom lens.
+,,,Right(W)/Left(T),Assigns zoom in (T) function to left-handed rotation and zoom-out (W) function to right-handed rotation.
+"<i name=camera""/>Camera 2""",Display/Auto Review1,DISP Button,,Sets the type of information to be displayed on the monitor or in the
+"<i name=camera""/>Camera 2""",Display/Auto Review1,FINDER/MONITOR,Auto,"When you look into the Electronic Viewfinder, the eye sensor reacts and the display is switched to the Electronic Viewfinder automatically. Sets the method for switching the display between the electronic"
+,,,Viewfinder(Manual),The screen is turned off and the image is displayed only in the Electronic Viewfinder.
+,,,Monitor(Manual),The Electronic Viewfinder is turned off and the image is always displayed on the screen.
+"<i name=camera""/>Camera 2""",Display/Auto Review1,Zebra Setting,Zebra Display,Sets whether to display the zebra pattern. Sets the stripes displayed to adjust brightness.
+,,,Zebra Level,Adjusts the brightness level of the zebra pattern.
+"<i name=camera""/>Camera 2""",Display/Auto Review1,Grid Line,Rule of 3rds Grid,Place main subjects close to one of the grid lines that divide the image into thirds for a well-balanced composition. Displays grid lines for adjusting the image composition.
+,,,Square Grid,"Square grids make it easier to confirm the horizontal level of your composition. This is suitable to determine the quality of the composition when shooting landscape, close-up, or duplicated images."
+,,,Diag. + Square Grid,Place a subject on the diagonal line to express an uplifting and powerful feeling.
+,,,Off,Does not display the grid line.
+"<i name=camera""/>Camera 2""",Display/Auto Review1,Exposure Set. Guide,Off,Does not display the guide. Sets the guide displayed when exposure settings are changed in the
+,,,On,Displays the guide.
+"<i name=camera""/>Camera 2""",Display/Auto Review1,Live View Display,Setting Effect ON,Displays Live View in conditions close to what your picture will look like as a result of applying all your settings.  This setting is useful when you want to shoot pictures while checking the results of the shot on the Live View screen. Sets whether to reflect settings such as exposure compensation in screen
+,,,Setting Effect OFF,"Displays Live View without the effects of exposure compensation, white balance, [Creative Style], or [Picture Effect].  When this setting is used, you can easily check the image composition.  Live View is always displayed with the appropriate brightness even in [Manual Exposure] mode. When [Setting Effect OFF] is selected, the  icon is displayed on the Live View screen."
+"<i name=camera""/>Camera 2""",Display/Auto Review2,Cont. Shoot. Length,Always Display,Always displays the indicator when the drive mode is set to [Cont. Shooting]. Sets whether to display an indicator continuous shooting can be performed at the same shooting speed.
+,,,Shoot.-Only Display,Displays the indicator only while continuous shooting is performed.
+,,,Not Displayed,Does not display the indicator.
+"<i name=camera""/>Camera 2""",Display/Auto Review2,Auto Review,10 Sec/5 Sec/2 Sec,"Displays the recorded image on the screen right after shooting for the selected duration of time.  If you perform a magnifying operation during Auto Review, you can check that image using the magnified scale. Sets auto review to display the captured image after shooting."
+,,,Off,Does not display the Auto Review.
+"<i name=camera""/>Camera 2""",Custom Operation1,Custom Key,Custom Key,Sets the custom key function to use when shooting still images. Assigns functions to the various keys so that you can perform operations
+,,,Custom Key,Sets the custom key function to use when recording movies. You can assign a different function from the one used when shooting still images.
+,,,Custom Key,Sets the custom key function to use when playing back images.
+"<i name=camera""/>Camera 2""",Custom Operation1,Custom Key,,Assigns functions to the various keys so that you can perform operations
+"<i name=camera""/>Camera 2""",Custom Operation1,Custom Key,,Assigns functions to the various keys so that you can perform operations
+"<i name=camera""/>Camera 2""",Custom Operation1,Function Menu Set,,Customizes the functions displayed when the Fn (Function) button is
+"<i name=camera""/>Camera 2""",Custom Operation1,Dial Setup,Tv Av,The front dial is used to change the shutter speed and the rear dial to change the aperture value. Sets the functions of the front and rear dials when the exposure mode
+,,,Av Tv,The front dial is used to change the aperture value and the rear dial to change the shutter speed.
+"<i name=camera""/>Camera 2""",Custom Operation1,Av/Tv Rotate,Normal,"Does not change the direction of rotation for the front dial, rear dial, or control wheel. Sets the direction of turning the front or rear dial or the control wheel to"
+,,,Reverse,"Reverses the direction of rotation for the front dial, rear dial, or control wheel."
+"<i name=camera""/>Camera 2""",Custom Operation2,Dial Ev Comp,Off,Does not enable exposure compensation with the front or rear dial. Sets whether to compensate the exposure with the front or rear dial.
+,,,Front dial/ Rear dial,Enables exposure compensation with the front or rear dial.
+"<i name=camera""/>Camera 2""",Custom Operation2,MOVIE Button,Always,Starts movie recording when you press the MOVIE button in any mode. Enables or disables for the MOVIE button.
+,,,Movie Mode Only,Starts movie recording when you press the MOVIE button only if the shooting mode is set to [Movie] or [S&Q Motion] mode.
+"<i name=camera""/>Camera 2""",Custom Operation2,Lock Operation Parts,Off,"Does not lock the multi-selector, front dial, rear dial, or control wheel even if you press and hold down the Fn (Function) button. Sets whether to disable the multi- selector, control wheel, or front and"
+,,,Multi-Selector Only,Locks the multi-selector.
+,,,Dial + Wheel,"Locks the front dial, rear dial, and control wheel."
+,,,All,"Locks the multi-selector, front dial, rear dial, and control wheel."
+"<i name=camera""/>Camera 2""",Custom Operation2,Audio signals,On,Sounds are produced for example when the focus is achieved by pressing the shutter button halfway down. Selects whether the camera beeps during auto focus and self-timer
+,,,Off,Sounds are not produced.
+"<i name=camera""/>Camera 2""",Custom Operation2,Function Ring(Lens),Power Focus,The focusing position moves toward infinity when you turn the function ring to the right. The focusing position moves to the closer range when you turn the function ring to the left.
+,,,/Full Frm Sel.,The angle of view switches between full frame and APS-C/Super 35 mm when the function ring is turned. The angle of view switches regardless of the direction in which you turn the function ring.
+Network,Network1,Snd to Smrtphn Func,,"Sets movies to be transferred to a smartphone, or transfers images to a smartphone"
+Network,Network1,Send to Computer,,Backs up images by transferring them to a computer connected to a network
+Network,Network1,FTP Transfer Func,,Sets image transfer using FTP and executes it. * Basic knowledge of FTP servers is required.
+Network,Network1,View on TV,,Allows you to view images on a network-enabled TV.
+Network,Network1,Ctrl w/ Smartphone,Ctrl w/ Smartphone,Sets whether to connect the camera and a smartphone using Wi-Fi. ([On]/[Off]) Sets the condition for connecting the camera to a smartphone.
+,,,Connection,Displays the QR code or SSID used to connect the camera to a smartphone.
+,,,Always Connected,"Sets whether to keep the camera connected to a smartphone. If this item is set to [On], once you connect the camera to a smartphone, it will remain connected to the smartphone at all times. If it is set to [Off], the camera will connect to a smartphone only when the connection procedure is performed."
+Network,Network1,Airplane Mode,,"Disables wireless communications from the device such as Wi-Fi, NFC,"
+Network,Network2,Wi-Fi Settings,,Allows you to register your access point and check or change the Wi-Fi
+Network,Network2,Bluetooth Settings,Bluetooth Function (On/Off),Sets whether to activate or not the Bluetooth function of the camera. Controls the settings for connecting the camera with a smartphone via a
+,,,Pairing,Displays the screen for pairing the camera and smartphone or Bluetooth remote commander.
+,,,Disp Device Address,Displays the BD address of the camera.
+Network,Network2,Loc. Info. Link Set,Location Info. Link,Sets whether to obtain the location information by linking with a smartphone. Obtains location information from the
+,,,Auto Time Correct.,Sets whether to automatically correct the date setting of the camera using information from a linked smartphone.
+,,,Auto Area Adjust.,Sets whether to automatically correct the area setting of the camera using information from a linked smartphone.
+Network,Network2,Edit Device Name,,Changes the device name under Wi-Fi
+Network,Network2,Imp Root Certificate,,Imports a root certificate to the camera.
+Network,Network2,Reset Network Set,,Resets all the network settings.
+Network,Network3,Bluetooth Rmt Ctrl,On,Enables Bluetooth remote commander operation.
+,,,Off,Disables Bluetooth remote commander operation.
+Playback,Playback1,Protect,Multiple Img.,"Applies or cancels the protection of the selected multiple images. 
+(1) Select the image to be protected, then press the center of the control wheel. The  mark is displayed in the check box. To cancel the selection, press the center again to remove the  mark. 
+(2) To protect other images, repeat step (1). 
+(3) MENU → [OK]. Protects recorded images against accidental erasure."
+,,,All in this Folder,Protects all images in the selected folder.
+,,,All with this date,Protects all images in the selected date range.
+,,,Cancel All in this Folder,Cancels the protection of all images in the selected folder.
+,,,Cancel All with this date,Cancels the protection of all images in the selected date range.
+,,,All Images in This Group,Protects all the images in the selected group.
+,,,Cancel All in This Group,Cancels the protection of all the images in the selected group.
+Playback,Playback1,Rotate,Left(W)/Right(T),Assigns zoom out (W) function to left-handed rotation and zoom-in (T) function to right-handed rotation. Rotates the image.
+,,,Right(W)/Left(T),Assigns zoom in (T) function to left-handed rotation and zoom-out (W) function to right-handed rotation.
+Playback,Playback1,Delete,,Deletes images.
+Playback,Playback1,Rating,,Assigns rating to recorded images on a scale from ★ to ★★★★★.
+Playback,Playback1,Rating Set(Cust Key),,Assigns rating to recorded images on a scale from ★ to ★★★★★.
+Playback,Playback1,Specify Printing,Multiple Img.,"Selects images to order printing. (1) Select an image and press the center of the control wheel. The  mark is displayed in the check box. To cancel the selection, press the center again and delete the  mark. (2) Repeat step (1) to print other images. To select all the images from a certain date or in a certain folder, select the check box for the date or folder. (3) MENU → [OK]. Specifies in advance on the memory card which still images to print out"
+,,,Cancel All,Clears all DPOF marks.
+,,,Print Setting,Sets whether to print the date on images registered with DPOF marks. The position or size of the date (inside or outside of the image) may differ depending on the printer.
+Playback,Playback2,Copy,,Copies images from the memory card in the memory card slot designated in
+Playback,Playback2,Photo Capture,,Captures a chosen scene in a movie to save as a still image.
+Playback,Playback2,Enlarge Image,,Enlarges the playback images.
+Playback,Playback2,Enlarge Init. Mag,Standard. Mag.,Displays an image with the standard magnification. Sets the initial magnification scale when playing back enlarged images.
+,,,Previous Mag.,Displays an image with the previous magnification. The previous magnification is stored even after exiting the playback zoom mode.
+Playback,Playback2,Enlarge Initial Pos,,Sets the initial magnification area when playing back enlarged images.
+Playback,Playback2,Slide Show,Repeat,"Select [On], in which images are played back in a continuous loop, or [Off], in which the product exits the slideshow when all the images are played back once. Plays a slide show."
+,,,Interval,"Select the display interval for images from among [1 Sec], [3 Sec], [5 Sec], [10 Sec] or [30 Sec]."
+Playback,Playback3,Select PB Media,Slot 1,Selects the slot 1. Selects the memory card slot of the memory card to be played back.
+,,,Slot 2,Selects the slot 2.
+Playback,Playback3,View Mode,Date View,Displays the images by date. Plays back images from a specified date or specified folder of still images
+,,,Folder View(Still),Displays only still images.
+,,,AVCHD View,Displays only AVCHD-format movies.
+,,,XAVC S HD View,Displays only XAVC S HD-format movies.
+,,,XAVC S 4K View,Displays only XAVC S 4K-format movies.
+Playback,Playback3,Image Index,9 Images/25 Images,Displays multiple images at the same time.
+Playback,Playback3,Display as Group,On,Displays images as a group.
+,,,Off,Does not display images as a group.
+Playback,Playback3,Display Rotation,Auto,"When you rotate the camera, the displayed image rotates automatically by detecting the orientation of the camera. Sets the playback orientation for images shot vertically."
+,,,Manual,"Images shot vertically are displayed vertically. If you have set the image orientation using the [Rotate] function, the image will be displayed accordingly."
+,,,Off,Images are always displayed horizontally.
+Playback,Playback3,Image Jump Setting,Select Dial,Selects the dial to use for jumping between images. Sets which dial and method to use for jumping between images during
+,,,Image Jump Method,Sets the type of images to be played back with Image Jump.
+Playback,Playback4,Cont. PB for Intvl.,,
+Playback,Playback4,PB Speed for Intvl,,
+Setup,Setup1,Monitor Brightness,Manual,Adjusts the brightness within the range of –2 to +2. Adjusts the brightness of the screen.
+,,,Sunny Weather,Sets the brightness appropriately for shooting outdoors.
+Setup,Setup1,Viewfinder Bright,Auto,Adjusts the brightness automatically. Sets the brightness of the electronic viewfinder.
+,,,Manual,
+Setup,Setup1,Finder Color Temp,-2 to +2,"When you select “-,” the viewfinder screen changes to a warmer color, and when you select “+,” it changes to a colder color. Sets the color temperature of the viewfinder."
+Setup,Setup1,Gamma Disp. Assist,Off,Does not apply [Gamma Disp. Assist]. Adjusts the screen to make monitoring easier when displaying an
+,,,Auto,"Displays movies with an [S-Log2→709(800%)] effect when the gamma set in [Picture Profile] is [S-Log2], and with an [S-Log3→709(800%)] effect when the gamma is set to [S-Log3]. Displays movies with an [HLG(BT.2020)] effect when the gamma set in [Picture Profile] is [HLG], [HLG1], [HLG2] or [HLG3], and [Color Mode] is set to [BT.2020].  Displays movies with an [HLG(709)] effect when the gamma set in [Picture Profile] is [HLG], [HLG1], [HLG2] or [HLG3], and [Color Mode] is set to [709]."
+,,,S-Log2→709(800%),Displays movies with an S-Log2 gamma reproducing contrast equivalent to ITU709 (800%).
+,,,S-Log3→709(800%),Displays movies with an S-Log3 gamma reproducing contrast equivalent to ITU709 (800%).
+,,,HLG(BT.2020),Displays movies after adjusting the image quality of the monitor or viewfinder to a quality that is almost the same as when movies are displayed on an [HLG(BT.2020)] compatible monitor.
+,,,HLG(709),Displays movies after adjusting the image quality of the monitor or viewfinder to a quality that is almost the same as when movies are displayed on an [HLG(709)] compatible monitor.
+Setup,Setup1,Volume Settings,,Sets the volume for movie playback.
+Setup,Setup1,Delete confirm,,Sets whether [Delete] or [Cancel] is preselected in the delete confirmation
+Setup,Setup2,Display Quality,,"Sets the display quality. * When [High] is selected, the battery"
+Setup,Setup2,Pwr Save Start Time,,Sets the time intervals to automatically switch to power save
+Setup,Setup2,Auto Pwr OFF Temp,Standard,Sets the standard temperature for the camera to turn off. Sets the camera temperature at which the camera turns off automatically
+,,,High,Sets the temperature at which the camera turns off to higher than [Standard].
+,,,Ambient temperature: 20°C (68°F),Continuous recording time for movies (HD): Approx. 29 minutes
+,,,Ambient temperature: 30°C (86°F),Continuous recording time for movies (HD): Approx. 29 minutes
+,,,Ambient temperature: 40°C (104°F),Continuous recording time for movies (HD): Approx. 29 minutes
+Setup,Setup2,NTSC/PAL Selector,,
+Setup,Setup2,Cleaning Mode,,Starts the cleaning mode to clean the image sensor.
+Setup,Setup2,Touch Operation,On,"Activates the touch operation. Sets whether or not to activate the touch operation of the monitor. 72 73 Touch Panel/Pad Selects whether to activate touch panel operation when shooting with the monitor, or touch pad operation when shooting with the viewfinder."
+,,,Off,Deactivates the touch operation.
+Setup,Setup3,Touch Panel/Pad,Touch Panel+Pad,"Activates both the touch panel operations when shooting with the monitor and touch pad operations when shooting with the viewfinder. Selects whether to activate touch panel operation when shooting with the monitor, or touch pad operation when shooting with the viewfinder."
+,,,Touch Panel Only,Activates only the touch panel operations when shooting with the monitor.
+,,,Touch Pad Only,Activates only the touch pad operations when shooting with the viewfinder.
+Setup,Setup3,Touch Pad Settings,Operation in V Orien.,"Sets whether to enable touch pad operations during  vertically oriented viewfinder shooting. You can prevent erroneous operations during vertically oriented shooting caused by your nose, etc. touching the monitor. Adjusts settings related to touch pad operation."
+,,,Touch Pos. Mode,"Sets whether to move the focusing frame to the position touched on the screen ([Absolute Position]), or move the focusing frame to the desired position based on the direction of dragging and the amount of movement ([Relative Position])."
+,,,Operation Area,"Sets the area to be used for touch pad operations. Restricting the operational area can prevent erroneous operations caused by your nose, etc. touching the monitor."
+Setup,Setup3,Demo Mode,On,"The movie playback demonstration starts automatically if the product is not operated for about one minute. Only protected AVCHD movies can be played back.  Set the view mode to [AVCHD View], and protect the movie file with the oldest recorded date and time. Sets demonstration playback of movies to on or off."
+,,,Off,Does not show the demonstration.
+Setup,Setup3,TC/UB Settings,TC/UB Disp. Setting,"Sets the display for the counter, time code, and user bit. Sets the time code (TC) and user bit (UB)."
+,,,TC Preset,Sets the time code.
+,,,UB Preset,Sets the user bit.
+,,,TC Format,Sets the recording method for the time code. (Only when [NTSC/PAL Selector] is set to NTSC.)
+,,,TC Run,Sets the count up format for the time code.
+,,,TC Make,Sets the recording format for the time code on the recording medium.
+,,,UB Time Rec,Sets whether or not to record the time as a user bit.
+,,,DF,Records the time code in Drop Frame*2 format.
+,,,NDF,Records the time code in Non-Drop Frame format.
+,,,Rec Run,Sets the stepping mode for the time code to advance only while recording. The time code is recorded sequentially from the last time code of the previous recording.
+,,,Free Run,"Sets the stepping mode for the time code to advance anytime, regardless of the camera operation."
+,,,Preset,Records the newly set time code on the recording medium.
+,,,Regenerate,"Reads the last time code for the previous recording from the recording medium and records the new time code consecutively from the last time code. The time code is read from the memory card in the slot 1 when [Recording Mode] under [Rec. Media Settings] is set to [Simult. ()] or [Simult. (/)]. The time code is read from the memory card to which the movies will be recorded when [Recording Mode] is set to [Standard], [Simult. ()], [Sort(RAW/JPEG)], [Sort(JPEG/RAW)] or [Sort(/)]. The time code advances in [Rec Run] mode regardless of the [TC Run] setting."
+Setup,Setup3,Remote Ctrl,On,Allows infrared remote commander operation. Sets whether to use the infrared remote control.
+,,,Off,Does not allow infrared remote commander operation.
+Setup,Setup3,HDMI Settings,Auto,The product automatically recognizes an HD TV and sets the output resolution. Sets the HDMI settings. * Images will not appear on the
+,,,2160p/1080p,Outputs signals in 2160p/1080p.
+,,,1080p,Outputs signals in HD picture quality (1080p).
+,,,1080i,Outputs signals in HD picture quality (1080i).
+Setup,Setup4,4K Output Sel.,Memory Card+HDMI,Simultaneously outputs to the external recording/playback device and records on the camera’s memory card.
+,,,HDMI Only(30p),Outputs a 4K movie in 30p to the external recording/playback device without recording on the camera’s memory card.
+,,,HDMI Only(24p),Outputs a 4K movie in 24p to the external recording/playback device without recording on the camera’s memory card.
+,,,HDMI Only(25p) *,Outputs a 4K movie in 25p to the external recording/playback device without recording on the camera’s memory card.
+Setup,Setup4,USB Connection,Auto,"Establishes a Mass Storage or MTP connection automatically, depending on the computer or other USB devices to be connected. Sets the USB connection method."
+,,,Mass Storage,"Establishes a Mass Storage connection between this product, a computer, and other USB devices."
+,,,MTP,"Establishes an MTP connection between this product, a computer, and other USB devices. The memory card in memory card slot 1 is the connection target."
+,,,PC Remote,"Uses Imaging Edge to control the product from a computer, including such functions as shooting and storing images on the computer."
+Setup,Setup4,USB LUN Setting,,
+Setup,Setup4,USB Power Supply,On,"Power is supplied to the product via a USB cable when the product is connected to a computer, etc. Sets whether to supply power via"
+,,,Off,"Power is not supplied to the product via a USB cable when the product is connected to a computer, etc. If you use an AC adaptor, power will be supplied even when [Off] is selected."
+Setup,Setup4,PC Remote Settings,PC Only,Saves still images only on the computer. Controls the PC remote shooting settings.
+,,,PC+Camera,Saves still images on the computer and the camera.
+Setup,Setup4,Language,,"Selects the language. Date/Time Setup Sets the date, time, and daylight savings."
+Setup,Setup5,Date/Time Setup,,"Sets the date, time, and daylight savings."
+Setup,Setup5,Area Setting,,Sets the location of use.
+Setup,Setup5,Copyright Info,Write Copyright Info,Sets whether to write copyright information. ([On]/[Off]) Sets copyright information for still images.
+,,,Set Photographer,Sets the photographer name.
+,,,Set Copyright,Sets the copyright holder name.
+,,,Disp. Copyright Info,Displays the current copyright information.
+Setup,Setup5,Format,,Formats the memory card.
+Setup,Setup5,File Number,Series,"The product will assign numbers to files sequentially up to 9999"" without resetting."" Sets the method used to assign file numbers."
+,,,Reset,"The product resets numbers when a file is recorded in a new folder and assigns numbers to files starting with 0001"".  (When the recording folder contains a file a number one higher than the largest number is assigned.)"""
+Setup,Setup5,Set File Name,,Changes the first 3 characters of the file names for still images.
+Setup,Setup6,Rec. Media Settings,Slot 1,Selects media in the slot 1. Sets the method for recording images to two memory card slots.
+,,,Slot 2,Selects media in the slot 2.
+Setup,Setup6,Select REC Folder,,Changes the folder selected for storing still images.
+Setup,Setup6,New Folder,,Creates a new folder for storing still images.
+Setup,Setup6,Folder Name,Standard Form,The folder name form is as follows: folder number + MSDCF.  Example: 100MSDCF Sets the folder format for still images.
+,,,Date Form,"The folder name form is as follows: folder number + Y (the last digit)/MM/DD.  Example: 10070405(Folder number: 100, date: 04/05/2017)"
+Setup,Setup6,Recover Image DB,,
+Setup,Setup6,Display Media Info,,Displays the remaining recording time
+Setup,Setup7,Version,,Displays the camera software version.
+Setup,Setup7,Setting Reset,Camera Settings Reset,Initializes the main shooting settings to the default settings.
+,,,Initialize,Initializes all the settings to the default settings.
+"<i name=""star""/>My Menu",My Menu1,,,
+"<i name=""star""/>My Menu",My Setting,Add Item,,
+"<i name=""star""/>My Menu",My Setting,Sort Item,,
+"<i name=""star""/>My Menu",My Setting,Delete Item,,Deletes MENU items added to
+"<i name=""star""/>My Menu",My Setting,Delete Page,,Deletes all the MENU items on a page
+"<i name=""star""/>My Menu",My Setting,Delete All,,Deletes all the MENU items added to
 camera_menu_config
 brand,Sony
 model,A7III

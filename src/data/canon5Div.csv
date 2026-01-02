@@ -329,5 +329,6 @@ SET UP1,File numbering,Continuous
 SET UP1,File numbering,Auto reset
 SET UP1,File numbering,Manual reset
 camera_menu_config,
-display_name,Canon 5Div
+brand,Canon 
+model,5Div
 css_file,canon5Div

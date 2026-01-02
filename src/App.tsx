@@ -3,6 +3,7 @@ import './App.css'
 import { getAllCustomCameras, saveCustomCamera, deleteCustomCamera, CustomCamera } from './utils/indexedDB'
 import { createCustomCameraFromZip } from './utils/zipHandler'
 import { downloadCameraAsZip, CameraDownloadData } from './utils/downloadCamera'
+import { parseCSVRows } from './utils/csvParser'
 
 const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
 const cssModules = import.meta.glob('./data/*.css', { query: '?url', import: 'default', eager: true })
@@ -32,18 +33,20 @@ Object.keys(csvModules).forEach((path) => {
   const csvContent = csvModules[path] as string
   cameraCsvs[key] = csvContent
 
-  const configIndex = csvContent.indexOf('camera_menu_config')
-  if (configIndex !== -1) {
-    const configLines = csvContent.substring(configIndex).split('\n')
-    for (const line of configLines) {
-      if (line.startsWith('brand,')) {
-        cameraBrands[key] = line.substring('brand,'.length).trim()
-      } else if (line.startsWith('model,')) {
-        cameraModels[key] = line.substring('model,'.length).trim()
-      } else if (line.startsWith('display_name,')) {
-        cameraDisplayNames[key] = line.substring('display_name,'.length).trim()
-      } else if (line.startsWith('css_file,')) {
-        cameraCssFiles[key] = line.substring('css_file,'.length).trim()
+  const allRows = parseCSVRows(csvContent)
+  const configRowIndex = allRows.findIndex((row) => row.length > 0 && row[0] === 'camera_menu_config')
+  if (configRowIndex >= 0) {
+    const configRows = allRows.slice(configRowIndex + 1)
+    for (const row of configRows) {
+      if (row.length === 0) continue
+      if (row[0] === 'brand' && row.length > 1) {
+        cameraBrands[key] = row[1].trim()
+      } else if (row[0] === 'model' && row.length > 1) {
+        cameraModels[key] = row[1].trim()
+      } else if (row[0] === 'display_name' && row.length > 1) {
+        cameraDisplayNames[key] = row[1].trim()
+      } else if (row[0] === 'css_file' && row.length > 1) {
+        cameraCssFiles[key] = row[1].trim()
       }
     }
   }
@@ -274,14 +277,16 @@ function App() {
           cameraModels[camera.id] = camera.model
         }
 
-        const configIndex = camera.csvContent.indexOf('camera_menu_config')
-        if (configIndex !== -1) {
-          const configLines = camera.csvContent.substring(configIndex).split('\n')
-          for (const line of configLines) {
-            if (line.startsWith('brand,')) {
-              cameraBrands[camera.id] = line.substring('brand,'.length).trim()
-            } else if (line.startsWith('model,')) {
-              cameraModels[camera.id] = line.substring('model,'.length).trim()
+        const allRows = parseCSVRows(camera.csvContent)
+        const configRowIndex = allRows.findIndex((row) => row.length > 0 && row[0] === 'camera_menu_config')
+        if (configRowIndex >= 0) {
+          const configRows = allRows.slice(configRowIndex + 1)
+          for (const row of configRows) {
+            if (row.length === 0) continue
+            if (row[0] === 'brand' && row.length > 1) {
+              cameraBrands[camera.id] = row[1].trim()
+            } else if (row[0] === 'model' && row.length > 1) {
+              cameraModels[camera.id] = row[1].trim()
             }
           }
         }
@@ -382,14 +387,16 @@ function App() {
         cameraModels[customCamera.id] = customCamera.model
       }
 
-      const configIndex = customCamera.csvContent.indexOf('camera_menu_config')
-      if (configIndex !== -1) {
-        const configLines = customCamera.csvContent.substring(configIndex).split('\n')
-        for (const line of configLines) {
-          if (line.startsWith('brand,')) {
-            cameraBrands[customCamera.id] = line.substring('brand,'.length).trim()
-          } else if (line.startsWith('model,')) {
-            cameraModels[customCamera.id] = line.substring('model,'.length).trim()
+      const allRows = parseCSVRows(customCamera.csvContent)
+      const configRowIndex = allRows.findIndex((row) => row.length > 0 && row[0] === 'camera_menu_config')
+      if (configRowIndex >= 0) {
+        const configRows = allRows.slice(configRowIndex + 1)
+        for (const row of configRows) {
+          if (row.length === 0) continue
+          if (row[0] === 'brand' && row.length > 1) {
+            cameraBrands[customCamera.id] = row[1].trim()
+          } else if (row[0] === 'model' && row.length > 1) {
+            cameraModels[customCamera.id] = row[1].trim()
           }
         }
       }
@@ -517,34 +524,35 @@ function App() {
     const config: { icons: Record<string, string>; brand?: string; model?: string; displayName?: string; cssFile?: string } = { icons: {} }
     const csvContent = cameraCsvs[camera]
     if (!csvContent) return { data: {}, config: { icons: {} }, helpMap: {} }
-    const [_headerLine, ...rest] = csvContent.split('\n')
-    const menuLines = rest.slice(
-      0,
-      rest.indexOf('camera_menu_config') >= 0 ? rest.indexOf('camera_menu_config') : rest.length,
-    )
+    
+    const allRows = parseCSVRows(csvContent)
+    if (allRows.length === 0) return { data: {}, config: { icons: {} }, helpMap: {} }
+    
+    const configRowIndex = allRows.findIndex((row) => row.length > 0 && row[0] === 'camera_menu_config')
+    const menuRows = configRowIndex >= 0 ? allRows.slice(1, configRowIndex) : allRows.slice(1)
+    const configRows = configRowIndex >= 0 ? allRows.slice(configRowIndex + 1) : []
 
     let previousRowCells: string[] = []
     let hasHelpColumn = false
     let helpColumnIndex = -1
 
-    if (menuLines.length > 0) {
-      for (const line of menuLines) {
-        if (line.trim() === '') {
+    if (menuRows.length > 0) {
+      for (const row of menuRows) {
+        if (row.length === 0 || row.every((cell) => cell.trim() === '')) {
           continue
         }
 
-        if (line.startsWith('camera_menu_config')) {
+        if (row[0] === 'camera_menu_config') {
           break
         }
 
-        const cells = line.split(',')
-        const lastColumnIndex = cells.length - 1
-        const lastColumnValue = cells[lastColumnIndex].trim()
+        const lastColumnIndex = row.length - 1
+        const lastColumnValue = row[lastColumnIndex]?.trim() || ''
 
         if (lastColumnValue !== '') {
           let hasEmptyBeforeLast = false
           for (let i = lastColumnIndex - 1; i > 0; i--) {
-            if (cells[i]?.trim() === '') {
+            if (row[i]?.trim() === '') {
               hasEmptyBeforeLast = true
               break
             }
@@ -559,12 +567,12 @@ function App() {
       }
     }
 
-    for (const line of menuLines) {
-      if (line.startsWith('camera_menu_config')) {
+    for (const row of menuRows) {
+      if (row.length === 0 || row[0] === 'camera_menu_config') {
         break
       }
 
-      const currentRowCells = line.split(',')
+      const currentRowCells = row
 
       fillEmptyCellsFromPreviousRow(currentRowCells)
 
@@ -611,21 +619,33 @@ function App() {
       previousRowCells = currentRowCells
     }
 
-    const configStartIndex = rest.findIndex((line) => line.startsWith('camera_menu_config'))
-    if (configStartIndex !== -1) {
-      for (const line of rest.slice(configStartIndex + 1)) {
-        if (line.startsWith('brand,')) {
-          config.brand = line.substring('brand,'.length).trim()
-        } else if (line.startsWith('model,')) {
-          config.model = line.substring('model,'.length).trim()
-        } else if (line.startsWith('display_name,')) {
-          config.displayName = line.substring('display_name,'.length).trim()
-        } else if (line.startsWith('css_file,')) {
-          config.cssFile = line.substring('css_file,'.length).trim()
-        } else if (line.startsWith('icon')) {
-          const commaIndex = line.indexOf(',')
-          if (commaIndex !== -1) {
-            config.icons[line.substring(5, commaIndex)] = line.substring(commaIndex + 1)
+    for (const row of configRows) {
+      if (row.length === 0) continue
+      
+      if (row[0] === 'brand' && row.length > 1) {
+        config.brand = row[1].trim()
+      } else if (row[0] === 'model' && row.length > 1) {
+        config.model = row[1].trim()
+      } else if (row[0] === 'display_name' && row.length > 1) {
+        config.displayName = row[1].trim()
+      } else if (row[0] === 'css_file' && row.length > 1) {
+        config.cssFile = row[1].trim()
+      } else if (row[0]?.startsWith('icon')) {
+        if (row[0].startsWith('icon:')) {
+          const colonIndex = row[0].indexOf(':')
+          const commaIndex = row[0].indexOf(',')
+          if (colonIndex !== -1 && commaIndex !== -1) {
+            const iconName = row[0].substring(colonIndex + 1, commaIndex)
+            const iconValue = row.length > 1 ? row[1] : row[0].substring(commaIndex + 1)
+            config.icons[iconName] = iconValue
+          } else if (colonIndex !== -1 && row.length > 1) {
+            const iconName = row[0].substring(colonIndex + 1)
+            config.icons[iconName] = row[1]
+          }
+        } else {
+          const commaIndex = row[0].indexOf(',')
+          if (commaIndex !== -1 && row.length > 1) {
+            config.icons[row[0].substring(5, commaIndex)] = row[1] || row[0].substring(commaIndex + 1)
           }
         }
       }
@@ -636,12 +656,12 @@ function App() {
     function fillEmptyCellsFromPreviousRow(currentRowCells: string[]) {
       if (previousRowCells.length > 0) {
         for (let i = 0; i < helpColumnIndex; i++) {
-          const isEmpty = currentRowCells[i].trim() === ''
+          const isEmpty = currentRowCells[i]?.trim() === ''
           const hasLaterValues = currentRowCells.some(
-            (cell, index) => index > i && index < helpColumnIndex && cell.trim() !== '',
+            (cell, index) => index > i && index < helpColumnIndex && cell?.trim() !== '',
           )
 
-          if (isEmpty && hasLaterValues && i < previousRowCells.length && previousRowCells[i].trim() !== '') {
+          if (isEmpty && hasLaterValues && i < previousRowCells.length && previousRowCells[i]?.trim() !== '') {
             currentRowCells[i] = previousRowCells[i]
           }
         }
