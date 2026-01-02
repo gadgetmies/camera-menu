@@ -79,7 +79,12 @@ Tab,Category,Menu Item,Sub Menu Item,Comments/Defaults
 ,,,Off,Does not use the AF illuminator.
 "<i name=""camera""/>Camera 1",AF2,Center Lock-on AF,,Sets the function to track a subject and continue focusing when pressing
 "<i name=""camera""/>Camera 1",AF2,Set. Face Prty in AF,,Sets whether the camera focuses based on detected faces.
-"<i name=""camera""/>Camera 1",AF2,AF Track Sens,5(Responsive) / 4 / 3(Standard) / 2 / 1(Locked on),Select [5(Responsive)] to focus responsively on subjects at different distances.  Select [1(Locked on)] to keep the focus on a specific subject when other things are crossing in front of the subject. Sets the AF tracking sensitivity for the still image mode.
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,,Select [5(Responsive)] to focus responsively on subjects at different distances.  Select [1(Locked on)] to keep the focus on a specific subject when other things are crossing in front of the subject. Sets the AF tracking sensitivity for the still image mode.
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,5(Responsive),
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,4,
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,3(Standard),
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,2,
+"<i name=""camera""/>Camera 1",AF2,AF Track Sens,1(Locked on),
 "<i name=""camera""/>Camera 1",AF2,AF System,Phase Detection AF,Focuses with Phase Detection AF. The focusing speed is very fast. Sets the auto focus method when an LA-EA1/LA-EA3 Mount Adaptor
 ,,,Contrast AF,Always focuses with Contrast AF. The focusing speed is slower. Use when you cannot focus with [Phase Detection AF].
 "<i name=""camera""/>Camera 1",AF2,AF w/ shutter,On,The auto focus operates when you press the shutter button halfway down. Sets whether to perform auto focusing when the shutter button is
