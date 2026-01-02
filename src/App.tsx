@@ -77,18 +77,45 @@ Object.keys(csvModules).forEach((path) => {
 })
 
 const process = (acc: Record<string, any>, value: string): void => {
-  const commaPosition = value.indexOf(',')
-  if (commaPosition !== -1) {
-    const key = value.substring(0, commaPosition)
-    if (key === '') {
-      return
+  const trimmedValue = value.trim()
+  if (trimmedValue === '') {
+    return
+  }
+  const parts = trimmedValue.split(',').map(p => p.trim()).filter(p => p !== '')
+  if (parts.length === 0) {
+    return
+  }
+  
+  let current: Record<string, any> = acc
+  if (!current.__order__) {
+    current.__order__ = []
+  }
+  
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i]
+    if (part === '') {
+      continue
     }
-    if (!acc[key]) {
-      acc[key] = {}
+    if (i === parts.length - 1) {
+      if (!(part in current)) {
+        current[part] = ''
+        if (Array.isArray(current.__order__)) {
+          current.__order__.push(part)
+        }
+      }
+    } else {
+      if (!(part in current) || typeof current[part] !== 'object' || current[part] === null) {
+        const newObj: Record<string, any> = { __order__: [] }
+        current[part] = newObj
+        if (Array.isArray(current.__order__) && !current.__order__.includes(part)) {
+          current.__order__.push(part)
+        }
+      }
+      current = current[part] as Record<string, any>
+      if (!current.__order__) {
+        current.__order__ = []
+      }
     }
-    process(acc[key], value.substring(commaPosition + 1))
-  } else {
-    acc[value] = ''
   }
 }
 
@@ -107,7 +134,8 @@ const render = (
   onHelpClick?: (helpText: string, path: string) => void,
   currentPath: string[] = [],
 ): JSX.Element => {
-  if (Object.keys(node).length === 0) {
+  const nodeKeys = Array.isArray(node.__order__) ? node.__order__ : Object.keys(node).filter(k => k !== '__order__')
+  if (nodeKeys.length === 0) {
     return <></>
   }
   return (
@@ -115,7 +143,7 @@ const render = (
       <div className={`scroll-container level-${level} level`}>
         <div className={`level-${level} container ${classNames}`} key={`level-${level}-container`}>
           <div className={`level-heading`}>{parent ? parent : ''}</div>
-          {Object.keys(node).map((key, i) => {
+          {nodeKeys.map((key, i) => {
             const iconMatch = key.match(/<i name="([^"]+)"\/>/)
             const iconName = iconMatch ? iconMatch[1] : null
             const label = key.replace(/<i name="[^"]+"\/>/g, '')
@@ -155,12 +183,13 @@ const render = (
           })}
         </div>
       </div>
-      {Object.values(node).map((value, index) =>
-        value instanceof Object && selected[level] === index
+      {nodeKeys.map((key, index) => {
+        const value = node[key]
+        return value instanceof Object && selected[level] === index
           ? render(
               config,
               value,
-              Object.keys(node)[selected[level]],
+              key,
               level + 1,
               selected,
               setSelected,
@@ -168,10 +197,10 @@ const render = (
               helpMap,
               helpMode,
               onHelpClick,
-              [...currentPath, Object.keys(node)[selected[level]].replace(/<i name="[^"]+"\/>/g, '')],
+              [...currentPath, key.replace(/<i name="[^"]+"\/>/g, '')],
             )
-          : null,
-      )}
+          : null
+      })}
     </>
   )
 }
@@ -190,7 +219,8 @@ const crumbPath = (structure: Record<string, any>, selected: Array<number>) => {
       [result, current]: [Array<JSX.Element>, Record<string, any>],
       index: number,
     ): [Array<JSX.Element>, Record<string, any>] => {
-      const currentKey = Object.keys(current)[index]
+      const currentKeys = Array.isArray(current.__order__) ? current.__order__ : Object.keys(current).filter(k => k !== '__order__')
+      const currentKey = currentKeys[index]
       if (!currentKey) {
         return [result, current]
       }
@@ -231,8 +261,9 @@ const renderSearch = (
     return <span>{label}</span>
   }
 
+  const structureKeys = Array.isArray(structure.__order__) ? structure.__order__ : Object.keys(structure).filter(k => k !== '__order__')
   return [
-    ...Object.keys(structure).map((key, index) =>
+    ...structureKeys.map((key, index) =>
       key.toLowerCase().includes(searchString.toLowerCase()) ? (
         <div key={key} onClick={() => select([...path, index])}>
           {[...keys.map((k) => renderKey(k)), renderKey(key)].map((rendered, i) => (
@@ -244,9 +275,10 @@ const renderSearch = (
         </div>
       ) : null,
     ),
-    ...Object.entries(structure).map(([key, value], i) =>
-      value instanceof Object ? renderSearch(value, searchString, [...path, i], [...keys, key], select, config) : [],
-    ),
+    ...structureKeys.map((key, i) => {
+      const value = structure[key]
+      return value instanceof Object ? renderSearch(value, searchString, [...path, i], [...keys, key], select, config) : []
+    }),
   ].filter(Boolean) as JSX.Element[]
 }
 
@@ -518,7 +550,7 @@ function App() {
   const cameraSettings = (camera: string) => {
     if (!camera) return { data: {}, config: { icons: {} }, helpMap: {} }
 
-    const data = {}
+    const data: Record<string, any> = { __order__: [] }
     const helpMap: Record<string, string> = {}
 
     const config: { icons: Record<string, string>; brand?: string; model?: string; displayName?: string; cssFile?: string } = { icons: {} }
@@ -591,6 +623,9 @@ function App() {
         if (hasHelpColumn && helpText) {
           const pathParts: string[] = []
           let current: Record<string, any> = data
+          if (!current.__order__) {
+            current.__order__ = []
+          }
           const allCells = cellsForProcessing.filter((c) => c.trim() !== '')
 
           for (let i = 0; i < allCells.length; i++) {
@@ -600,12 +635,21 @@ function App() {
               pathParts.push(cellLabel)
               if (i < allCells.length - 1) {
                 if (!current[cell]) {
-                  current[cell] = {}
+                  current[cell] = { __order__: [] }
+                }
+                if (Array.isArray(current.__order__) && !current.__order__.includes(cell)) {
+                  current.__order__.push(cell)
                 }
                 current = current[cell] as Record<string, any>
+                if (!current.__order__) {
+                  current.__order__ = []
+                }
               } else {
                 if (!current[cell]) {
-                  current[cell] = {}
+                  current[cell] = { __order__: [] }
+                }
+                if (Array.isArray(current.__order__) && !current.__order__.includes(cell)) {
+                  current.__order__.push(cell)
                 }
                 helpMap[pathParts.join(' > ')] = helpText
               }
@@ -979,7 +1023,7 @@ function App() {
               </button>
             </div>
             <div className={'modal-body'}>
-              <div className={'help-path'}>{helpModalContent.path}</div>
+              <div className={'help-path'}>{helpModalContent.path.replace(/<i name="[^"]+"\/>/g, '')}</div>
               <div className={'help-text'}>{helpModalContent.text}</div>
             </div>
             <div className={'modal-footer'}>
