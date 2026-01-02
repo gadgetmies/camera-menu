@@ -4,6 +4,8 @@ import { getAllCustomCameras, saveCustomCamera, deleteCustomCamera, CustomCamera
 import { createCustomCameraFromZip } from './utils/zipHandler'
 import { downloadCameraAsZip, CameraDownloadData } from './utils/downloadCamera'
 import { parseCSVRows } from './utils/csvParser'
+import { HiCog6Tooth, HiArrowUpTray, HiQuestionMarkCircle, HiPencil, HiArrowUturnLeft, HiCheck, HiMagnifyingGlass, HiXMark } from 'react-icons/hi2'
+import { Modal } from './components/Modal'
 
 const csvModules = import.meta.glob('./data/*.csv', { query: '?raw', import: 'default', eager: true })
 const cssModules = import.meta.glob('./data/*.css', { query: '?url', import: 'default', eager: true })
@@ -280,7 +282,7 @@ const render = (
                       onClick={() => editFunctions.onDeleteItem(level, i)}
                       title="Delete item"
                     >
-                      ×
+                      <HiXMark />
                     </button>
                   </div>
                 )}
@@ -420,7 +422,8 @@ function App() {
   const [isDragging, setIsDragging] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
-  const [settingsCameraName, setSettingsCameraName] = useState('')
+  const [settingsCameraBrand, setSettingsCameraBrand] = useState('')
+  const [settingsCameraModel, setSettingsCameraModel] = useState('')
 
   const loadCustomCameras = async () => {
     try {
@@ -678,18 +681,24 @@ function App() {
   }
 
   const handleOpenSettings = () => {
-    const currentDisplayName = cameraDisplayNames[selectedCamera] || getCameraLabel(selectedCamera)
-    setSettingsCameraName(currentDisplayName)
+    const currentBrand = cameraBrands[selectedCamera] || ''
+    const currentModel = cameraModels[selectedCamera] || ''
+    setSettingsCameraBrand(currentBrand)
+    setSettingsCameraModel(currentModel)
     setIsSettingsModalOpen(true)
   }
 
   const handleCloseSettingsModal = () => {
     setIsSettingsModalOpen(false)
-    setSettingsCameraName('')
+    setSettingsCameraBrand('')
+    setSettingsCameraModel('')
   }
 
   const handleRenameCamera = async () => {
-    const newName = settingsCameraName.trim()
+    const brand = settingsCameraBrand.trim()
+    const model = settingsCameraModel.trim()
+    const newName = brand && model ? `${brand} ${model}`.trim() : brand || model
+
     if (!newName) {
       return
     }
@@ -698,17 +707,6 @@ function App() {
     const isCustom = !!currentCamera
 
     if (isCustom) {
-      const parts = newName.split(' ')
-      let brand = currentCamera.brand
-      let model = currentCamera.model
-
-      if (parts.length > 1) {
-        brand = parts[0]
-        model = parts.slice(1).join(' ')
-      } else {
-        brand = newName
-        model = ''
-      }
 
       const updatedCamera: CustomCamera = {
         ...currentCamera,
@@ -779,17 +777,6 @@ function App() {
 
       _setCameraData(cameraSettings(updatedCamera.id))
     } else {
-      const parts = newName.split(' ')
-      let brand = cameraBrands[selectedCamera]
-      let model = cameraModels[selectedCamera]
-
-      if (parts.length > 1) {
-        brand = parts[0]
-        model = parts.slice(1).join(' ')
-      } else {
-        brand = newName
-        model = ''
-      }
 
       const csvContent = cameraCsvs[selectedCamera]
       const cssFileName = cameraCssFiles[selectedCamera] || selectedCamera
@@ -884,7 +871,8 @@ function App() {
     }
 
     setIsSettingsModalOpen(false)
-    setSettingsCameraName('')
+    setSettingsCameraBrand('')
+    setSettingsCameraModel('')
   }
 
   const cameraSettings = (camera: string) => {
@@ -1496,13 +1484,13 @@ function App() {
                 title="Camera settings"
                 aria-label="Camera settings"
               >
-                ⚙
+                <HiCog6Tooth />
               </button>
             </div>
           </div>
           {!editMode && (
             <button className={'upload-button'} onClick={() => setIsUploadModalOpen(true)} title="Upload camera" aria-label="Upload camera">
-              ⬆
+              <HiArrowUpTray />
             </button>
           )}
           <button
@@ -1514,7 +1502,7 @@ function App() {
             title="Toggle help mode"
             aria-label="Toggle help mode"
           >
-            ?
+            <HiQuestionMarkCircle />
           </button>
           <button
             className={`edit-mode-button ${editMode ? 'active' : ''}`}
@@ -1531,10 +1519,10 @@ function App() {
                 setEditingText('')
               }
             }}
-            title="Toggle edit mode"
-            aria-label="Toggle edit mode"
+            title={editMode ? "Exit edit mode" : "Enter edit mode"}
+            aria-label={editMode ? "Exit edit mode" : "Enter edit mode"}
           >
-            {editMode ? '↶' : '✎'}
+            {editMode ? <HiArrowUturnLeft /> : <HiPencil />}
           </button>
           {editMode && (
             <button
@@ -1548,14 +1536,14 @@ function App() {
               title="Save edited camera"
               aria-label="Save edited camera"
             >
-              <img src="/camera-menu/assets/SaveIcon.svg" alt="" />
+              <HiCheck />
             </button>
           )}
         </div>
         {!editMode && (
           <div className={`control-group search-group ${isSearchFocused ? 'expanded' : ''}`}>
           <div className={'search-container'}>
-            <span className={'search-icon'}>⌕</span>
+            <span className={'search-icon'}><HiMagnifyingGlass /></span>
             <input
               className={'search-input'}
               type="text"
@@ -1566,8 +1554,8 @@ function App() {
               onBlur={handleSearchBlur}
             />
             {searchString !== '' && (
-              <button className={'search-clear'} onClick={() => setSearchString('')} aria-label="Clear search">
-                ×
+              <button className={'search-clear'} onClick={() => setSearchString('')} title="Clear search" aria-label="Clear search">
+                <HiXMark />
               </button>
             )}
           </div>
@@ -1592,170 +1580,167 @@ function App() {
           </div>
         </div>
       </div>
-      {isUploadModalOpen && (
-        <div className={'modal-overlay'} onClick={handleCloseModal}>
-          <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
-            <div className={'modal-header'}>
-              <h2>Upload Camera</h2>
-              <button className={'modal-close'} onClick={handleCloseModal} disabled={isUploading}>
-                ×
-              </button>
-            </div>
-            <div className={'modal-body'}>
-              <div className={'form-group'}>
-                <label htmlFor="camera-name-input">Camera Name</label>
-                <input
-                  id="camera-name-input"
-                  type="text"
-                  className={'camera-name-input'}
-                  value={cameraName}
-                  onChange={(e) => setCameraName(e.target.value)}
-                  placeholder="Enter camera model name"
-                  disabled={isUploading}
-                />
-              </div>
-              <div className={'form-group'}>
-                <label>ZIP File</label>
-                <div
-                  className={`drop-area ${isDragging ? 'dragging' : ''} ${uploadFile ? 'has-file' : ''}`}
-                  onDragOver={handleDragOver}
-                  onDragLeave={handleDragLeave}
-                  onDrop={handleDrop}
-                >
-                  <input
-                    ref={fileInputRef}
-                    type="file"
-                    accept=".zip"
-                    onChange={handleFileInputChange}
-                    style={{ display: 'none' }}
-                    id="camera-upload-input"
-                    disabled={isUploading}
-                  />
-                  {uploadFile ? (
-                    <div className={'file-selected'}>
-                      <span className={'file-name'}>{uploadFile.name}</span>
-                      <button
-                        className={'remove-file-button'}
-                        onClick={() => {
-                          setUploadFile(null)
-                          if (fileInputRef.current) {
-                            fileInputRef.current.value = ''
-                          }
-                        }}
-                        disabled={isUploading}
-                      >
-                        ×
-                      </button>
-                    </div>
-                  ) : (
-                    <div className={'drop-area-content'}>
-                      <img src="/camera-menu/assets/UploadLargeIcon.svg" alt="" />
-                      <p>Drag and drop a ZIP file here, or</p>
-                      <label htmlFor="camera-upload-input" className={'browse-button'}>
-                        Browse
-                      </label>
-                      <p className={'file-hint'}>ZIP file containing CSV, CSS, and optional PNG files</p>
-                    </div>
-                  )}
-                </div>
-              </div>
-              {uploadError && <div className={'upload-error'}>{uploadError}</div>}
-            </div>
-            <div className={'modal-footer'}>
-              <button className={'modal-cancel-button'} onClick={handleCloseModal} disabled={isUploading}>
-                Cancel
-              </button>
-              <button className={'modal-upload-button'} onClick={handleUpload} disabled={!uploadFile || isUploading}>
-                {isUploading ? 'Uploading...' : 'Upload'}
-              </button>
-            </div>
-          </div>
+      <Modal
+        isOpen={isUploadModalOpen}
+        onClose={handleCloseModal}
+        title="Upload Camera"
+        disabled={isUploading}
+        footer={
+          <>
+            <button className={'modal-cancel-button'} onClick={handleCloseModal} disabled={isUploading} title="Cancel upload">
+              Cancel
+            </button>
+            <button className={'modal-upload-button'} onClick={handleUpload} disabled={!uploadFile || isUploading} title="Upload camera">
+              {isUploading ? 'Uploading...' : 'Upload'}
+            </button>
+          </>
+        }
+      >
+        <div className={'form-group'}>
+          <label htmlFor="camera-name-input">Camera Name</label>
+          <input
+            id="camera-name-input"
+            type="text"
+            className={'camera-name-input'}
+            value={cameraName}
+            onChange={(e) => setCameraName(e.target.value)}
+            placeholder="Enter camera model name"
+            disabled={isUploading}
+          />
         </div>
-      )}
-      {helpModalOpen && helpModalContent && (
-        <div className={'modal-overlay'} onClick={() => setHelpModalOpen(false)}>
-          <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
-            <div className={'modal-header'}>
-              <h2>Help</h2>
-              <button className={'modal-close'} onClick={() => setHelpModalOpen(false)}>
-                ×
-              </button>
-            </div>
-            <div className={'modal-body'}>
-              <div className={'help-path'}>{helpModalContent.path.replace(/<i name="[^"]+"\/>/g, '')}</div>
-              <div className={'help-text'}>{helpModalContent.text}</div>
-            </div>
-            <div className={'modal-footer'}>
-              <button className={'modal-cancel-button'} onClick={() => setHelpModalOpen(false)}>
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-      {isSettingsModalOpen && (
-        <div className={'modal-overlay'} onClick={handleCloseSettingsModal}>
-          <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
-            <div className={'modal-header'}>
-              <h2>Camera Settings</h2>
-              <button className={'modal-close'} onClick={handleCloseSettingsModal}>
-                ×
-              </button>
-            </div>
-            <div className={'modal-body'}>
-              <div className={'form-group'}>
-                <label htmlFor="settings-camera-name-input">Camera Name</label>
-                <input
-                  id="settings-camera-name-input"
-                  type="text"
-                  className={'camera-name-input'}
-                  value={settingsCameraName}
-                  onChange={(e) => setSettingsCameraName(e.target.value)}
-                  placeholder="Enter camera model name"
-                />
-              </div>
-              <div className={'form-group'}>
+        <div className={'form-group'}>
+          <label>ZIP File</label>
+          <div
+            className={`drop-area ${isDragging ? 'dragging' : ''} ${uploadFile ? 'has-file' : ''}`}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+          >
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".zip"
+              onChange={handleFileInputChange}
+              style={{ display: 'none' }}
+              id="camera-upload-input"
+              disabled={isUploading}
+            />
+            {uploadFile ? (
+              <div className={'file-selected'}>
+                <span className={'file-name'}>{uploadFile.name}</span>
                 <button
-                  className={'modal-upload-button'}
-                  onClick={handleRenameCamera}
-                  disabled={!settingsCameraName.trim() || settingsCameraName.trim() === (cameraDisplayNames[selectedCamera] || getCameraLabel(selectedCamera))}
-                  style={{ width: '100%', marginBottom: '12px' }}
-                >
-                  Rename
-                </button>
-                {isCustomCamera(selectedCamera) && (
-                  <button
-                    className={'modal-delete-button'}
-                    onClick={async () => {
-                      if (confirm('Are you sure you want to delete this camera?')) {
-                        await handleDeleteCamera(selectedCamera)
-                        setIsSettingsModalOpen(false)
-                      }
-                    }}
-                    style={{ width: '100%', marginBottom: '12px' }}
-                  >
-                    Delete
-                  </button>
-                )}
-                <button
-                  className={'modal-upload-button'}
-                  onClick={async () => {
-                    await handleDownloadCamera(selectedCamera)
+                  className={'remove-file-button'}
+                  onClick={() => {
+                    setUploadFile(null)
+                    if (fileInputRef.current) {
+                      fileInputRef.current.value = ''
+                    }
                   }}
-                  style={{ width: '100%' }}
+                  disabled={isUploading}
+                  title="Remove file"
+                  aria-label="Remove file"
                 >
-                  Download
+                  <HiXMark />
                 </button>
               </div>
-            </div>
-            <div className={'modal-footer'}>
-              <button className={'modal-cancel-button'} onClick={handleCloseSettingsModal}>
-                Close
-              </button>
-            </div>
+            ) : (
+              <div className={'drop-area-content'}>
+                <img src="/camera-menu/assets/UploadLargeIcon.svg" alt="" />
+                <p>Drag and drop a ZIP file here, or</p>
+                <label htmlFor="camera-upload-input" className={'browse-button'}>
+                  Browse
+                </label>
+                <p className={'file-hint'}>ZIP file containing CSV, CSS, and optional PNG files</p>
+              </div>
+            )}
           </div>
         </div>
+        {uploadError && <div className={'upload-error'}>{uploadError}</div>}
+      </Modal>
+      {helpModalContent && (
+        <Modal
+          isOpen={helpModalOpen}
+          onClose={() => setHelpModalOpen(false)}
+          title="Help"
+          footer={
+            <button className={'modal-cancel-button'} onClick={() => setHelpModalOpen(false)} title="Close help">
+              Close
+            </button>
+          }
+        >
+          <div className={'help-path'}>{helpModalContent.path.replace(/<i name="[^"]+"\/>/g, '')}</div>
+          <div className={'help-text'}>{helpModalContent.text}</div>
+        </Modal>
       )}
+      <Modal
+        isOpen={isSettingsModalOpen}
+        onClose={handleCloseSettingsModal}
+        title="Camera Settings"
+        footer={
+          <button className={'modal-cancel-button'} onClick={handleCloseSettingsModal} title="Close settings">
+            Close
+          </button>
+        }
+      >
+        <div className={'form-group'}>
+          <label htmlFor="settings-camera-brand-input">Camera Brand</label>
+          <input
+            id="settings-camera-brand-input"
+            type="text"
+            className={'camera-name-input'}
+            value={settingsCameraBrand}
+            onChange={(e) => setSettingsCameraBrand(e.target.value)}
+            placeholder="Enter camera brand"
+          />
+        </div>
+        <div className={'form-group'}>
+          <label htmlFor="settings-camera-model-input">Camera Model</label>
+          <input
+            id="settings-camera-model-input"
+            type="text"
+            className={'camera-name-input'}
+            value={settingsCameraModel}
+            onChange={(e) => setSettingsCameraModel(e.target.value)}
+            placeholder="Enter camera model"
+          />
+        </div>
+        <div className={'form-group'}>
+          <button
+            className={'modal-upload-button'}
+            onClick={handleRenameCamera}
+            disabled={!settingsCameraBrand.trim() || (settingsCameraBrand.trim() === (cameraBrands[selectedCamera] || '') && settingsCameraModel.trim() === (cameraModels[selectedCamera] || ''))}
+            style={{ width: '100%', marginBottom: '12px' }}
+            title="Rename camera"
+          >
+            Rename
+          </button>
+          {isCustomCamera(selectedCamera) && (
+            <button
+              className={'modal-delete-button'}
+              onClick={async () => {
+                if (confirm('Are you sure you want to delete this camera?')) {
+                  await handleDeleteCamera(selectedCamera)
+                  setIsSettingsModalOpen(false)
+                }
+              }}
+              style={{ width: '100%', marginBottom: '12px' }}
+              title="Delete camera"
+            >
+              Delete
+            </button>
+          )}
+          <button
+            className={'modal-upload-button'}
+            onClick={async () => {
+              await handleDownloadCamera(selectedCamera)
+            }}
+            style={{ width: '100%' }}
+            title="Download camera"
+          >
+            Download
+          </button>
+        </div>
+      </Modal>
     </div>
   )
 }

@@ -147,10 +147,14 @@
     color 0.2s;
 }
 
+.settings-camera-button svg,
 .upload-button svg,
+.help-mode-button svg,
+.edit-mode-button svg,
 .save-edit-button svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .settings-camera-button:hover {
@@ -254,6 +258,12 @@
   justify-content: center;
 }
 
+.edit-delete-item svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 .edit-add-sub-item:hover {
   background-color: #4caf50;
   border-color: #4caf50;
@@ -327,6 +337,12 @@
   justify-content: center;
 }
 
+.search-icon svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .search-group.expanded .search-icon {
   opacity: 0;
 }
@@ -392,6 +408,12 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+}
+
+.search-clear svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .search-clear:hover {
@@ -524,6 +546,12 @@
   transition:
     background-color 0.2s,
     color 0.2s;
+}
+
+.modal-close svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .modal-close:hover:not(:disabled) {
@@ -675,6 +703,12 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
+}
+
+.remove-file-button svg {
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
 }
 
