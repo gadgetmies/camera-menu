@@ -1,28 +1,28 @@
 #root {
-    max-width: 1280px;
+  max-width: 1280px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .root {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .scroll-container {
-    overflow-y: auto;
-    max-width: 100vw;
+  overflow-y: auto;
+  max-width: 100vw;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .level-0.container {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .level-1.container,
@@ -31,7 +31,7 @@
 .level-4.container,
 .level-5.container,
 .level-6.container {
-    width: 100%;
+  width: 100%;
 }
 
 .level-2.container,
@@ -39,284 +39,315 @@
 .level-4.container,
 .level-5.container,
 .level-6.container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .level-0.container {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .level-1.scroll-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .wrapper {
-    background-color: black;
-    color: white;
-    font-weight: 500;
+  background-color: black;
+  color: white;
+  font-weight: 500;
 }
 
 .menu > .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
 }
 
 .index {
-    display: none;
+  display: none;
 }
 
 .label {
-    padding: 4px;
-    display: inline-block;
-    border-radius: 2px;
-    flex: 1;
-    margin-right: 4px;
+  padding: 4px;
+  display: inline-block;
+  border-radius: 2px;
+  flex: 1;
+  margin-right: 4px;
 }
 
 :root {
-    --item-0-color: 255, 0, 0;
-    --item-1-color: 232, 0, 232;
-    --item-2-color: 0, 100, 255;
-    --item-3-color: 219, 207, 0;
-    --item-4-color: 255, 165, 0;
-    --item-5-color: 0, 128, 0;
-    --selected-item-line-width: 2px;
+  --item-0-color: 255, 0, 0;
+  --item-1-color: 232, 0, 232;
+  --item-2-color: 0, 100, 255;
+  --item-3-color: 219, 207, 0;
+  --item-4-color: 255, 165, 0;
+  --item-5-color: 0, 128, 0;
+  --selected-item-line-width: 2px;
 }
 
 .level-0 .item {
-    width: 80px;
-    text-align: center;
-    overflow: hidden;
-    height: 40px;
-    font-size: 12px;
+  width: 80px;
+  text-align: center;
+  overflow: hidden;
+  height: 40px;
+  font-size: 12px;
 }
 
-.level-0 .item-0.selected, .level-2.category-0 .selected, .level-3.category-0 .item.selected {
-    background-color: rgba(var(--item-0-color), 1);
+.level-0 .item-0.selected,
+.level-2.category-0 .selected,
+.level-3.category-0 .item.selected {
+  background-color: rgba(var(--item-0-color), 1);
 }
 
 .level-1.category-0 .selected .index {
-    background-color: rgba(var(--item-0-color), 0.8);
+  background-color: rgba(var(--item-0-color), 0.8);
 }
 
-.level-0:has(.item-0.selected), .crumb-path:has(~ .level-3.category-0) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-0-color), 1);
+.level-0:has(.item-0.selected),
+.crumb-path:has(~ .level-3.category-0) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-0-color), 1);
 }
 
-.level-0 .item-1.selected, .level-2.category-1 .selected, .level-3.category-1 .item.selected {
-    background-color: rgba(var(--item-1-color), 1);
+.level-0 .item-1.selected,
+.level-2.category-1 .selected,
+.level-3.category-1 .item.selected {
+  background-color: rgba(var(--item-1-color), 1);
 }
 
 .level-1.category-1 .selected .index {
-    background-color: rgba(var(--item-1-color), 0.8);
+  background-color: rgba(var(--item-1-color), 0.8);
 }
 
-.level-0:has(.item-1.selected), .crumb-path:has(~ .level-3.category-1) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-1-color), 1);
+.level-0:has(.item-1.selected),
+.crumb-path:has(~ .level-3.category-1) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-1-color), 1);
 }
 
-.level-0 .item-2.selected, .level-2.category-2 .selected, .level-3.category-2 .item.selected {
-    background-color: rgba(var(--item-2-color), 1);
+.level-0 .item-2.selected,
+.level-2.category-2 .selected,
+.level-3.category-2 .item.selected {
+  background-color: rgba(var(--item-2-color), 1);
 }
 
 .level-1.category-2 .selected .index {
-    background-color: rgba(var(--item-2-color), 0.8);
+  background-color: rgba(var(--item-2-color), 0.8);
 }
 
-.level-0:has(.item-2.selected), .crumb-path:has(~ .level-3.category-2) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-2-color), 1);
+.level-0:has(.item-2.selected),
+.crumb-path:has(~ .level-3.category-2) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-2-color), 1);
 }
 
-.level-0 .item-3.selected, .level-2.category-3 .selected, .level-3.category-3 .item.selected {
-    background-color: rgba(var(--item-3-color), 1);
+.level-0 .item-3.selected,
+.level-2.category-3 .selected,
+.level-3.category-3 .item.selected {
+  background-color: rgba(var(--item-3-color), 1);
 }
 
 .level-1.category-3 .selected .index {
-    background-color: rgba(var(--item-3-color), 0.8);
+  background-color: rgba(var(--item-3-color), 0.8);
 }
 
-.level-0:has(.item-3.selected), .crumb-path:has(~ .level-3.category-3) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-3-color), 1);
+.level-0:has(.item-3.selected),
+.crumb-path:has(~ .level-3.category-3) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-3-color), 1);
 }
 
-.level-0 .item-4.selected, .level-2.category-4 .selected, .level-3.category-4 .item.selected {
-    background-color: rgba(var(--item-4-color), 1);
+.level-0 .item-4.selected,
+.level-2.category-4 .selected,
+.level-3.category-4 .item.selected {
+  background-color: rgba(var(--item-4-color), 1);
 }
 
 .level-1.category-4 .selected .index {
-    background-color: rgba(var(--item-4-color), 0.8);
+  background-color: rgba(var(--item-4-color), 0.8);
 }
 
-.level-0:has(.item-4.selected), .crumb-path:has(~ .level-3.category-4) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-4-color), 1);
+.level-0:has(.item-4.selected),
+.crumb-path:has(~ .level-3.category-4) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-4-color), 1);
 }
 
-.level-0 .item-5.selected, .level-2.category-5 .selected, .level-3.category-5 .item.selected {
-    background-color: rgba(var(--item-5-color), 1);
+.level-0 .item-5.selected,
+.level-2.category-5 .selected,
+.level-3.category-5 .item.selected {
+  background-color: rgba(var(--item-5-color), 1);
 }
 
 .level-1.category-5 .selected .index {
-    background-color: rgba(var(--item-5-color), 0.8);
+  background-color: rgba(var(--item-5-color), 0.8);
 }
 
-.level-0:has(.item-5.selected), .crumb-path:has(~ .level-3.category-5) {
-    border-bottom: var(--selected-item-line-width) solid rgba(var(--item-5-color), 1);
+.level-0:has(.item-5.selected),
+.crumb-path:has(~ .level-3.category-5) {
+  border-bottom: var(--selected-item-line-width) solid rgba(var(--item-5-color), 1);
 }
 
 .level-0 .item {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .level-0 .item.selected {
-    opacity: 1;
+  opacity: 1;
 }
 
 .level-1 {
-    display: flex;
-    flex-direction: row;
-    padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
 }
 
 .level-1 .index {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 8px;
-    width: 40px;
-    height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  width: 40px;
+  height: 100%;
 }
 
 .level-1 .label {
-    display: none;
+  display: none;
 }
 
-.level-2 .label, .level-3 .label {
-    margin: 0 12px;
+.level-2 .label,
+.level-3 .label {
+  margin: 0 12px;
 }
 
-.level-2 .selected .label, .level-3 .selected .label {
-    background-color: black;
+.level-2 .selected .label,
+.level-3 .selected .label {
+  background-color: black;
 }
 
 .level-2 .item {
-    background: #292929;
+  background: #292929;
 }
 
-.level-2 .item, .level-3 .item {
-    padding: 4px;
+.level-2 .item,
+.level-3 .item {
+  padding: 4px;
 }
 
 .level-2 .item:not(:first-child) {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .level-heading {
-    display: none;
+  display: none;
 }
 
 .crumb-path {
-    order: 3;
-    display: flex;
-    margin-right: 8px;
-    align-items: center;
-    margin-left: 4px;
-    flex: 1;
-    justify-content: flex-end;
+  order: 3;
+  display: flex;
+  margin-right: 8px;
+  align-items: center;
+  margin-left: 4px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .crumb-path .container {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 .crumb-path.scroll-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .crumb-path .crumb {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .level-0 {
-    order: 1;
-    flex-basis: 100%;
+  order: 1;
+  flex-basis: 100%;
 }
 
 .level-1 {
-    order: 2;
-    flex-shrink: 0;
+  order: 2;
+  flex-shrink: 0;
 }
 
 .level-2 {
-    order: 4;
-    flex: 1 1 100%;
-    margin-top: 4px;
+  order: 4;
+  flex: 1 1 100%;
+  margin-top: 4px;
 }
 
 .level-3 {
-    order: 5;
-    width: 100%;
-    background: black;
-    margin-top: 8px;
+  order: 5;
+  width: 100%;
+  background: black;
+  margin-top: 8px;
 }
 
 .crumb-path:has(~ .level-3) {
-    order: 1;
-    width: 100%;
-    margin: 0 16px;
+  order: 1;
+  width: 100%;
+  margin: 0 16px;
 }
 
 .crumb-path:has(~ .level-3) .crumb {
-    margin: 0 16px;
+  margin: 0 16px;
 }
 
-.crumb-path:has(~ .level-3) .crumb:nth-child(-n + 2), .crumb-path:has(~ .level-3) .crumb:nth-child(4) {
-    display: none;
+.crumb-path:has(~ .level-3) .crumb:nth-child(-n + 2),
+.crumb-path:has(~ .level-3) .crumb:nth-child(4) {
+  display: none;
 }
 
-.level-0:has(~ .level-3), .level-1:has(~ .level-3), .level-2:has(~ .level-3) {
-    display: none;
+.level-0:has(~ .level-3),
+.level-1:has(~ .level-3),
+.level-2:has(~ .level-3) {
+  display: none;
 }
 
 .level-3 {
-    display: flex;
+  display: flex;
 }
 
 .level-3 .item {
-    background-color: #292929;
+  background-color: #292929;
 }
 
 .level-3 ~ .nav-buttons {
-    display: flex;
-    justify-items: flex-end;
-    order: 6;
-    flex: 1 1 100%;
-    justify-content: flex-end;
+  display: flex;
+  justify-items: flex-end;
+  order: 6;
+  flex: 1 1 100%;
+  justify-content: flex-end;
 }
 
 .level-3 ~ .nav-buttons .back-button {
-    border: 1px solid #444444;
-    background: #292929;
-    padding: 4px 2px;
-    margin: 8px;
-    border-radius: 4px;
+  border: 1px solid #444444;
+  background: #292929;
+  padding: 4px 2px;
+  margin: 8px;
+  border-radius: 4px;
 }
 
 .level-3 ~ .nav-buttons .back-button:before {
-    content: 'SET OK';
+  content: 'SET OK';
 }
 
-
 .level-4 {
-    order: 6;
+  order: 6;
+}
+
+.has-help {
+  display: none;
+}
+
+.container > :nth-last-child(1 of .level) .has-help {
+  display: block;
 }

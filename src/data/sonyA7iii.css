@@ -345,3 +345,12 @@
 .crumb-path {
   display: none;
 }
+
+
+.has-help {
+  display: none;
+}
+
+.container > :nth-last-child(1 of .level) .has-help {
+  display: block;
+}

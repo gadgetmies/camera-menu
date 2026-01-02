@@ -280,3 +280,11 @@
 .level:not(.level-0):has(+ .level + .level) { 
   width: 50px;
 }
+
+.has-help {
+  display: none;
+}
+
+.container > :nth-last-child(1 of .level) .has-help {
+  display: block;
+}
