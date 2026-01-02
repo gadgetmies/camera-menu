@@ -48,7 +48,7 @@ SHOOT,2,ISO Speed Settings,ISO speed,Auto
 SHOOT,2,ISO Speed Settings,ISO speed,100-32000
 SHOOT,2,ISO Speed Settings,Range for stills,1000-32000
 SHOOT,2,ISO Speed Settings,Auto range,1000-32000
-SHOOT,2,ISO Speed Settings,Min. shutter spd.,1/8000-1"
+SHOOT,2,ISO Speed Settings,Min. shutter spd.,1/8000-1""
 SHOOT,2,Auto Lighting Optimizer,Disable
 SHOOT,2,Auto Lighting Optimizer,Low
 SHOOT,2,Auto Lighting Optimizer,Standard
