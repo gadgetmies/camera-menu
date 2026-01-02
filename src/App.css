@@ -691,3 +691,11 @@
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.has-help {
+  display: none;
+}
+
+.container > :nth-last-child(1 of .level) .has-help {
+  display: block;
+}
