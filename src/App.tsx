@@ -1073,6 +1073,9 @@ function App() {
   const [helpMode, setHelpMode] = useState(false)
   const [helpModalOpen, setHelpModalOpen] = useState(false)
   const [helpModalContent, setHelpModalContent] = useState<{ text: string; path: string } | null>(null)
+  const [helpEditMode, setHelpEditMode] = useState(false)
+  const [editingHelpText, setEditingHelpText] = useState<string>('')
+  const [editingHelpMap, setEditingHelpMap] = useState<Record<string, string>>({})
   const [editMode, setEditMode] = useState(false)
   const [editingData, setEditingData] = useState<Record<string, any> | null>(null)
   const [editingItemKey, setEditingItemKey] = useState<string | null>(null)
@@ -1149,8 +1152,34 @@ function App() {
   })
 
   const handleHelpClick = (helpText: string, path: string) => {
-    setHelpModalContent({ text: helpText, path })
+    const editedHelpText = editingHelpMap[path] !== undefined ? editingHelpMap[path] : helpText
+    setHelpModalContent({ text: editedHelpText, path })
+    setEditingHelpText(editedHelpText)
+    setHelpEditMode(false)
     setHelpModalOpen(true)
+  }
+
+  const handleSaveHelpText = () => {
+    if (!helpModalContent) return
+    
+    const newHelpMap = { ...helpMap, ...editingHelpMap }
+    if (editingHelpText.trim()) {
+      newHelpMap[helpModalContent.path] = editingHelpText
+    } else {
+      delete newHelpMap[helpModalContent.path]
+    }
+    setEditingHelpMap(newHelpMap)
+    setHelpEditMode(false)
+    
+    const updatedContent = { ...helpModalContent, text: editingHelpText }
+    setHelpModalContent(updatedContent)
+  }
+
+  const handleCancelHelpEdit = () => {
+    if (helpModalContent) {
+      setEditingHelpText(helpModalContent.text)
+    }
+    setHelpEditMode(false)
   }
 
   const getNodeAtPath = (data: Record<string, any>, path: number[]): Record<string, any> | null => {
@@ -1294,8 +1323,9 @@ function App() {
     }
   }
 
-  const convertDataToCSV = (data: Record<string, any>): string => {
+  const convertDataToCSV = (data: Record<string, any>, helpMapToUse: Record<string, string> = {}): string => {
     const rows: string[] = []
+    const hasHelpText = Object.keys(helpMapToUse).length > 0
     
     const traverse = (node: Record<string, any>, path: string[] = []) => {
       const keys = Array.isArray(node.__order__) ? node.__order__ : Object.keys(node).filter(k => k !== '__order__')
@@ -1304,20 +1334,33 @@ function App() {
         const value = node[key]
         const label = key.replace(/<i name="[^"]+"\/>/g, '')
         const currentPath = [...path, label]
+        const pathString = currentPath.join(' > ')
         
         if (value && typeof value === 'object' && value !== null && !Array.isArray(value)) {
           const hasChildren = Object.keys(value).some(k => k !== '__order__')
           if (hasChildren) {
-            const row = currentPath.map(p => `"${p.replace(/"/g, '""')}"`).join(',')
-            rows.push(row)
+            const cells = currentPath.map(p => `"${p.replace(/"/g, '""')}"`)
+            if (hasHelpText) {
+              const helpText = helpMapToUse[pathString] || ''
+              cells.push(`"${helpText.replace(/"/g, '""')}"`)
+            }
+            rows.push(cells.join(','))
             traverse(value, currentPath)
           } else {
-            const row = currentPath.map(p => `"${p.replace(/"/g, '""')}"`).join(',')
-            rows.push(row)
+            const cells = currentPath.map(p => `"${p.replace(/"/g, '""')}"`)
+            if (hasHelpText) {
+              const helpText = helpMapToUse[pathString] || ''
+              cells.push(`"${helpText.replace(/"/g, '""')}"`)
+            }
+            rows.push(cells.join(','))
           }
         } else {
-          const row = currentPath.map(p => `"${p.replace(/"/g, '""')}"`).join(',')
-          rows.push(row)
+          const cells = currentPath.map(p => `"${p.replace(/"/g, '""')}"`)
+          if (hasHelpText) {
+            const helpText = helpMapToUse[pathString] || ''
+            cells.push(`"${helpText.replace(/"/g, '""')}"`)
+          }
+          rows.push(cells.join(','))
         }
       }
     }
@@ -1328,7 +1371,8 @@ function App() {
 
   const handleSaveEditedCamera = async (editedData: Record<string, any>) => {
     try {
-      const menuCSV = convertDataToCSV(editedData)
+      const combinedHelpMap = { ...helpMap, ...editingHelpMap }
+      const menuCSV = convertDataToCSV(editedData, combinedHelpMap)
       const existingCustomCamera = customCameras.find(c => c.id === selectedCamera)
       const isExistingCustom = !!existingCustomCamera
       
@@ -1446,6 +1490,7 @@ function App() {
       _setCameraData(cameraSettings(customCamera.id))
       setEditMode(false)
       setEditingData(null)
+      setEditingHelpMap({})
     } catch (error) {
       console.error('Failed to save edited camera:', error)
       alert('Failed to save edited camera. Please try again.')
@@ -1522,6 +1567,7 @@ function App() {
               if (!editMode) {
                 setHelpMode(false)
                 setEditingData(JSON.parse(JSON.stringify(data)))
+                setEditingHelpMap({})
                 setEditMode(true)
                 setEditingItemKey(null)
                 setEditingText('')
@@ -1529,6 +1575,7 @@ function App() {
                 setEditMode(false)
                 setEditingItemKey(null)
                 setEditingText('')
+                setEditingHelpMap({})
               }
             }}
             title={editMode ? "Exit edit mode" : "Enter edit mode"}
@@ -1672,16 +1719,65 @@ function App() {
       {helpModalContent && (
         <Modal
           isOpen={helpModalOpen}
-          onClose={() => setHelpModalOpen(false)}
+          onClose={() => {
+            setHelpModalOpen(false)
+            setHelpEditMode(false)
+            if (helpModalContent) {
+              setEditingHelpText(helpModalContent.text)
+            }
+          }}
           title="Help"
           footer={
-            <button className={'modal-cancel-button'} onClick={() => setHelpModalOpen(false)} title="Close help">
-              Close
-            </button>
+            helpEditMode ? (
+              <>
+                <button className={'modal-cancel-button'} onClick={handleCancelHelpEdit} title="Cancel editing">
+                  Cancel
+                </button>
+                <button className={'modal-upload-button'} onClick={handleSaveHelpText} title="Save help text">
+                  Save
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  className={'modal-upload-button'}
+                  onClick={() => setHelpEditMode(true)}
+                  title="Edit help text"
+                  style={{ marginRight: '8px' }}
+                >
+                  <HiPencil style={{ marginRight: '4px', display: 'inline' }} />
+                  Edit
+                </button>
+                <button className={'modal-cancel-button'} onClick={() => setHelpModalOpen(false)} title="Close help">
+                  Close
+                </button>
+              </>
+            )
           }
         >
           <div className={'help-path'}>{helpModalContent.path.replace(/<i name="[^"]+"\/>/g, '')}</div>
-          <div className={'help-text'}>{helpModalContent.text}</div>
+          {helpEditMode ? (
+            <textarea
+              className={'help-text-edit'}
+              value={editingHelpText}
+              onChange={(e) => setEditingHelpText(e.target.value)}
+              rows={10}
+              style={{
+                width: '100%',
+                padding: '12px',
+                backgroundColor: '#1a1a1a',
+                color: '#fff',
+                border: '1px solid #444',
+                borderRadius: '4px',
+                fontFamily: 'inherit',
+                fontSize: '16px',
+                lineHeight: '1.6',
+                resize: 'vertical',
+              }}
+            />
+          ) : (
+            <div className={'help-text'}>{helpModalContent.text}</div>
+          )}
         </Modal>
       )}
       <Modal

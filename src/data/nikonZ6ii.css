@@ -114,11 +114,11 @@
   border-right: 2px solid hsl(var(--item-5-color));
 }
 
-.level-0 .item-6.selected {
+.level-0 .item-6.selected, .level-0 .item-7.selected {
   background-color: hsl(var(--item-6-color));
 }
 
-.level-0.container:has(.item-6.selected) {
+.level-0.container:has(.item-6.selected), .level-0.container:has(.item-7.selected) {
   border-right: 2px solid hsl(var(--item-6-color));
 }
 
@@ -180,6 +180,10 @@
   left: 0;
   right: 0;
   height: 1.3lh;
+}
+
+.level-1 .level-heading {
+  text-transform: uppercase;
 }
 
 .level:not(.level-0) .selected .label {
