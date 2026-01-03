@@ -22,6 +22,16 @@ Object.keys(cssRawModules).forEach((path) => {
   cssRawMap[fileName] = cssRawModules[path] as string
 })
 
+const resolveCssFile = (cssFile: string | undefined): string => {
+  if (!cssFile) {
+    return 'default'
+  }
+  if (cssFileMap[cssFile] || cssRawMap[cssFile]) {
+    return cssFile
+  }
+  return 'default'
+}
+
 const cameraCsvs: Record<string, string> = {}
 const cameraBrands: Record<string, string> = {}
 const cameraModels: Record<string, string> = {}
@@ -74,7 +84,9 @@ Object.keys(csvModules).forEach((path) => {
     cameraDisplayNames[key] = `${cameraBrands[key]} ${cameraModels[key]}`.trim()
   }
   if (!cameraCssFiles[key]) {
-    cameraCssFiles[key] = fileName
+    cameraCssFiles[key] = resolveCssFile(fileName)
+  } else {
+    cameraCssFiles[key] = resolveCssFile(cameraCssFiles[key])
   }
 })
 
@@ -433,7 +445,7 @@ function App() {
       cameras.forEach((camera) => {
         cameraCsvs[camera.id] = camera.csvContent
         cameraDisplayNames[camera.id] = camera.displayName
-        cameraCssFiles[camera.id] = camera.cssFileName
+        cameraCssFiles[camera.id] = resolveCssFile(camera.cssFileName)
 
         if (camera.brand) {
           cameraBrands[camera.id] = camera.brand
@@ -543,7 +555,7 @@ function App() {
 
       cameraCsvs[customCamera.id] = customCamera.csvContent
       cameraDisplayNames[customCamera.id] = customCamera.displayName
-      cameraCssFiles[customCamera.id] = customCamera.cssFileName
+      cameraCssFiles[customCamera.id] = resolveCssFile(customCamera.cssFileName)
 
       if (customCamera.brand) {
         cameraBrands[customCamera.id] = customCamera.brand
@@ -660,7 +672,7 @@ function App() {
           return
         }
 
-        const cssFileName = cameraCssFiles[cameraId] || cameraId
+        const cssFileName = resolveCssFile(cameraCssFiles[cameraId] || cameraId)
         const cssContent = cssRawMap[cssFileName]
 
         if (!cssContent) {
@@ -779,7 +791,7 @@ function App() {
     } else {
 
       const csvContent = cameraCsvs[selectedCamera]
-      const cssFileName = cameraCssFiles[selectedCamera] || selectedCamera
+      const cssFileName = resolveCssFile(cameraCssFiles[selectedCamera] || selectedCamera)
       const cssContent = cssRawMap[cssFileName] || ''
 
       const allRows = parseCSVRows(csvContent)
@@ -854,7 +866,7 @@ function App() {
 
       cameraCsvs[newCamera.id] = newCamera.csvContent
       cameraDisplayNames[newCamera.id] = newCamera.displayName
-      cameraCssFiles[newCamera.id] = newCamera.cssFileName
+      cameraCssFiles[newCamera.id] = resolveCssFile(newCamera.cssFileName)
       if (newCamera.brand) {
         cameraBrands[newCamera.id] = newCamera.brand
       }
@@ -1076,7 +1088,7 @@ function App() {
   }
 
   useEffect(() => {
-    const cssFile = config.cssFile || cameraCssFiles[selectedCamera] || selectedCamera
+    const cssFile = resolveCssFile(config.cssFile || cameraCssFiles[selectedCamera] || selectedCamera)
     const linkId = 'camera-specific-css'
 
     let link = document.getElementById(linkId) as HTMLLinkElement
@@ -1332,7 +1344,7 @@ function App() {
       const originalBrand = cameraBrands[selectedCamera] || ''
       const originalModel = cameraModels[selectedCamera] || ''
       const originalDisplayName = cameraDisplayNames[selectedCamera] || ''
-      const cssFile = cameraCssFiles[selectedCamera] || selectedCamera
+      const cssFile = resolveCssFile(cameraCssFiles[selectedCamera] || selectedCamera)
       
       let updatedDisplayName = originalDisplayName
       let updatedModel = originalModel
@@ -1366,8 +1378,8 @@ function App() {
       
       const newCsvContent = menuCSV + configSection
       
-      const cssContent = existingCustomCamera?.cssContent || cssRawMap[cssFile] || ''
-      const cssFileName = cssFile
+      const cssFileName = resolveCssFile(cssFile)
+      const cssContent = existingCustomCamera?.cssContent || cssRawMap[cssFileName] || ''
       
       let iconData = existingCustomCamera?.iconData
       if (!iconData && !isExistingCustom) {
@@ -1408,7 +1420,7 @@ function App() {
       
       cameraCsvs[customCamera.id] = customCamera.csvContent
       cameraDisplayNames[customCamera.id] = customCamera.displayName
-      cameraCssFiles[customCamera.id] = customCamera.cssFileName
+      cameraCssFiles[customCamera.id] = resolveCssFile(customCamera.cssFileName)
       
       if (customCamera.brand) {
         cameraBrands[customCamera.id] = customCamera.brand

@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  --border-color: rgb(197, 197, 197);
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  max-height: 500px;
+  width: 100vw;
+}
+
+.crumb-path .container {
+  display: flex;
+  gap: 4px;
+  flex-direction: row;
+  width: max-content;
+}
+
+.crumb-path .scroll-container {
+  height: 1lh;
+  overflow-x: auto;
+}
+
+.crumb-separator:after {
+  content: '>';
+  margin: 0 5px;
+}
+
+.crumb-separator:first-of-type,
+.crumb-separator:last-of-type {
+  display: none;
+}
+
+.crumb {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.level .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+.menu.scroll-container {
+  width: max-content;
+}
+
+.menu > .container {
+  display: flex;
+  width: max-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.crumb-path.scroll-container {
+  flex-basis: 100%;
+  padding: 4px;
+}
+
+.crumb-path .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.level.scroll-container {
+  padding: 4px;
+}
+
+.level .item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  background-color: #444444;
+}
+
+.level .item .index {
+  width: 1lh;
+  padding: 2px;
+  display: block;
+  background-color: black;
+  text-align: center;
+}
+
+.level .item.selected {
+  background-color: #cd2701;
+}
+
+.level .level-heading {
+  display: none;
+}
