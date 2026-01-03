@@ -46,3 +46,4 @@ export const Modal = ({ isOpen, onClose, title, children, footer, disabled = fal
   )
 }
 
+
