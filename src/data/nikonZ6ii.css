@@ -21,6 +21,7 @@
 .root {
   flex: 1;
   display: flex;
+  overflow: hidden;
 }
 
 .container {
@@ -37,7 +38,8 @@
 }
 
 .menu {
-  width: 100%;
+  flex: 1;
+  display: flex;
 }
 
 .menu > .container {
@@ -45,6 +47,7 @@
   width: max-content;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .menu.scroll-container {
@@ -162,11 +165,11 @@
 
 .level:not(.level-0) .container {
   position: relative;
-  width: 30ch;
   padding-top: 1.3lh;
 }
 
 .level:not(.level-0).scroll-container {
+  flex: 1;
   margin-left: 46px;
   height: 100%;
   overflow-y: scroll;
@@ -205,17 +208,17 @@
   display: flex;
   width: 50px;
   margin-left: -50px;
-  height: 100%;
   margin-top: 2px;
-  align-items: center;
-  border: 1px solid #464646;
-  border-radius: 4px;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .back-button {
   cursor: pointer;
   z-index: 1;
+  border: 1px solid #464646;
+  padding: 0 2px;
+  border: 1px solid #464646;
+  border-radius: 4px;
 }
 
 .back-button::after {

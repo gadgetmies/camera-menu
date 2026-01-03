@@ -1,68 +1,68 @@
 level0,level1,level2,level3,level4,level5,level6,level7,Comment/help
-Playback menu,,Delete,,,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures)"
-Playback menu,,Delete,Selected images,,,,,,Delete selected pictures
-Playback menu,,Delete,Images shot on selected dates,,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures). Delete selected pictures."
-Playback menu,,Delete,All images,,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures). Delete selected pictures."
-Playback menu,,Playback menu, folder,,,,,,,Choose a folder for Playback menu,. Pictures in all folders with the selected name will be visible during Playback menu,. Folders can be renamed using the [Storage folder] > [Rename] option in the photo shooting menu.
-Playback menu,,Playback menu, folder,Storage folder,,,,,,Choose a folder for Playback menu,. Pictures in all folders with the selected name will be visible during Playback menu,. Folders can be renamed using the [Storage folder] > [Rename] option in the photo shooting menu.
-Playback menu,,Playback menu, folder,All,,,,,,Pictures in all folders will be visible during Playback menu,.
-Playback menu,,Playback menu, folder,Current,,,,,,Only pictures in the current folder will be visible during Playback menu,.
-Playback menu,,Playback menu, display options,,,,,,,Choose whether the focus points used when the photograph was taken are displayed during full-frame Playback menu,. You can also choose the types of photo information that can be viewed during full-frame Playback menu,.
-Playback menu,,Dual-format recording PB slot,,,,,,,Choose the slot from which dual-format pictures recorded with [RAW primary - JPEG secondary] selected for [Secondary slot function] in the photo shooting menu are played back. D The Playback menu, Menu: Managing Images.
-Playback menu,,Image review,,,,,,,Choose whether pictures are automatically displayed in the monitor immediately after shooting.
-Playback menu,,Image review,On,,,,,,Pictures appear in the currently-selected display (monitor or viewfinder) as they are taken.
-Playback menu,,Image review,On (monitor only),,,,,,Pictures are displayed after shooting only when the monitor is used to frame shots. Pictures are not displayed in the viewfinder when [Viewfinder only] is selected for monitor mode.
-Playback menu,,Image review,Off,,,,,,Pictures can only be viewed by pressing the K button.
-Playback menu,,After delete,,,,,,,Choose the picture displayed after an image is deleted.
-Playback menu,,After delete,Show next,,,,,,Choose the picture displayed after an image is deleted. The following picture is displayed.
-Playback menu,,After delete,Show previous,,,,,,Choose the picture displayed after an image is deleted. The following picture is displayed.
-Playback menu,,After delete,Continue as before,,,,,,"If you were scrolling through pictures in the order recorded, the following picture will be displayed as described for [Show next]. If you were scrolling through pictures in reverse order, the next picture will be displayed as described for [Show previous]"
-Playback menu,,"After burst, show",,,,,,,Choose whether the photo displayed immediately after a burst of shots is taken in continuous mode is the first or last shot in the burst.
-Playback menu,,Rotate tall,,,,,,,"When [On] is selected, “tall” (portrait-orientation) pictures will be automatically rotated for display during Playback menu,. Images are not rotated automatically during image review even when [On] is selected for [Rotate tall]."
-Playback menu,,Copy image(s),,,,,,,Copy pictures from one memory card to another when two memory cards are inserted. Choose the card from which pictures will be copied.
-Playback menu,,Copy image(s),Select source,,,,,,Choose the card from which pictures will be copied.
-Playback menu,,Copy image(s),Select image(s),,,,,,Select pictures to be copied.
-Playback menu,,Copy image(s),Select destination folder,,,,,,Select the destination folder on the remaining card (the card not selected for [Select source])
-Playback menu,,Copy image(s),Copy image(s)?,,,,,,Copy the pictures.
-Playback menu,,Slide show,,,,,,,View a slide show; pictures are displayed in the order recorded. The pictures in the folder currently selected for [Playback menu, folder] (Playback menu, Folder) will be displayed one-by-one in the order recorded.
-Playback menu,,Slide show,Start,,,,,,Start the slide show.
-Playback menu,,Slide show,Image type,,,,,,Choose the type of picture displayed. Select to view only pictures with selected ratings. Highlight ratings and press 2 to select (M) or deselect (U)
-Playback menu,,Slide show,Frame interval,,,,,,Choose how long each picture will be displayed.
-Playback menu,,Rating,,,,,,,Highlight pictures using the multi selector 4 or 2
-Photo shooting menu,Reset photo shooting menu,,,,,,,,Restore photo shooting menu options to their default values. Photo shooting menu reset is not available while a multiple exposure is in progress.
-Photo shooting menu,Storage folder,,,,,,,,Choose the folder in which subsequent pictures will be stored.
-Photo shooting menu,Storage folder,Select folder by number,,,,,,,
-Photo shooting menu,Storage folder,Select folder from list,,,,,,,
-Photo shooting menu,File naming,,,,,,,,Pictures are saved using file names consisting of “DSC_” followed by a four-digit number and a three-letter extension. [File naming] is used to select three letters to replace the “DSC” portion of the file name.
-Photo shooting menu,Primary slot selection,,,,,,,,Choose the slot that serves as the primary slot when memory cards are inserted in both the CFexpress/XQD and SD memory card slots
+Playback menu,,Delete,,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures)"
+Playback menu,,Delete,Selected images,,,,,Delete selected pictures
+Playback menu,,Delete,Images shot on selected dates,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures). Delete selected pictures."
+Playback menu,,Delete,All images,,,,,"Delete multiple images. For more information, see “Deleting Multiple Pictures” (Deleting Multiple Pictures). Delete selected pictures."
+Playback menu,,Playback menu, folder,,,,,",,Choose a folder for Playback menu,. Pictures in all folders with the selected name will be visible during Playback menu,. Folders can be renamed using the [Storage folder] > [Rename] option in the photo shooting menu."
+Playback menu,,Playback menu, folder,Storage folder,,,,",,Choose a folder for Playback menu,. Pictures in all folders with the selected name will be visible during Playback menu,. Folders can be renamed using the [Storage folder] > [Rename] option in the photo shooting menu."
+Playback menu,,Playback menu, folder,All,,,,",,Pictures in all folders will be visible during Playback menu,."
+Playback menu,,Playback menu, folder,Current,,,,",,Only pictures in the current folder will be visible during Playback menu,."
+Playback menu,,Playback menu, display options,,,,,",,Choose whether the focus points used when the photograph was taken are displayed during full-frame Playback menu,. You can also choose the types of photo information that can be viewed during full-frame Playback menu,."
+Playback menu,,Dual-format recording PB slot,,,,,,"Choose the slot from which dual-format pictures recorded with [RAW primary - JPEG secondary] selected for [Secondary slot function] in the photo shooting menu are played back. D The Playback menu, Menu: Managing Images."
+Playback menu,,Image review,,,,,,Choose whether pictures are automatically displayed in the monitor immediately after shooting.
+Playback menu,,Image review,On,,,,,Pictures appear in the currently-selected display (monitor or viewfinder) as they are taken.
+Playback menu,,Image review,On (monitor only),,,,,Pictures are displayed after shooting only when the monitor is used to frame shots. Pictures are not displayed in the viewfinder when [Viewfinder only] is selected for monitor mode.
+Playback menu,,Image review,Off,,,,,Pictures can only be viewed by pressing the K button.
+Playback menu,,After delete,,,,,,Choose the picture displayed after an image is deleted.
+Playback menu,,After delete,Show next,,,,,Choose the picture displayed after an image is deleted. The following picture is displayed.
+Playback menu,,After delete,Show previous,,,,,Choose the picture displayed after an image is deleted. The following picture is displayed.
+Playback menu,,After delete,Continue as before,,,,,"If you were scrolling through pictures in the order recorded, the following picture will be displayed as described for [Show next]. If you were scrolling through pictures in reverse order, the next picture will be displayed as described for [Show previous]"
+Playback menu,,"After burst, show",,,,,,Choose whether the photo displayed immediately after a burst of shots is taken in continuous mode is the first or last shot in the burst.
+Playback menu,,Rotate tall,,,,,,"When [On] is selected, “tall” (portrait-orientation) pictures will be automatically rotated for display during Playback menu,. Images are not rotated automatically during image review even when [On] is selected for [Rotate tall]."
+Playback menu,,Copy image(s),,,,,,Copy pictures from one memory card to another when two memory cards are inserted. Choose the card from which pictures will be copied.
+Playback menu,,Copy image(s),Select source,,,,,Choose the card from which pictures will be copied.
+Playback menu,,Copy image(s),Select image(s),,,,,Select pictures to be copied.
+Playback menu,,Copy image(s),Select destination folder,,,,,Select the destination folder on the remaining card (the card not selected for [Select source])
+Playback menu,,Copy image(s),Copy image(s)?,,,,,Copy the pictures.
+Playback menu,,Slide show,,,,,,"View a slide show; pictures are displayed in the order recorded. The pictures in the folder currently selected for [Playback menu, folder] (Playback menu, Folder) will be displayed one-by-one in the order recorded."
+Playback menu,,Slide show,Start,,,,,Start the slide show.
+Playback menu,,Slide show,Image type,,,,,Choose the type of picture displayed. Select to view only pictures with selected ratings. Highlight ratings and press 2 to select (M) or deselect (U)
+Playback menu,,Slide show,Frame interval,,,,,Choose how long each picture will be displayed.
+Playback menu,,Rating,,,,,,Highlight pictures using the multi selector 4 or 2
+Photo shooting menu,Reset photo shooting menu,,,,,,,Restore photo shooting menu options to their default values. Photo shooting menu reset is not available while a multiple exposure is in progress.
+Photo shooting menu,Storage folder,,,,,,,Choose the folder in which subsequent pictures will be stored.
+Photo shooting menu,Storage folder,Select folder by number,,,,,,","
+Photo shooting menu,Storage folder,Select folder from list,,,,,,","
+Photo shooting menu,File naming,,,,,,,Pictures are saved using file names consisting of “DSC_” followed by a four-digit number and a three-letter extension. [File naming] is used to select three letters to replace the “DSC” portion of the file name.
+Photo shooting menu,Primary slot selection,,,,,,,Choose the slot that serves as the primary slot when memory cards are inserted in both the CFexpress/XQD and SD memory card slots
 Photo shooting menu,Primary slot selection,The CFexpress/XQD memory card slot serves as the primary slot.,,,,,,
 Photo shooting menu,Primary slot selection,The SD memory card slot serves as the primary slot.,,,,,,
-Photo shooting menu,Secondary slot function,,,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
-Photo shooting menu,Secondary slot function,Overflow,,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
-Photo shooting menu,Secondary slot function,Backup,,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
-Photo shooting menu,Secondary slot function,RAW primary - JPEG secondary,,,,,,,"NEF (RAW) copies of photos taken at settings of NEF (RAW) + JPEG are recorded only to the card in the primary slot, JPEG copies only to the card in the secondary slot. Pictures taken at other image quality settings are recorded twice at the same setting, once to the card in the primary slot and again to the card in the secondary slot"
-Photo shooting menu,Choose image area,,,,,,,,Record pictures in FX format with an angle of view equivalent to a 35 mm format camera. Use this option when taking photographs with NIKKOR lenses for 35 mm format cameras
-Photo shooting menu,Choose image area,FX (36×24),,,,,,,Record pictures in FX format with an angle of view equivalent to a 35 mm format camera. Use this option when taking photographs with NIKKOR lenses for 35 mm format cameras
-Photo shooting menu,Choose image area,DX (24×16),,,,,,,"Images are recorded in DX format. To calculate the approximate focal length of the lens in 35 mm format, multiply by 1.5. Image-area selection is fixed at [DX (24×16)] when a DX lens is attached"
-Photo shooting menu,Choose image area,5:4 (30×24),,,,,,,Pictures are recorded with an aspect ratio of 5:4. Available only with Z 7II
-Photo shooting menu,Choose image area,1:1 (24×24),,,,,,,Pictures are recorded with an aspect ratio of 1:1
-Photo shooting menu,Choose image area,16:9 (36×20),,,,,,,Pictures are recorded with an aspect ratio of 16:9
-Photo shooting menu,Image quality,,,,,,,,"Choose a file format for photographs. For more information, see “The i Menu” under “Image Quality” (Image Quality)"
-Photo shooting menu,Image size,,,,,,,,"Choose the size, in pixels, of pictures recorded with the camera. Select [JPEG] to choose the size of JPEG images, [NEF (RAW)] to choose the size of NEF (RAW) images. Note that image size varies with the option selected for image area."
-Photo shooting menu,NEF (RAW) recording,,,,,,,,NEF (RAW) images are recorded at a bit depth of 12 bits. NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit].
-Photo shooting menu,NEF (RAW) recording,Lossless compressed,,,,,,,NEF pictures are compressed using a reversible algorithm. The resulting files are about 60% to 80% the size of pictures recorded using [Uncompressed]. Image quality is the same as pictures recorded using [Uncompressed]
-Photo shooting menu,NEF (RAW) recording,Compressed,,,,,,,NEF images are compressed using a non-reversible algorithm. The resulting files are about 45% to 65% the size of pictures recorded using [Uncompressed]. Image quality is nearly the same as pictures recorded using [Uncompressed]
-Photo shooting menu,NEF (RAW) recording,Lossless compressed,,,,,,,NEF pictures are not compressed; the resulting files are larger than those for pictures recorded using or [Compressed]
-Photo shooting menu,NEF (RAW) recording,12-bit,,,,,,,NEF (RAW) images are recorded at a bit depth of 12 bits. NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit].
-Photo shooting menu,NEF (RAW) recording,14-bit,,,,,,,NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit]
-Photo shooting menu,ISO sensitivity settings,,,,,,,,"Choose from the following settings.Z 7II: Choose from settings of ISO 64 to 25600; the camera also supports settings below ISO 64 by about 0.3, 0.5, 0.7, and 1 EV (ISO 32 equivalent) and above ISO 25600 by"
-Photo shooting menu,ISO sensitivity settings,ISO sensitivity,,,,,,,"Choose from settings of ISO 100 to 51200; the camera also supports settings below ISO 100 by about 0.3, 0.5, 0.7, and 1 EV (ISO 50 equivalent) and above ISO 51200 by about 0.3, 0.5, 0.7, 1, and 2 EV (ISO 204800 equivalent).Auto offers an ISO AUTO option."
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,,,,,,,"Highlight [On] and press J to enable auto ISO sensitivity control. If [Off] is selected, [ISO sensitivity] will remain fixed at the value selected by the user."
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,On,,,,,,
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Off,,,,,,
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Maximum sensitivity,,,,,,Choose an upper limit for ISO sensitivity to prevent it being raised too high.
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Maximum sensitivity with flash,,,,,,Choose the upper ISO sensitivity limit for photos taken using an optional flash unit.
-Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Minimum shutter speed,,,,,,"Choose the shutter speed below which auto ISO sensitivity control will kick in to prevent underexposure in modes P and A. If [Auto] is selected, the camera will choose the minimum shutter speed based on lens focal length. For example, the camera will automatically choose faster minimum shutter speeds to prevent blur caused by camera shake when a long lens is attached.
+Photo shooting menu,Secondary slot function,,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
+Photo shooting menu,Secondary slot function,Overflow,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
+Photo shooting menu,Secondary slot function,Backup,,,,,,Video Tutorial: Dual Card Slots Choose the role played by the card in the secondary slot when two memory cards are inserted in the camera.
+Photo shooting menu,Secondary slot function,RAW primary - JPEG secondary,,,,,,"NEF (RAW) copies of photos taken at settings of NEF (RAW) + JPEG are recorded only to the card in the primary slot, JPEG copies only to the card in the secondary slot. Pictures taken at other image quality settings are recorded twice at the same setting, once to the card in the primary slot and again to the card in the secondary slot"
+Photo shooting menu,Choose image area,,,,,,,Record pictures in FX format with an angle of view equivalent to a 35 mm format camera. Use this option when taking photographs with NIKKOR lenses for 35 mm format cameras
+Photo shooting menu,Choose image area,FX (36×24),,,,,,Record pictures in FX format with an angle of view equivalent to a 35 mm format camera. Use this option when taking photographs with NIKKOR lenses for 35 mm format cameras
+Photo shooting menu,Choose image area,DX (24×16),,,,,,"Images are recorded in DX format. To calculate the approximate focal length of the lens in 35 mm format, multiply by 1.5. Image-area selection is fixed at [DX (24×16)] when a DX lens is attached"
+Photo shooting menu,Choose image area,5:4 (30×24),,,,,,Pictures are recorded with an aspect ratio of 5:4. Available only with Z 7II
+Photo shooting menu,Choose image area,1:1 (24×24),,,,,,Pictures are recorded with an aspect ratio of 1:1
+Photo shooting menu,Choose image area,16:9 (36×20),,,,,,Pictures are recorded with an aspect ratio of 16:9
+Photo shooting menu,Image quality,,,,,,,"Choose a file format for photographs. For more information, see “The i Menu” under “Image Quality” (Image Quality)"
+Photo shooting menu,Image size,,,,,,,"Choose the size, in pixels, of pictures recorded with the camera. Select [JPEG] to choose the size of JPEG images, [NEF (RAW)] to choose the size of NEF (RAW) images. Note that image size varies with the option selected for image area."
+Photo shooting menu,NEF (RAW) recording,,,,,,,NEF (RAW) images are recorded at a bit depth of 12 bits. NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit].
+Photo shooting menu,NEF (RAW) recording,Lossless compressed,,,,,,NEF pictures are compressed using a reversible algorithm. The resulting files are about 60% to 80% the size of pictures recorded using [Uncompressed]. Image quality is the same as pictures recorded using [Uncompressed]
+Photo shooting menu,NEF (RAW) recording,Compressed,,,,,,NEF images are compressed using a non-reversible algorithm. The resulting files are about 45% to 65% the size of pictures recorded using [Uncompressed]. Image quality is nearly the same as pictures recorded using [Uncompressed]
+Photo shooting menu,NEF (RAW) recording,Lossless compressed,,,,,,NEF pictures are not compressed; the resulting files are larger than those for pictures recorded using or [Compressed]
+Photo shooting menu,NEF (RAW) recording,12-bit,,,,,,NEF (RAW) images are recorded at a bit depth of 12 bits. NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit].
+Photo shooting menu,NEF (RAW) recording,14-bit,,,,,,NEF (RAW) images are recorded at a bit depth of 14 bits. Files recorded at a bit depth of 14 bits contain more color data than pictures recorded using [12-bit]. Files recorded at a bit depth of 14 bits are also larger than pictures recorded using [12-bit]
+Photo shooting menu,ISO sensitivity settings,,,,,,,"Choose from the following settings.Z 7II: Choose from settings of ISO 64 to 25600; the camera also supports settings below ISO 64 by about 0.3, 0.5, 0.7, and 1 EV (ISO 32 equivalent) and above ISO 25600 by"
+Photo shooting menu,ISO sensitivity settings,ISO sensitivity,,,,,,"Choose from settings of ISO 100 to 51200; the camera also supports settings below ISO 100 by about 0.3, 0.5, 0.7, and 1 EV (ISO 50 equivalent) and above ISO 51200 by about 0.3, 0.5, 0.7, 1, and 2 EV (ISO 204800 equivalent).Auto offers an ISO AUTO option."
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,,,,,,"Highlight [On] and press J to enable auto ISO sensitivity control. If [Off] is selected, [ISO sensitivity] will remain fixed at the value selected by the user."
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,On,,,,,","
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Off,,,,,","
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Maximum sensitivity,,,,,Choose an upper limit for ISO sensitivity to prevent it being raised too high.
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Maximum sensitivity with flash,,,,,Choose the upper ISO sensitivity limit for photos taken using an optional flash unit.
+Photo shooting menu,ISO sensitivity settings,Auto ISO sensitivity control,Minimum shutter speed,,,,,"Choose the shutter speed below which auto ISO sensitivity control will kick in to prevent underexposure in modes P and A. If [Auto] is selected, the camera will choose the minimum shutter speed based on lens focal length. For example, the camera will automatically choose faster minimum shutter speeds to prevent blur caused by camera shake when a long lens is attached.
 To view auto shutter-speed selection options, highlight [Auto] and press 2. Auto shutter-speed selection can be fine-tuned by choosing faster or slower minimums. Faster settings can be used to reduce blur when photographing fast-moving subjects.
 Shutter speeds may drop below the selected minimum if optimal exposure cannot be achieved at the ISO sensitivity chosen for [Maximum sensitivity]."
 Photo shooting menu,White balance,,,,,,,"Adjust white balance to match the color of the light source. For more information, see “Basic Settings” under “White Balance” (White Balance) and “The i Menu” under “White Balance” (White Balance)"
@@ -250,9 +250,9 @@ Custom settings menu,Shutter-release button AE-L,,,,,,,Choose whether exposure l
 Custom settings menu,Shutter-release button AE-L,On (half press),,,,,,A Custom settings menu: Fine-Tuning Camera Settings.
 Custom settings menu,Shutter-release button AE-L,On (burst mode),,,,,,Exposure only locks while the shutter-release button is pressed all the way down
 Custom settings menu,Shutter-release button AE-L,Pressing the shutter-release button does not lock exposure.,,,,,,
-Playback menu,,Delete,All images,,,,,,"Delete all pictures in the folder currently selected for [Playback menu, folder] in the Playback menu, menu. If two memory cards are inserted, you can select the card from which pictures will be deleted."
-Playback menu,,Delete,Images shot on selected dates,,,,,,Delete all pictures taken on selected dates (Images Shot on Selected Dates).
-Playback menu,,Delete,Selected images,,,,,,Delete selected pictures.
+Playback menu,,Delete,All images,,,,,"Delete all pictures in the folder currently selected for [Playback menu, folder] in the Playback menu, menu. If two memory cards are inserted, you can select the card from which pictures will be deleted."
+Playback menu,,Delete,Images shot on selected dates,,,,,Delete all pictures taken on selected dates (Images Shot on Selected Dates).
+Playback menu,,Delete,Selected images,,,,,Delete selected pictures.
 Custom settings menu,Self-timer,,,,,,,"Choose the length of the shutter release delay, the number of shots taken, and the interval between shots in self-timer mode. Choose the length of the shutter-release delay."
 Custom settings menu,Self-timer,Choose the length of the shutter-release delay.,,,,,,
 Custom settings menu,Self-timer,Press 1 and 3 to choose the number of shots taken each time the shutter-release button is pressed; choose from values of from 1 to 9.,,,,,,
@@ -330,7 +330,7 @@ Custom settings menu,Customize command dials,Sub-dial frame advance,,,,,,"Playba
 Photo shooting menu,High ISO NR,Low,,,,,,Noise reduction is performed only as required. The amount of noise reduction performed is always lower than when is selected.
 Photo shooting menu,High ISO NR,High,,,,,,"Reduce noise in photographs taken at all ISO sensitivities. The higher the sensitivity, the greater the effect. Choose the amount of noise reduction performed from , [Normal], and [Low]."
 Custom settings menu,Customize command dials,On (image review excluded),,,,,,Customize the operation of the main and sub-command dials. The selected settings also apply to the command dials on optional MB-N11 power battery packs.
-Custom settings menu,Customize command dials,Use the multi selector to choose the picture displayed during full-frame Playback menu, or to highlight pictures or menu items.,,,,,,
+Custom settings menu,Customize command dials,Use the multi selector to choose the picture displayed during full-frame Playback menu, or to highlight pictures or menu items.,,,,,","
 Custom settings menu,Customize command dials,Skip forward or back 10 frames at a time.,,,,,,
 Photo shooting menu,Vignette control,Vignette control disabled.,,,,,,Vignette control disabled.
 Photo shooting menu,Vignette control,Low,,,,,,
@@ -428,9 +428,9 @@ Movie shooting menu,Manage Picture Control,Rename custom Picture Controls.,,,,,,
 Movie shooting menu,Manage Picture Control,"Create a new custom Picture Control based on an existing preset or custom Picture
                                                          Control, or edit existing custom Picture Controls.",,,,,,"Create a new custom Picture Control based on an existing preset or custom Picture Control, or edit existing custom Picture Controls."
 Setup menu,Beep options,,,,,,,"If [On] is selected for [Beep on/off], beeps sound when:"
-Setup menu,Touch controls,,,,,,,Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only.
-Setup menu,Touch controls,LeftURight,,,,,,Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only.
-Setup menu,Touch controls,LeftVRight,,,,,,Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only.
+Setup menu,Touch controls,,,,,,,"Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only."
+Setup menu,Touch controls,LeftURight,,,,,,"Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only."
+Setup menu,Touch controls,LeftVRight,,,,,,"Adjust settings for monitor touch controls. Enable or disable touch controls. Select [Playback menu, only] to enable touch controls in Playback menu, mode only."
 Setup menu,HDMI,,,,,,,
 Movie shooting menu,Active D-Lighting,Off,,,,,,Active D-Lighting off.
 Movie shooting menu,Active D-Lighting,Low,,,,,,
@@ -536,14 +536,14 @@ Setup menu,HDMI,On,,,,,,"Choosing allows camera controls to be used to start and
 Setup menu,HDMI,Choose a bit depth for HDMI output.,,,,,,Choose a bit depth for HDMI output.
 Setup menu,HDMI,N-Log,,,,,,Preserve details in highlights and shadows and avoid over-saturated colors when recording movies. is intended for footage that will be color graded during post-production. [HDR (HLG)] is used to record footage in HLG format for such applications as HDR broadcasting. The selected options appear in the shooting display. The footage will be recorded directly to the external device. It cannot be saved to the camera memory card. This option is available only when [10 bit] is selected for [Output data depth]. The minimum values available for the [ISO sensitivity settings] > [Maximum sensitivity] and [ISO sensitivity (Mode M)] items in the Movie shooting menu are respectively ISO 1600 and ISO 800; the maximum for both is ISO 25600 (Z 7II) or 51200 (Z 6II).
 Setup menu,HDMI,On,,,,,,"Choose for a live preview of video footage recorded with [N-Log] or [HDR (HLG)] selected for [N-Log/HDR (HLG) output options], but note that the colors in the preview are simplified for enhanced contrast. This has no effect on the footage actually recorded."
-My Menu,Add items
-My Menu,Remove items
-My Menu,Rank items
-My Menu,Choose tab,MY MENU
-My Menu,Choose tab,RECENT SETTINGS
-Recent settings,Choose tab,MY MENU
-Recent settings,Choose tab,RECENT SETTINGS
-camera_menu_config
+My Menu,Add items,,,,,,,
+My Menu,Remove items,,,,,,,
+My Menu,Rank items,,,,,,,
+My Menu,Choose tab,MY MENU,,,,,,
+My Menu,Choose tab,RECENT SETTINGS,,,,,,
+Recent settings,Choose tab,MY MENU,,,,,,
+Recent settings,Choose tab,RECENT SETTINGS,,,,,,
+camera_menu_config,,,,,,,,
 brand,Nikon,,,,,,,
 model,Z6II,,,,,,,
 css_file,nikonZ6ii,,,,,,,
