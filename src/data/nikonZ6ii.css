@@ -159,7 +159,7 @@
   height: auto;
 }
 
-.level:not(.level-0):has(+ .level) {
+.level:not(.level-0):not(:nth-last-child(1 of .level)) {
   display: none;
 }
 

@@ -276,8 +276,8 @@
   filter: drop-shadow(0px -5px 10px #000000);
 }
 
-.level:not(.level-0, .level-1):has(+ .level),
-.level:not(.level-0):has(+ .level + .level) { 
+.level:not(.level-0, .level-1):not(:nth-last-child(1 of .level)),
+.level:not(.level-0):has(+ .level + .level) {
   width: 50px;
 }
 
